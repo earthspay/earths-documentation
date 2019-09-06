@@ -2,6 +2,12 @@
 
 ## Сентябрьские статьи
 
+### Блокчейн
+
+* Бинарный формат
+  * Бинарный формат транзакции
+    * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
+
 ### RIDE
 
 * Скрипт
@@ -59,8 +65,6 @@
 * Бинарный формат
   * [Бинарный формат адреса](blockchain/binary-format/address-binary-format.md)
   * [Бинарный формат псевдонима](blockchain/binary-format/alias-binary-format.md)
-  * Бинарный формат транзакции
-    * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
 * Блок
   * [Временная метка блока](blockchain/block/block-timestamp.md)
 * Блокчейн
