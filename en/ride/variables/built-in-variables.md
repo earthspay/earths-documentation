@@ -5,9 +5,9 @@ A **built-in variable** is a [variable](/ride/variables.md) of the [script conte
 ## List of built-in variables
 <table style="width:100%">
   <tr>
-    <th style="text-align:left">#</th>
-    <th style="text-align:left">Name</th>
-    <th style="text-align:left">Description</th>
+    <th align="left">#</th>
+    <th align="left">Name</th>
+    <th align="left">Description</th>
   </tr>
   <tr>
     <td>1</td>
