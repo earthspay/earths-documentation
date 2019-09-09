@@ -6,6 +6,7 @@
 
 * Бинарный формат
   * Бинарный формат транзакции
+    * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
     * [Бинарный формат транзакции обмена](blockchain/transaction-type/exchange-transaction.md)
 
 ### RIDE
