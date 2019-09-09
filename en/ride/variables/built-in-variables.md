@@ -92,13 +92,13 @@ A **built-in variable** is a [variable](/ride/variables.md) of the [script conte
 @Callable(inv)
 func deposit() = {
   TransferSet([
-    ScriptTransfer(inv.caller, 5, unit) # Перевести 5 WAVELET на аккаунт inv.caller. Вместо ID токена указан unit
+    ScriptTransfer(inv.caller, 5, unit) # Transfer 5 WAVELETs to the account inv.caller. Instead of the token ID the unit is specified
   ])
 }
 </code>
 </pre>
 
-WAVES does not have a <a href="/blockchain/token/token-id.md">token ID</a>; The <code>unit</code> is passed instead of the ID.<br><b>Example 2</b><br>The <a href="/ride/functions/built-in-functions/blockchain-functions.md"><tt>assetInfo</tt></a> function requests information about the token by its ID. Next, the <code>isDefined</code> function checks that a token with this ID exists on the blockchain.
+WAVES does not have a <a href="/blockchain/token/token-id.md">token ID</a>; the <code>unit</code> is passed instead of the ID.<br><b>Example 2</b><br>The <a href="/ride/functions/built-in-functions/blockchain-functions.md"><tt>assetInfo</tt></a> function requests information about the token by its ID. Next, the <code>isDefined</code> function checks that a token with this ID exists on the blockchain.
 <pre>
 <code class=“lang-ride”>
 {-# STDLIB_VERSION 3 #-}
