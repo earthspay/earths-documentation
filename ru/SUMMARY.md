@@ -23,6 +23,7 @@
     * [Бинарный формат транзакции данных](blockchain/binary-format/transaction-binary-format/data-transaction-binary-format.md)
     * [Бинарный формат транзакции лизинга](blockchain/binary-format/transaction-binary-format/lease-transaction-binary-format.md)
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
+    * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
     * [Бинарный формат транзакции сжигания токена](blockchain/binary-format/transaction-binary-format/burn-transaction-binary-format.md)
     * [Бинарный формат транзакции создания псевдонима](blockchain/binary-format/transaction-binary-format/alias-transaction-binary-format.md)
 * [Блок](blockchain/block.md)
