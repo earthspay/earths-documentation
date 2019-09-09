@@ -12,7 +12,8 @@
     "youtubex",
     "gtm",
     "bulk-redirect",
-    "scripts"
+    "scripts",
+    "folding-menu"
   ],
   "pluginsConfig": {
     "bulk-redirect": {
@@ -31,7 +32,8 @@
     "favicon": "/_theme/favicon.ico",
     "scripts": {
       "files": [
-        "./scripts/layoutModification.js"
+        "./scripts/layoutModification.js",
+        "./scripts/setActivePathOnTreeMenu.js"
       ]
     },
     "flexible-alerts": {
@@ -60,6 +62,10 @@
           "en": "ATTENTION"
         }
       }
+    },
+    "folding-menu":	{
+      "animationDuration": 500,
+      "sticky":            true
     }
   }
 }
