@@ -19,7 +19,7 @@
 | 5.3 | Ордер на продажу токена | order2 | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | См. страницу [бинарный формат ордера](/blockchain/binary-format/order-binary-format.md) |  |
 | 6 | Стоимость токена для покупки или продажи | price | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество [токена](/blockchain/token.md) Б, которое отправитель ордера предлагает за один токен А |
 | 7 | Количество | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество токена А, которое отправитель ордера хочет купить |
-| 8 | [Комиссия матчера](/blockchain/matcher-fee.md) за покупку | buyMatcherFee | [Int](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 8 | [Комиссия матчера](/blockchain/matcher-fee.md) за покупку | buyMatcherFee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 9 | Комиссия матчера за продажу | sellMatcherFee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 10 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 11 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
