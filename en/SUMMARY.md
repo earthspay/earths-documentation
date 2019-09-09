@@ -419,7 +419,6 @@
 ## Miscellaneous
 
 * [Contributing](resources/contributing.md)
-* [News archive](miscellaneous/news-archive.md)
 * [Waves protocol](blockchain/waves-protocol.md)
   * [Cryptographic practical details](blockchain/waves-protocol/cryptographic-practical-details.md)
   * [Validation rules](blockchain/waves-protocol/validation-rules.md)
@@ -433,3 +432,4 @@
   * [Asset verification protocol](resources/asset-verification-protocol.md)
   * [Trezor hardware wallet integration specification](resources/trezor-hardware-wallet-integration-specification.md)
   * [Sponsored transactions](resources/sponsored-transactions.md)
+* [News archive](miscellaneous/news-archive.md)

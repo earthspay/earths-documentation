@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
 	var expandedState = 'expanded';
 	var animationTime = 200;
 	var pathToGithubFile = 'https://github.com/wavesplatform/waves-documentation/blob/master/';
-	
+
 	var attachChapterClickHandler = function ($collapseIcon) {
 		$collapseIcon.on('click', function (e) {
 			var $this = $(this);
@@ -13,8 +13,8 @@ jQuery(document).ready(function () {
 			var _key = getAbsoluteUrl(anchorEl);
 			var parentEl = $this.parents('.chapter:first').find('>.articles');
 			var isCollapsed = anchorEl.hasClass(collapsedState);
-			
-			
+
+
 			if (isCollapsed) {
 				anchorEl
 					.removeClass(collapsedState)
@@ -32,15 +32,15 @@ jQuery(document).ready(function () {
 			return false;
 		});
 	};
-	
+
 	var attachHeaderClickHandlers = function ($collapseIcon) {
 		$collapseIcon.parent().on('click', function () {
 			var $headerEl = $(this);
 			var _key = $headerEl.text();
 			var itemsEl = $headerEl.next('.chapters-wrapper:first');
 			var isCollapsed = $headerEl.hasClass(collapsedState);
-			
-			
+
+
 			if (isCollapsed) {
 				$headerEl
 					.removeClass(collapsedState)
@@ -56,7 +56,7 @@ jQuery(document).ready(function () {
 			}
 		});
 	};
-	
+
 	var wrapChapters = function ($header, level) {
 		var $wrapper = $('<div class="chapters-wrapper"></div>');
 		$('[data-level^="' + level + '."]').each(function (i, el) {
@@ -67,29 +67,29 @@ jQuery(document).ready(function () {
 		});
 		$header.after($wrapper);
 	};
-	
+
 	var expandArticlesOnClick = function ($title) {
 		$title.on('click', function () {
 			$title.find('.icon-triangle').click();
 		});
 	};
-	
+
 	var getAbsoluteUrl = function ($a) {
 		return $a.get(0).href.trim();
 	};
-	
+
 	var buildCurrentTreeState = function () {
-		
+
 		var $collapseIcon = $(
 			'<div class="icon-triangle">' +
 			'<i class="octicon octicon-triangle"></i>' +
 			'</div>');
-		
+
 		$('.header').each(function (index) {
 			var $header = $(this);
 			var _key = $header.text().trim();
 			var $icon = $collapseIcon.clone();
-			
+
 			wrapChapters($header, index + 1);
 			$header.prepend($icon);
 			if (currentTreeState[_key] === expandedState) {
@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
 			}
 			attachHeaderClickHandlers($icon);
 		});
-		
+
 		$('.articles').each(function () {
 			var $articles = $(this);
 			var $title = $articles.prev();
@@ -116,7 +116,7 @@ jQuery(document).ready(function () {
 			attachChapterClickHandler($icon);
 			expandArticlesOnClick($title);
 			$title.prepend($icon);
-			
+
 			if (currentTreeState[_key] === expandedState) {
 				$title
 					.addClass(expandedState)
@@ -132,8 +132,8 @@ jQuery(document).ready(function () {
 			}
 		});
 	};
-	
-	
+
+
 	var pageHasChanged = gitbook.page.hasChanged;
 	gitbook.page.hasChanged = function (e, t, n) {
 		pageHasChanged(e, t, n);
@@ -141,10 +141,10 @@ jQuery(document).ready(function () {
 		addBranding();
 		addLinkToGithub();
 	};
-	
+
 	buildCurrentTreeState();
-	
-	
+
+
 	/**/
 	var addBranding = function () {
 		var $bookSummary = $('.book-summary');
@@ -156,8 +156,8 @@ jQuery(document).ready(function () {
 		$bookSummary.prepend($logo);
 	};
 	addBranding();
-	
-	
+
+
 	/*Another important function*/
 	var addLinkToGithub = function () {
 		var path = pathToGithubFile + gitbook.page.getState().file.path;

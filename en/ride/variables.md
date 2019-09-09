@@ -2,9 +2,9 @@
 
 All variables in RIDE are _immutable_. After definition, the value of the variable does not change.
 
-Definition and simultaneous initialisation of the variable are performed with the help of the `let` [operator](/ride/operators.md).
+Definition and simultaneous initialization of the variable are performed with the help of the `let` [operator](/ride/operators.md).
 
-You cannot declare a variable without initialisation.
+You cannot declare a variable without initialization.
 
 During the variable assignment at the right side of the "=" sign must be an [expression](/ride/base-concepts/expression.md). The value of the variable is the [expression result](/ride/base-concepts/expression.md#expression-result).
 
@@ -33,4 +33,8 @@ let result = f()
 
 ## Laziness
 
-RIDE has the lazy variable initialisation, so the value of the variable is calculated only at the first call to it.
+RIDE has the lazy variable initialization, so the value of the variable is calculated only at the first call to it.
+
+## Variables built into the script
+
+The [script](/ride/script.md) has [built-in variables](/ride/variables/built-in-variables.md).

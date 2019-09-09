@@ -1,5 +1,4 @@
 jQuery(document).ready(function() {
-
     const
         COPY_ICO = '<svg ' +
                        'class="wd-ico wd-ico_for_copy" ' +

@@ -2,7 +2,6 @@
   "plugins": [
     "custom-js-css",
     "tree-shaper@git+https://github.com/KardanovIR/gitbook-plugin-tree-shaper.git",
-    "inline-codes@git+https://github.com/KardanovIR/gitbook-plugin-inline-codes.git",
     "github-gist@git+https://github.com/KardanovIR/gitbook-plugin-github-gist",
     "pretty-hint@git+https://github.com/KardanovIR/gitbook-plugin-pretty-hint.git",
     "pretty-link@git+https://github.com/KardanovIR/gitbook-plugin-pretty-link.git",
@@ -12,7 +11,8 @@
     "anchor-navigation",
     "youtubex",
     "gtm",
-    "bulk-redirect"
+    "bulk-redirect",
+    "scripts"
   ],
   "pluginsConfig": {
     "bulk-redirect": {
@@ -29,10 +29,9 @@
       "showByDefault": true
     },
     "favicon": "/_theme/favicon.ico",
-    "custom-js-css": {
-      "js": [
-      ],
-      "css": [
+    "scripts": {
+      "files": [
+        "./scripts/layoutModification.js"
       ]
     },
     "flexible-alerts": {

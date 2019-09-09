@@ -293,7 +293,7 @@ ERRORS
 
 #### **signTransactionPackage**
 
-A package transaction signature. Sometimes several transactions need to be simultaneously signed, and for users' convenience, up to seven transactions at ones could be signed. Only certain types of transactions are permitted:
+A package transaction signature. Sometimes several transactions need to be simultaneously signed, and for users' convenience, up to 7 transactions at ones could be signed. Only certain types of transactions are permitted:
 
 * `3 – token issue`
 * `4 – token transfer`

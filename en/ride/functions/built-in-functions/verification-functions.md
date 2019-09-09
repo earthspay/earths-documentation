@@ -2,14 +2,15 @@
 
 | # | Name | Description | Complexity |
 | :--- | :--- | :--- | :--- |
-| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Verifies if a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree). The [blake2b256](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29) function is used for hashing the Merkle tree. | 30 |
-| 2 | [isDefined(List[T]&#124;Unit): Boolean](#is-defined) | Checks if a value is not `Unit` | 1 |
-| 3 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Verifies an [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) signature | 100 |
-| 4 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Verifies a [Curve25519](https://en.wikipedia.org/wiki/Curve25519) signature | 100 |
+| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Checks that a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) | 30 |
+| 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Checks that the [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) digital signature is valid, i.e. it was created by the owner of the public key | 300 |
+| 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Checks that the [Curve25519](https://en.wikipedia.org/wiki/Curve25519) digital signature is valid, i.e. it was created by the owner of the public key | 100 |
 
 ## checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean<a id="check-merkle-proof"></a>
 
-Verifies if a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree). The [blake2b256](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29) function is used for hashing the Merkle tree.
+Checks that a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
+
+[BLAKE2b](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29) hashing function is used to hash the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
 ``` ride
 checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: ByteVector): Boolean
@@ -19,33 +20,19 @@ checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: By
 
 #### merkleRoot: ByteVector
 
-The root hash of the Merkle tree.
+Root hash of the Merkle tree.
 
 #### merkleProof: ByteVector
 
-The array of bytes of the Merkle tree proof.
+Tree of hashes.
 
 #### valueBytes: ByteVector
 
-The tree of hashes.
-
-## isDefined(List[T]|Unit): Boolean<a id="is-defined"></a>
-
-Checks if a value is not `Unit`.
-
-``` ride
-isDefined(a: List[T]|Unit): Boolean
-```
-
-### Parameters
-
-#### `a`: List[T]|Unit
-
-The argument.
+Tree of hashes.
 
 ## rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean<a id="rsa-verify"></a>
 
-Verifies an [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) signature.
+Checks that the [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) digital signature is valid, i.e. it was created by the owner of the public key.
 
 ``` ride
 rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
@@ -55,23 +42,39 @@ rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub
 
 #### `digest`: digestAlgorithmType
 
-The RSA algorithm.
+The hashing algorithm applied to the data.
+
+The value must be one of the built-in variables:
+
+* NOALG
+* MD5
+* SHA1
+* SHA224
+* SHA256
+* SHA384
+* SHA512
+* SHA3224
+* SHA3256
+* SHA3384
+* SHA3512
+
+All variables, except `NOALG`, represent hashing algorithms. If `NOALG` is used, the data will not be hashed.
 
 #### `message`: ByteVector
 
-The message.
+Signed data.
 
 #### `sig`: ByteVectore
 
-The signature.
+Digital signature.
 
 #### `pub`: ByteVectore
 
-The public key.
+Public key.
 
 ## sigVerify(ByteVector, ByteVector, ByteVector): Boolean<a id="sig-verify"></a>
 
-Verifies a [Curve25519](https://en.wikipedia.org/wiki/Curve25519) signature.
+Checks that the [Curve25519](https://en.wikipedia.org/wiki/Curve25519) digital signature is valid, i.e. it was created by the owner of the public key.
 
 ``` ride
 sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
@@ -81,12 +84,12 @@ sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
 
 #### `message`: ByteVector
 
-The message.
+Signed data.
 
 #### `sig`: ByteVectore
 
-The signature.
+Digital signature.
 
 #### `pub`: ByteVectore
 
-The account public key.
+Public key.
