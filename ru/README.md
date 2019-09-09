@@ -7,6 +7,7 @@
 * Бинарный формат
   * Бинарный формат транзакции
     * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
+    * [Бинарный формат транзакции обмена](blockchain/transaction-type/exchange-transaction.md)
 
 ### RIDE
 
@@ -14,9 +15,12 @@
   * [Контекст скрипта](ride/script/script-context.md)
   * [Стандартная библиотека](ride/script/standard-library.md)
   * [Тело скрипта](ride/script/script-body.md)
+  * Типы скриптов
+    * [Скрипт аккаунта](/ride/script/script-types/account-script.md) — <span style="color:green">обновлено</span>
 
 * Функции
   * [Встроенные функции](/ride/functions/built-in-functions.md) — [<span style="color:green">обновлено</span>](https://github.com/wavesplatform/waves-documentation/commit/b9c34cc7a7c0f540a2e41be8592233e1903da0d2#diff-b3344cfde38b2228710ac8c6a652a56d)
+    * [Функции верификации] — [<span style="color:green">обновлено</span>](https://github.com/wavesplatform/waves-documentation/commit/de148968d16389068ce77865bcc3a482eb3fb9b5?diff=unified#diff-7d8db406e747ac90ad2ed0ae321fc5fe)
 
 ## Августовские статьи
 

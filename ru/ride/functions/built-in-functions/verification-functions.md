@@ -2,16 +2,15 @@
 
 | 1 | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Проверяет, является ли дерево хешей частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей).<br>Для хеширования дерева Меркла используется [Blake2b256](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29). | 30 |
-| 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Проверяет подпись [RSA](https://ru.wikipedia.org/wiki/RSA) | 300 |
-| 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Проверяет подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) | 100 |
-
+| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Проверяет, что дерево хешей является частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
+| 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа | 300 |
+| 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа | 100 |
 
 ## checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean<a id="check-merkle-proof"></a>
 
-Проверяет, является ли дерево хешей частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей).
+Проверяет, что дерево хешей является частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей).
 
-Для хеширования [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) используется [Blake2b256](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29).
+Для хеширования [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) используется функция хеширования [BLAKE2b](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29).
 
 ``` ride
 checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: ByteVector): Boolean
@@ -25,7 +24,7 @@ checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: By
 
 #### merkleProof: ByteVector
 
-Массив байтов дерева Меркла, подтверждающего транзакцию.
+Дерево хешей.
 
 #### valueBytes: ByteVector
 
@@ -33,7 +32,7 @@ checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: By
 
 ## rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean<a id="rsa-verify"></a>
 
-Проверяет подпись [RSA](https://ru.wikipedia.org/wiki/RSA).
+Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа.
 
 ``` ride
 rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
@@ -43,10 +42,11 @@ rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub
 
 #### `digest`: digestAlgorithmType
 
-Идентификатор реализации алгоритма [RSA](https://ru.wikipedia.org/wiki/RSA).
+Алгоритм хеширования, который применяется к данным.
 
-digestAlgorithmType представляет собой [объединение](/ride/data-types/union.md), которое включает в себя следующие типы данных:
+Значение должно быть одной из [встроенных переменных](ru/ride/variables/built-in-variables.md):
 
+* NOALG
 * MD5
 * SHA1
 * SHA224
@@ -58,15 +58,15 @@ digestAlgorithmType представляет собой [объединение]
 * SHA3384
 * SHA3512
 
-Объект каждого из перечисленных типов данных является идентификатором реализации алгоритма RSA.
+Все переменные, за исключением `NOALG`, представляют алгоритмы хеширования. Если используется `NOALG`, тогда данные не хешируются.
 
 #### `message`: ByteVector
 
-Сообщение.
+Подписанные данные.
 
 #### `sig`: ByteVectore
 
-Подпись.
+Цифровая подпись.
 
 #### `pub`: ByteVectore
 
@@ -74,7 +74,7 @@ digestAlgorithmType представляет собой [объединение]
 
 ## sigVerify(ByteVector, ByteVector, ByteVector): Boolean<a id="sig-verify"></a>
 
-Проверяет подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519).
+Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа.
 
 ``` ride
 sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
@@ -84,12 +84,12 @@ sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
 
 #### `message`: ByteVector
 
-Сообщение.
+Подписанные данные.
 
 #### `sig`: ByteVectore
 
-Подпись.
+Цифровая подпись.
 
 #### `pub`: ByteVectore
 
-Открытый ключ [аккаунта](/blockchain/account.md).
+Открытый ключ.
