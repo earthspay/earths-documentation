@@ -42,7 +42,7 @@
 
 **Check your balance**
 
-After the authorisation, you can check your balance on the Asset page.
+After the authorization, you can check your balance on the Asset page.
 
 ![](/_assets/ledger_nano_04.png)
 

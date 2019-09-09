@@ -249,7 +249,7 @@ Parameter `cors` could be used to enable or disable CORS support in REST API. CO
 
 ### Synchronization settings
 
-In `synchronisation` section it is possible to tune different aspects of node synchronization process.
+In `synchronization` section it is possible to tune different aspects of node synchronization process.
 
 Use `max-rollback` parameter to change the length of blockchain that can be discarded in case of fork detection. In your node find yourself on a fork with a lower score, it will try to switch to another fork, to do so the node will rollback few blocks. If the detected fork is longer than the given number, node prefers not to switch to another fork even if its score is bigger.
 

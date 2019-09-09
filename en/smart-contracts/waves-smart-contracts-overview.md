@@ -105,10 +105,9 @@ The script for the token is invoked upon the following operations with an asset:
 * ExchangeTransaction
 * SetAssetScriptTransaction
 
-
 ## Waves Smart Contracts Next Steps
 
-Our realisation of smart contracts will contain two Stages:
+Our realization of smart contracts will contain two Stages:
 
 1. **Non-Turing Complete Smart Contracts** which cover a large proportion of use cases, including smart accounts.
 2. **Turing Complete Smart Contracts** which will allow the creation of decentralised applications on the blockchain.
