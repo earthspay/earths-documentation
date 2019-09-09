@@ -8,7 +8,7 @@
   * Бинарный формат транзакции
     * [Бинарный формат транзакции вызова скрипта](blockchain/binary-format/transaction-binary-format/invoke-script-transaction-binary-format.md)
     * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
-    * [Бинарный формат транзакции обмена](blockchain/transaction-type/exchange-transaction.md)
+    * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
 
 ### RIDE
 
