@@ -1,14 +1,14 @@
 # Бинарный формат транзакции лизинга
 
-## Бинарный формат версии 2
+## Транзакция версии 2
 
-| Порядковый номер поля | Название поля | Название JSON-поля |Тип поля | Размер поля в байтах | Описание поля |
+| Порядковый номер поля | Поле | Название JSON-поля |Тип поля | Размер поля в байтах | Комментарий |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Флаг версии | | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Указывает что [структура данных](/blockchain/binary-format/transaction-binary-format.md) транзакции имеет версию 2 или выше. <br>Значение должно быть равно 0 |
-| 2 | Тип транзакции |type| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | ID [типа транзакции](/blockchain/transaction-type.md). <br>Значение должно быть равно 8 |
-| 3 | Версия |version| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Номер версии структуры данных транзакции. <br>Значение должно быть равно 2 |
+| 1 | Флаг версии | | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Указывает что [версия транзакции](/blockchain/binary-format/transaction-binary-format.md) является второй или выше.<br>Значение должно быть равно 0 |
+| 2 | [ID типа транзакции](/blockchain/transaction-type.md) | type | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 8 |
+| 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) |version| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4 | Зарезервированное поле |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 0 |
-| 5 | Публичный ключ отправителя | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Публичный ключ аккаунта отправителя |
+| 5 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 6 | Получатель | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | [Адрес](/blockchain/address.md) либо псевдоним получателя. <br>Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
 | 7 | Количество | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество токенов, отдаваемых в лизинг |
 | 8 | Комиссия| fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Комиссия за транзакцию в [WAVELET](/blockchain/token/wavelet.md) |
