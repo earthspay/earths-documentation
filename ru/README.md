@@ -2,6 +2,12 @@
 
 ## Сентябрьские статьи
 
+### Блокчейн
+
+* Бинарный формат
+  * Бинарный формат транзакции
+    * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
+
 ### RIDE
 
 * Скрипт
