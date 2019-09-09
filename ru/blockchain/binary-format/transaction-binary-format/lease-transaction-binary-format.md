@@ -9,42 +9,24 @@
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) |version| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4 | Зарезервированное поле |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 0 |
 | 5 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 6 | Получатель | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | [Адрес](/blockchain/address.md) либо псевдоним получателя. <br>Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
-| 7 | Количество | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество токенов, отдаваемых в лизинг |
-| 8 | Комиссия| fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Комиссия за транзакцию в [WAVELET](/blockchain/token/wavelet.md) |
-| 9 | Временная метка | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Unix-время отправки транзакции в блокчейн |
-| 10 | Подтверждения |proofs| Массив [подтверждений](/blockchain/transaction/transaction-proof.md) | `S` | Если массив пустой, то `S`= 3. <br>Если массив не пустой, то `S`= 3 + 2 × `N` + \(`P`<sub>1</sub> + `P`<sub>2</sub> + ... + `P`<sub>n</sub>\), <br>где <br>`N` — количество подтверждений в массиве, <br>`P`<sub>n</sub> — размер `N`-го подтверждения в байтах.<br> Максимальное количество подтверждений в массиве — 8. Максимальный размер каждого подтверждения — 64 байта |
+| 6 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
+| 7 | Количество токенов, отдаваемых в лизинг | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 8 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 9 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 10 | [Подтверждения транзакции](/blockchain/transaction/transaction-proof.md) |proofs| [Подтверждения](/blockchain/transaction/transaction-proof.md) | `S` | Если массив пустой, то `S`= 3. <br>Если массив не пустой, то `S`= 3 + 2 × `N` + (`P`<sub>1</sub> + `P`<sub>2</sub> + ... + `P`<sub>n</sub>), <br>где <br>`N` — количество подтверждений в массиве, <br>`P`<sub>n</sub> — размер `N`-го подтверждения в байтах.<br> Максимальное количество подтверждений в массиве — 8. Максимальный размер каждого подтверждения — 64 байта |
 
-## JSON-представление транзакции бинарного формата версии 2
+## JSON-представление транзакции
 
-```json
-{
-   "type":8,
-   "version":2,
-   "senderPublicKey":"GNswAY61mER5ZyUFeDBo1UyKGkPSSmmnd6yj7axN2n8f",
-   "recipient":"3PMWRsRDy882VR2viKPrXhtjAQx7ygQcnea",
-   "amount":14000000000,
-   "fee":100000,
-   "feeAssetId":null,
-   "timestamp":1548660916755,
-   "proofs":[
-      "2opTj7mGKXLRajkJ78wN4ctSWqTeWtvisHaR8BnL2amqJ2KB313BbcpDYJKcqr7o7EpYjL5tppMz2pGjUMWbJe9b"
-   ],
-   "id":"J6jZCzLpWJX8EDVhopKFx1mcbFizLGHVb44dvqPzH4QS",
-   "sender":"3PMYNm8hshzCNjZ8GpPta5SyN7qBTEzS7Kw",
-   "status":"canceled",
-   "height":1370973
-}
-```
+Смотрите [пример](https://nodes.wavesplatform.com/transactions/info/J6jZCzLpWJX8EDVhopKFx1mcbFizLGHVb44dvqPzH4QS) в Node API.
 
-## Бинарный формат версии 1
+## Транзакция версии 1
 
-| Порядковый номер поля | Название поля | Тип поля | Размер поля в байтах | Описание поля |
+| Порядковый номер поля | Поле | Тип поля | Размер поля в байтах | Комментарий |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Тип транзакции | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | ID типа транзакции. <br>Значение должно быть равно 8 |
-| 2 | Публичный ключ отправителя | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Публичный ключ аккаунта отправителя |
-| 3 | Получатель  | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Адрес либо псевдоним получателя. <br>Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
-| 4 | Количество | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество токенов, отдаваемых в лизинг |
-| 5 | Комиссия | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Комиссия за транзакцию в WAVELET |
-| 6 | Временная метка | [Long](/blockchain/blockchain/blockchain-data-types.md)| 8 | Unix-время публикации транзакции в сеть |
+| 1 | [ID типа транзакции](/blockchain/transaction-type.md) | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 8 |
+| 2 | Открытый ключ аккаунта отправителя транзакции | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
+| 3 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md) получателя | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
+| 4 | Количество токенов, отдаваемых в лизинг | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 5 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 6 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md)| 8 |  |
 | 7 | Подпись | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) |
