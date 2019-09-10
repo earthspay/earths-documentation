@@ -12,7 +12,9 @@
     "youtubex",
     "gtm",
     "bulk-redirect",
-    "scripts"
+    "scripts",
+    "folding-menu",
+    "-sharing"
   ],
   "pluginsConfig": {
     "bulk-redirect": {
@@ -31,7 +33,8 @@
     "favicon": "/_theme/favicon.ico",
     "scripts": {
       "files": [
-        "./scripts/layoutModification.js"
+        "./scripts/layoutModification.js",
+        "./scripts/setActivePathOnTreeMenu.js"
       ]
     },
     "flexible-alerts": {
@@ -60,6 +63,22 @@
           "en": "ATTENTION"
         }
       }
+    },
+    "folding-menu":	{
+      "animationDuration": 500,
+      "sticky":            true
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook", "google", "twitter",
+        "weibo", "instapaper"
+      ]
     }
   }
 }

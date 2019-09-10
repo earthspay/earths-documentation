@@ -306,6 +306,7 @@
     * [TransferTransaction](ride/structures/transaction-structures/transfer-transaction.md)
 
 * [Variables](ride/variables.md)
+  * [Built-in variables](ride/variables/built-in-variables.md)
 
 ## Programming
 
