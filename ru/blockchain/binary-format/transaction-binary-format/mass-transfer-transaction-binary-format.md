@@ -15,7 +15,7 @@
 | 5.2 | Сумма всех переводов  | totalAmount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5.3 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md) получателя перевода 1 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 5.4 | Количество токена в переводе 1 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 5.5 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md) получателя перевода 2 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
+| 5.5 | Адрес или псевдоним получателя перевода 2 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 5.6 | Количество токена в переводе 2 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | ... | ... | ... | ... | ... | ... |
 | ... | ... | ... | ... | ... | ... |
