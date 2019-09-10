@@ -6,13 +6,15 @@ Choose and open up your Waves wallet. Click on the **Get Started** to start acco
 
 ![](/_assets/account_creation_01.png)
 
-Set a single password for all your accounts. Put a checkmark before **I have read and agree with the [Terms and Conditions](https://wavesplatform.com/files/docs/Waves_terms_and_conditions.pdf), [Privacy Policy](https://wavesplatform.com/files/docs/Waves_privacy_policy.pdf)** and click on the **Continue** button.
+Set a single password for all your accounts and put a checkmark before **I have read and agree with the [Terms and Conditions](https://wavesplatform.com/files/docs/Waves_terms_and_conditions.pdf), [Privacy Policy](https://wavesplatform.com/files/docs/Waves_privacy_policy.pdf)** then click on the **Continue** button.
 
 ![](/_assets/account_creation_02.png)
 
-Please take some time to understand some important things for your own safety.  
+Please take some time to understand some important things for your own safety.
+
 We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase \(aka SEED phrase\).  
-By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.  
+By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
+
 In case you lose your SEED, you agree and acknowledge that the Waves Platform would not be responsible for the negative consequences of this.
 
 To continue, click on the **What you need to know about your SEED**
@@ -64,7 +66,9 @@ If you have done all of the above, you are forwarded to the user interface.
 
 We strongly recommend create the backup copy, since only with these words you will be able to restore access to your account in case of loss or theft of the device.
 
-You can find account seed phrase under **Settings**. Click on the **Account avatar** at the top right corner. Then click on the **Settings**.
+You can find account seed phrase under account settings.
+
+Click on the **Account avatar** at the top right corner. Then click on the **Settings**.
 
 ![](/_assets/advanced_features_001.png)
 

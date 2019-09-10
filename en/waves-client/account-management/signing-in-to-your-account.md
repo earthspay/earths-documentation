@@ -16,6 +16,9 @@ If you have done all of the above, you are forwarded to the user interface.
 
 ![](/_assets/login_page_03.png)
 
+If you forgot the password, in this case click on the **Forgot your password?** under **Sign In** button. Please keep in mind, password reseting will delete all accounts. To recover access you will need to import each account from the seed phrase or via private key.
+**Note** If you have not saved the Seed phrase or Private key, then you will not be able to recover access to your account.
+
 ___
 
 See more articles in the [Account Management](/waves-client/account-management.md) chapter.
