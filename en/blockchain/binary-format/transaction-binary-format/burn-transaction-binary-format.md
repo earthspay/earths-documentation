@@ -31,4 +31,4 @@ See the [example](https://nodes.wavesplatform.com/transactions/info/csr25XQHT1c9
 | 4 | Amount of tokens to burn | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5 | [Transaction fee](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 7 | [Transaction signature](/blockchain/transaction/transaction-signature.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
+| 7 | [Transaction signature](/blockchain/transaction/transaction-signature.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |  |

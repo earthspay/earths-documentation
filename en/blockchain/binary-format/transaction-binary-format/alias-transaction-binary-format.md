@@ -30,4 +30,4 @@ See the [example](https://nodes.wavesplatform.com/transactions/info/5CZV9RouJs7u
 | 4 | Alias | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | from 4 to 30 |  |
 | 5 | [Transaction fee](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 7 | [Transaction signature](/blockchain/transaction/transaction-signature) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
+| 7 | [Transaction signature](/blockchain/transaction/transaction-signature) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |  |
