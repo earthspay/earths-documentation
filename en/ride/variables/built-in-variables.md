@@ -92,7 +92,7 @@ A **built-in variable** is a [variable](/ride/variables.md) of the [script conte
 @Callable(inv)
 func deposit() = {
   TransferSet([
-    ScriptTransfer(inv.caller, 5, unit) # Transfer 5 WAVELETs to the account inv.caller. Instead of the token ID the unit is specified
+    ScriptTransfer(inv.caller, 5, unit) # Transfer 5 WAVELETs to the inv.caller account. Instead of the token ID the unit is specified
   ])
 }
 </code>
