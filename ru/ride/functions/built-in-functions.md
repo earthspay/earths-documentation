@@ -25,9 +25,9 @@
 
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, является ли дерево хешей частью [дерева Меркла](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9).<br>Для хеширования [дерева Меркла](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9) используется [Blake2b256](https://en.wikipedia.org/wiki/BLAKE_(hash_function)) | 30 |
-| 2 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Проверяет подпись [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) | 300 |
-| 3 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Проверяет подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) | 100 |
+| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что данные являются частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
+| 2 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа | 300 |
+| 3 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа | 100 |
 
 ### [Функции декодирования](/ride/functions/built-in-functions/decoding-functions.md)
 

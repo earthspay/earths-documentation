@@ -1,14 +1,14 @@
 # Функции верификации
 
-| 1 | Название | Описание | Сложность |
+| # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Проверяет, что дерево хешей является частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
+| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Проверяет, что данные являются частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
 | 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа | 300 |
 | 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа | 100 |
 
 ## checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean<a id="check-merkle-proof"></a>
 
-Проверяет, что дерево хешей является частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей).
+Проверяет, что данные являются частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей).
 
 Для хеширования [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) используется функция хеширования [BLAKE2b](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29).
 
@@ -24,11 +24,11 @@ checkMerkleProof(merkleRoot: ByteVector, merkleProof: ByteVector, valueBytes: By
 
 #### merkleProof: ByteVector
 
-Дерево хешей.
+Массив хешей.
 
 #### valueBytes: ByteVector
 
-Дерево хешей.
+Данные для проверки.
 
 ## rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean<a id="rsa-verify"></a>
 
