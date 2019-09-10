@@ -11,7 +11,7 @@
 | 3 | [Адрес](/blockchain/address.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 |  |
 | 4 | Количество [WAVES](/blockchain/token/waves.md), которое будет переведено на [аккаунт](/blockchain/account.md) | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md)| 8 |  |
-| 6 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) | signature | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
+| 6 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) | signature | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  ||
 
 ## JSON-представление транзакции
 
