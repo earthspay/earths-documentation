@@ -71,7 +71,7 @@ This section is displayed only if the token has a ticker or is traded on the DEX
 | Ticker | The token ticker on DEX if there is |
 | Price in USD | The current price of the token in USD |
 | Price in WAVES | The current price of the token in WAVES |
-| Cap | Capitalization (product of the token's price and the amount of issued tokens) |
+| Capitalization | Capitalization (product of the token's price and the amount of issued tokens) |
 
 ### General information
 
