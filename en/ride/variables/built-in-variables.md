@@ -81,7 +81,7 @@ A **built-in variable** is a [variable](/ride/variables.md) of the [script conte
   <tr>
     <td>9</td>
     <td>unit</td>
-    <td>Variable that contains an object of <a href="/ride/data-types/unit.md">Unit</a> type. The variable is used by the programmer to acquire an object of <code>Unit</code> type. <br><b>Example 1</b><br> the <code>deposit</code> function transfers 5 <a href="/blockchain/token/wavelet.md">WAVELET</a> to the account, that <a href="/ride/functions/callable-function.md">called</a> this function.
+    <td>Variable that contains an object of <a href="/ride/data-types/unit.md">Unit</a> type. The variable is used by the programmer to acquire an object of <code>Unit</code> type. <br><b>Example 1</b><br> the <code>deposit</code> function transfers 5 <a href="/blockchain/token/wavelet.md">WAVELETs</a> to the account, that <a href="/ride/functions/callable-function.md">called</a> this function.
 
 <pre>
 <code class=“lang-ride”>
