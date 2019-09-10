@@ -8,7 +8,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) | type | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 11 |
 | 2 | [Версия транзакции](/blockchain/transaction/transaction-version.md) | version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
-| 3 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Массив байтов | 32 |  |
+| 3 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 4.1 | Флаг WAVES/токен |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Равен 0, если переводится [WAVES](/blockchain/token/waves.md).<br>Равен 1, если переводится другой токен |
 | 4.2 | ID токена | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | S | S = 0 если значение поля "Флаг WAVES/токен" равно 0.<br>S = 32 если значение поля "Флаг WAVES/токен" равно 1 |
 | 5.1 | Количество переводов | transferCount | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество переводов токенов в транзакции |
