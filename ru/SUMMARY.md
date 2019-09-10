@@ -324,6 +324,7 @@
 * [Формула рейтинга](waves-token-rating/rating-formula.md)
 * [Транзакция данных с оценкой пользователя](waves-token-rating/data-transaction-with-user-s-rate.md)
 * [Транзакция данных оракула Token Rating](waves-token-rating/data-transaction-of-the-token-rating-oracle.md)
+* [Управление токеном](waves-token-rating/token-management.md)
 
 ## Разное
 

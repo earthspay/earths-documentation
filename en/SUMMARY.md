@@ -415,6 +415,7 @@
 * [Rating formula](waves-token-rating/rating-formula.md)
 * [Data transaction with user's rate](waves-token-rating/data-transaction-with-user-s-rate.md)
 * [Data transaction of the Token Rating oracle](waves-token-rating/data-transaction-of-the-token-rating-oracle.md)
+* [Token management](waves-token-rating/token-management.md)
 
 ## Miscellaneous
 
