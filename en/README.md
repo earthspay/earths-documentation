@@ -16,6 +16,10 @@
 * Variables
   * [Built-in variables](ride/variables/built-in-variables.md)
 
+### Waves node
+
+* [Node configuration](waves-node/node-configuration.md) — <span style="color:green">updated</span>
+
 ## August articles
 
 ### Getting started
