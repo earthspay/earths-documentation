@@ -152,7 +152,6 @@ A **built-in function** is a [function](/ride/functions.md) of the [script conte
 
 | # | Name | Description | Complexity |
 | :--- | :--- | :--- | :--- |
-| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Verifies if a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).<br> [Blake2b256](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29) is used to hash the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree). | 30 |
-| 2 | isDefined(List[T]&#124;Unit): Boolean | Checks if a value is not `Unit` | 1 |
-| 3 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Verifies a [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) signature | 300 |
-| 4 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Verifies a [Curve25519](https://en.wikipedia.org/wiki/Curve25519) signature | 100 |
+| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Checks that the data is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) | 30 |
+| 2 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Vhecks that the [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) digital signature is valid, i.e. it was created by the owner of the public key | 300 |
+| 3 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Checks that the [Curve25519](https://en.wikipedia.org/wiki/Curve25519) digital signature is valid, i.e. it was created by the owner of the public key | 100 |
