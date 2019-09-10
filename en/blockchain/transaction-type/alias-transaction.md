@@ -1,6 +1,6 @@
 # Alias transaction
 
-**Alias transaction** is a [transaction](/blockchain/transaction.md) that creates [alias](/blockchain/alias.md) for an [address](/blockchain/address.md).
+**Alias transaction** is a [transaction](/blockchain/transaction.md) that creates [alias](/blockchain/alias.md) for an [address](/blockchain/account/address.md).
 
 > A created alias cannot be deleted
 

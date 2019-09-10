@@ -2,8 +2,8 @@
 
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | [addressFromPublicKey(ByteVector): Address](#address-from-public-key) | Получает [адрес](/blockchain/address.md), соответствующий открытому ключу аккаунта | 82 |
-| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
+| 1 | [addressFromPublicKey(ByteVector): Address](#address-from-public-key) | Получает [адрес](/blockchain/account/address.md), соответствующий открытому ключу аккаунта | 82 |
+| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
 | 3 | [parseInt(String): Int&#124;Unit](#parse-int) | Конвертирует строковое представление числа в эквивалентное целое число | 20 |
 | 4 | [parseIntValue(String): Int](#parse-int-value) | Конвертирует строковое представление числа в эквивалентное целое число.<br>Выбрасывает исключение, если строка не может быть спарсена | 20 |
 | 5 | [toBytes(Boolean): ByteVector](#to-bytes-boolean) | Конвертирует логическое значение в массив байтов | 1 |
@@ -11,14 +11,14 @@
 | 7 | [toBytes(String): ByteVector](#to-bytes-string) | Конвертирует строку в массив байтов | 1 |
 | 8 | [toInt(ByteVector): Int](#to-int-bytevector) | Конвертирует массив байтов в целое число | 10 |
 | 9 | [toInt(ByteVector, Int): Int](#to-int-bytevector-int) | Конвертирует массив байтов начиная с указанного индекса в целое число | 10 |
-| 10 | [toString(Address): String](#to-string-address) | Конвертирует массив байтов [адреса](/blockchain/address.md) в строку | 10 |
+| 10 | [toString(Address): String](#to-string-address) | Конвертирует массив байтов [адреса](/blockchain/account/address.md) в строку | 10 |
 | 11 | [toString(Boolean): String](#to-string-boolean) | Конвертирует логическое значение в строку | 1 |
 | 12 | [toString(Int): String](#to-string-int) | Конвертирует целое число в строку | 1 |
 | 13 | [toUtf8String(ByteVector): String](#to-utf8-string-bytevector) | Конвертирует массив байтов в строку в [UTF-8](https://ru.wikipedia.org/wiki/UTF-8) | 20 |
 
 ## addressFromPublicKey(ByteVector): Address<a id="address-from-public-key"></a>
 
-Получает [адрес](/blockchain/address.md), соответствующий открытому ключу аккаунта.
+Получает [адрес](/blockchain/account/address.md), соответствующий открытому ключу аккаунта.
 
 ``` ride
 addressFromPublicKey(publicKey: ByteVector): Address
@@ -39,7 +39,7 @@ let add = addressFromPublicKey(publicKey)# The result will be the address for th
 
 ## addressFromRecipient(Address&#124;Alias): Address<a id="address-from-recipient"></a>
 
-Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md).
+Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/alias.md).
 
 ``` ride
 addressFromRecipient(AddressOrAlias: Address|Alias): Address
@@ -206,7 +206,7 @@ let result = toInt(bin,2)
 
 ## toString(Address): String<a id="to-string-address"></a>
 
-Конвертирует массив байтов [адреса](/blockchain/address.md) в строку.
+Конвертирует массив байтов [адреса](/blockchain/account/address.md) в строку.
 
 ``` ride
 toString(Address: Address): String

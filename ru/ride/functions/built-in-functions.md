@@ -58,8 +58,8 @@
 
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | addressFromPublicKey(ByteVector): Address | Получает [адрес](/blockchain/address.md), соответствующий открытому ключу аккаунта | 82 |
-| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
+| 1 | addressFromPublicKey(ByteVector): Address | Получает [адрес](/blockchain/account/address.md), соответствующий открытому ключу аккаунта | 82 |
+| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
 | 3 | parseInt(String): Int&#124;Unit | Конвертирует строковое представление числа в эквивалентное целое число | 20 |
 | 4 | parseIntValue(String): Int | Конвертирует строковое представление числа в эквивалентное целое число. <br>Выбрасывает исключение, если строка не может быть спарсена | 20 |
 | 5 | toBytes(Boolean): ByteVector | Конвертирует логическое значение в массив байтов | 1 |
@@ -67,7 +67,7 @@
 | 7 | toBytes(String): ByteVector | Конвертирует строку в массив байтов | 1 |
 | 8 | toInt(ByteVector): Int | Конвертирует массив байтов в целое число | 10 |
 | 9 | toInt(ByteVector, Int): Int | Конвертирует массив байтов, начиная с указанного индекса, в целое число | 10 |
-| 10 | toString(Address): String | Конвертирует массив байтов [адреса](/blockchain/address.md) в строку | 10 |
+| 10 | toString(Address): String | Конвертирует массив байтов [адреса](/blockchain/account/address.md) в строку | 10 |
 | 11 | toString(Boolean): String | Конвертирует логическое значение в строку | 1 |
 | 12 | toString(Int): String | Конвертирует целое число в строку | 1 |
 | 13 | toUtf8String(ByteVector): String | Конвертирует массив байтов в строку в [UTF-8](https://ru.wikipedia.org/wiki/UTF-8) | 20 |

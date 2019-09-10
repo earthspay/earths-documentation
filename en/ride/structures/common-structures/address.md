@@ -1,6 +1,6 @@
 # Address
 
-Structure of an [address](/blockchain/address.md).
+Structure of an [address](/blockchain/account/address.md).
 
 ## Constructor
 

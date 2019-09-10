@@ -2,7 +2,7 @@
 
 | # | Name | Description |
 | :--- | :--- | :--- |
-| 1 | [Address](/ride/structures/common-structures/address.md) | The structure of an [address](/blockchain/address.md) |
+| 1 | [Address](/ride/structures/common-structures/address.md) | The structure of an [address](/blockchain/account/address.md) |
 | 2 | [Asset](/ride/structures/common-structures/asset.md) | The structure of a [token](/blockchain/token.md) |
 | 3 | [AssetPair](/ride/structures/common-structures/asset-pair.md) | The structure of a pair of tokens of an order |
 | 4 | [AttachedPayment](/ride/structures/common-structures/attached-payment.md) | The structure of an invoke script transaction payment |

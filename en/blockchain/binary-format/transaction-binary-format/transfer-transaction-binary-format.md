@@ -13,7 +13,7 @@
 | 5.1 | Flag [WAVES](/blockchain/token/waves.md)/[token](/blockchain/token.md) | | | 1 | Value is 0 for transferring [WAVES](/blockchain/token/waves.md).<br>Value is 1 for transferring other [tokens](/blockchain/token.md) |
 | 5.2 | [Token ID](/blockchain/token/token-id.md) | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S`= 0 if the value of the "flag WAVES/token" field is 0.<br>`S` = 32 if the value of the "flag WAVES/token" field is 1 |
 | 5.3 | Token fee | feeAssetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | [Token](/blockchain/token.md) to pay the commission. Currently it can be [WAVES](/blockchain/token/waves.md) only.<br>`S` = 0 if the value of the "flag WAVES/token" field is 0.<br>`S` = 32 if the value of the "flag WAVES/token" field is 1 |
-| 6 | [Address](/blockchain/address.md) or [alias ](/blockchain/alias.md)of the transfer recipient | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
+| 6 | [Address](/blockchain/account/address.md) or [alias ](/blockchain/alias.md)of the transfer recipient | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
 | 7 | Amount of [tokens](/blockchain/token.md) in the transfer | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 8 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 9 | [Transaction fee](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
@@ -34,7 +34,7 @@ See the [example](https://nodes.wavesnodes.com/transactions/info/JAutkv1Nk4xVrkb
 | 3.1 | Flag [WAVES](/blockchain/token/waves.md)/[token](/blockchain/token.md) | | 1 | Value is 0 for transferring [WAVES](/blockchain/token/waves.md).<br>Value is 1 for transferring other [tokens](/blockchain/token.md) |
 | 3.2 | [Token ID](/blockchain/token/token-id.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 if the value of the "flag WAVES/token" field is 0.<br>`S` = 32 if the value of the "flag WAVES/token" field is 1 |
 | 3.3 | Token fee | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | [Token](/blockchain/token.md) to pay the commission. Currently it can be [WAVES](/blockchain/token/waves.md) only.<br>`S` = 0 if the value of the "flag WAVES/token" field is 0.<br>`S` = 32 if the value of the "flag WAVES/token" field is 1 |
-| 4 | [Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the transfer recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
+| 4 | [Address](/blockchain/account/address.md) or [alias](/blockchain/alias.md) of the transfer recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
 | 5 | Amount of [tokens](/blockchain/token.md) in the transfer | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 6 | [Transaction fee](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 7 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |

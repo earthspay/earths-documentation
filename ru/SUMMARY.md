@@ -8,9 +8,9 @@
 
 ## Блокчейн
 
-* [Адрес](blockchain/address.md)
 * [Аккаунт](blockchain/account.md)
   * [dApp](blockchain/account/dapp.md)
+  * [Адрес](blockchain/account/address.md)
   * [Смарт-аккаунт](blockchain/account/smart-account.md)
   * [Хранилище данных аккаунта](blockchain/account/account-data-storage.md)
 * [Бинарный формат](blockchain/binary-format.md)

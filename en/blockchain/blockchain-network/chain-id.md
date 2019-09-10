@@ -1,6 +1,6 @@
 # Chain ID
 
-A **chain ID** is a blockchain setting that affects the forming of an [address](/blockchain/address.md).
+A **chain ID** is a blockchain setting that affects the forming of an [address](/blockchain/account/address.md).
 
 The linkage in the [transaction binary format](/blockchain/binary-format/transaction-binary-format.md) between the address and the chain ID makes it impossible to move transactions between different [blockchain networks](/blockchain/blockchain-network.md).
 

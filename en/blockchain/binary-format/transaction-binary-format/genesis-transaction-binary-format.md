@@ -8,7 +8,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | [Transaction type ID](/blockchain/transaction-type.md) |type| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Value must be 1 |
 | 2 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 3 | [Address](/blockchain/address.md) of the recipient | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 |  |
+| 3 | [Address](/blockchain/account/address.md) of the recipient | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 |  |
 | 4 | Amount of [WAVES](/blockchain/token/waves.md) that will be transferred to the [account](/blockchain/account.md) | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5 | [Transaction fee](/blockchain/transaction/transaction-fee.md) |fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | [Transaction signature](/blockchain/transaction/transaction-signature.md) | signature | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  | |

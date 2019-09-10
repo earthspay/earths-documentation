@@ -12,7 +12,7 @@ You can also see all the tokens that you rated by clicking the Show my votes onl
 
 ### Top 20
 
-Displays 20 tokens that have the best overall indicators of rating, sums of all weights [W<sub>n</sub>](/waves-token-rating/rating-formula.md), and the number of [addresses](/blockchain/address.md) that rated token.
+Displays 20 tokens that have the best overall indicators of rating, sums of all weights [W<sub>n</sub>](/waves-token-rating/rating-formula.md), and the number of [addresses](/blockchain/account/address.md) that rated token.
 
 ### All tokens
 
