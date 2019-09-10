@@ -13,7 +13,7 @@
     * [Verification functions](ride/functions/built-in-functions/verification-functions.md) — [<span style="color:green">updated</span>](https://github.com/wavesplatform/waves-documentation/commit/de148968d16389068ce77865bcc3a482eb3fb9b5?diff=unified#diff-7d8db406e747ac90ad2ed0ae321fc5fe)
 
 * Token Rating
-  * [Управление токеном](waves-token-rating/token-management.md)
+  * [Token management](waves-token-rating/token-management.md)
 
 ## August articles
 
