@@ -11,6 +11,9 @@
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
 
+* Token Rating
+  * [Token management](waves-token-rating/token-management.md)
+
 ### RIDE
 
 * Скрипт
