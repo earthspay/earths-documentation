@@ -6,7 +6,12 @@ Tokens can be rated from browsers only with Waves Keeper installed. In mobile br
 
 If Waves Keeper is installed, then in the upper right corner you can see the calculated value of the weight of your rating based on the number of WCT tokens on your account.
 
-You can also see all the tokens that you rated by clicking the Show my votes only link.
+The menu consists of following items:
+
+* Account - account information
+* Rating - default Token Rating page
+* My tokens - the token management panel for issuers
+* Log out
 
 ## Filters
 
@@ -18,7 +23,9 @@ Displays 20 tokens that have the best overall indicators of rating, sums of all 
 
 Displays all tokens.
 
-On the All Tokens page, additional filters are available: by rating, WCT weight and votes sum.
+On the **All Tokens** page, additional filters are available: by rating, WCT weight and votes sum.
+
+You can also view all the tokens you have rated by switching the filter Only my votes to the active position.
 
 ## Rating table
 
@@ -31,7 +38,7 @@ The table displays only tokens that were ever rated. Tokens without ratings can 
 | WCT weight	| Sum of all weights W<sub>n</sub> of all scores |
 | Vote sum | Number of users' rates |
 | Total amount | Amount of issued tokens |
-| Price on DEX | The current price of a single token from [DEX](/waves-dex/about-waves-dex.md) (updates every three hours) |
+| Last price | The current price of a single token from [DEX](/waves-dex/about-waves-dex.md) (updates every three hours) |
 
 ## Token's card
 
@@ -57,13 +64,13 @@ This section is displayed only if you already rated token.
 
 ### Market information
 
-This section is displayed only if the token is traded on DEX.
+This section is displayed only if the token has a ticker or is traded on the DEX.
 
 | Field | Description |
 | :--- | :--- |
-| Ticker on DEX | The token ticker on DEX if there is |
-| Price in USD on DEX | The current price of the token in USD |
-| Price in WAVES on DEX | The current price of the token in WAVES |
+| Ticker | The token ticker on DEX if there is |
+| Price in USD | The current price of the token in USD |
+| Price in WAVES | The current price of the token in WAVES |
 | Cap | Capitalization (product of the token's price and the amount of issued tokens) |
 
 ### General information
@@ -72,6 +79,7 @@ This section is displayed only if the token is traded on DEX.
 | :--- | :--- |
 | ID | ID of the token |
 | Name | Name of the token |
+| Website | Link to the website. Displayed only if the issuer adds the link |
 | Total amount | Amount of issued tokens |
 | Decimal points | Number of decimal places of token |
 | Type | Tells if the [reissue transaction](/blockchain/transaction-type/reissue-transaction.md) is possible. <br>Takes one of two values: "Reissuable" or "Not reissuable" |
@@ -79,3 +87,4 @@ This section is displayed only if the token is traded on DEX.
 | Block | The [blockchain height](/blockchain/blockchain/blockchain-height.md) at which the [issue transaction](/blockchain/transaction-type/issue-transaction.md) went to the [block](/blockchain/block.md) |
 | Issue date | Token issue date |
 | Description | Token description |
+| Additional information | Additional information from the issuer about the token or project. Displayed only if the issuer adds it |
