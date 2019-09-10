@@ -39,7 +39,7 @@ If you have done all of the above, you are forwarded to the user interface.
 
 You can create or import as many accounts as you need if you want to use several Waves accounts. Just create a new account or import an existing account and click on the **Account avatar** at the top right corner.
 
-Click on the **Switch account** and **Add an account**. And repeat the account recovering procedure described below.
+Click on the **Switch account** and **Add an account**. And repeat the account recovering procedure described above.
 
 ![](/_assets/account_restoring_04.png)
 
