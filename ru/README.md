@@ -12,7 +12,7 @@
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
 
 * Token Rating
-  * [Token management](waves-token-rating/token-management.md)
+  * [Управление токеном](waves-token-rating/token-management.md)
 
 ### RIDE
 
