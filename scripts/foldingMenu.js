@@ -30,6 +30,17 @@ jQuery(document).ready(function () {
     // - or when api.md is referenced in multiple seperate sections
     //   ... i.e. Core API and Extension API
     // > process on next event tick (i.e. timeout) seems to help
+
+    const findClosestChapter = function($currentElement) {
+      var $closestChapter = $currentElement.closest('.chapter:not(.active)');
+      if($currentElement[0] === $closestChapter[0]) {
+        return
+      }
+      if($closestChapter.length) {
+        $closestChapter[0].click();
+        return findClosestChapter($closestChapter);
+      }
+    }
     setTimeout( function() {
 
       var activeElement = $('.chapter.active');
@@ -37,6 +48,7 @@ jQuery(document).ready(function () {
       var activeElementClosestTrigger = activeElementClosestParent.prev();
       var bookSummaryElement = activeElement.closest('.book-summary');
       if(!activeElementClosestTrigger.hasClass('expanded')) {
+        findClosestChapter(activeElement);
         activeElementClosestTrigger.click();
         setTimeout(function() {
           var activeChapterBoundingClientRect = activeElement[0].getBoundingClientRect();
