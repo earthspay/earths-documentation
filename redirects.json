@@ -7,6 +7,10 @@
     },
     {
       "===============================  Blockchain  =====================================": null,
+      "to": "/en/blockchain/account/address.md",
+      "from": "/en/blockchain/address.md",
+      "to": "/ru/blockchain/account/address.md",
+      "from": "/ru/blockchain/address.md",      
       "to": "/en/blockchain/transaction-type/data-transaction.html",
       "from": "/en/waves-environment/waves-protocol/data-transaction.html"
     },
