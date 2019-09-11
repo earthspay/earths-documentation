@@ -13,7 +13,7 @@ Order(id: ByteVector, matcherPublicKey: ByteVector, assetPair: AssetPair, orderT
 | # | Название | Тип данных | Описание |
 | :--- | :--- | :--- | :--- |
 | 1 | id | [ByteVector](/ride/data-types/byte-vector.md) | ID ордера |
-| 2 | matcherPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Публичный ключ аккаунта матчера |
+| 2 | matcherPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Открытый ключ аккаунта матчера |
 | 3 | assetPair | [AssetPair](/ride/structures/common-structures/asset-pair.md) | Пара токенов |
 | 4 | orderType | Buy&#124;Sell | Тип ордера — продажа или покупка |
 | 5 | price | [Int](/ride/data-types/int.md) | Цена обмениваемого токена |
@@ -23,6 +23,6 @@ Order(id: ByteVector, matcherPublicKey: ByteVector, assetPair: AssetPair, orderT
 | 9 | matcherFee | [Int](/ride/data-types/int.md) | Комиссия за исполнение ордера |
 | 10 | matcherFeeAssetId | [ByteVector](/ride/data-types/byte-vector.md)&#124;[Unit](/ride/data-types/unit.md) | Токен [комиссии за транзакцию](/blockchain/transaction/transaction-fee.md). В настоящее время возможен только WAVES |
 | 11 | sender | [Address](/ride/structures/common-structures/address.md) | [Адрес](/blockchain/account/address.md) отправителя ордера |
-| 12 | senderPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Публичный ключ аккаунта отправителя ордера |
+| 12 | senderPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Открытый ключ аккаунта отправителя ордера |
 | 13 | bodyBytes | [ByteVector](/ride/data-types/byte-vector.md) | Массив байтов ордера |
 | 14 | proofs | [List](/ride/data-types/list.md)[[ByteVector](/ride/data-types/byte-vector.md)] | Массив [подтверждений](/blockchain/transaction/transaction-proof.md) |

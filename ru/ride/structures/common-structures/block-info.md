@@ -17,4 +17,4 @@ BlockInfo(timestamp: Int, height: Int, baseTarget: Int, generationSignature: Byt
 | 3 | baseTarget | [Int](/ride/data-types/int.md) | Сложность создания блока |
 | 4 | generationSignature | [ByteVector](/ride/data-types/byte-vector.md) | Подпись ключевого блока |
 | 5 | generator | [Address](/ride/structures/common-structures/address.md) | [Адрес](/blockchain/account/address.md) аккаунта, который создал блок |
-| 6 | generatorPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Публичный ключ аккаунта, который создал блок |
+| 6 | generatorPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Открытый ключ аккаунта, который создал блок |
