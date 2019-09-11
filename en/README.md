@@ -20,6 +20,9 @@
 
 * [Node configuration](waves-node/node-configuration.md) — <span style="color:green">updated</span>
 
+* Token Rating
+  * [Token management](waves-token-rating/token-management.md)
+
 ## August articles
 
 ### Getting started
