@@ -10,7 +10,7 @@
 | 2 | [ID типа транзакции](/blockchain/transaction-type.md) | type | [Byte](/blockchain/blockchain/blockchain-data-types.md)  | 1 | Значение должно быть равно 10 |
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) | version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 5 | Длина [псевдонима](/blockchain/alias.md) | | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество символов в имени псевдонима |
+| 5 | Длина [псевдонима](/blockchain/account/alias.md) | | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество символов в имени псевдонима |
 | 6 | Псевдоним | alias | [String](/blockchain/blockchain/blockchain-data-types.md) | от 4 до 30 |  |
 | 7 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 8 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
@@ -26,7 +26,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) | [Byte](/blockchain/blockchain/blockchain-data-types.md)  | 1 | Значение должно быть равно 6 |
 | 2 | Открытый ключ аккаунта отправителя транзакции | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 3 | Длина [псевдонима](/blockchain/alias.md) | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество символов в имени псевдонима |
+| 3 | Длина [псевдонима](/blockchain/account/alias.md) | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество символов в имени псевдонима |
 | 4 | Псевдоним | [String](/blockchain/blockchain/blockchain-data-types.md) | от 4 до 30 |  |
 | 5 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |

@@ -1,6 +1,6 @@
 # Транзакция создания псевдонима
 
-**Транзакция создания псевдонима** — [транзакция](/blockchain/transaction.md), которая создает [псевдоним](/blockchain/alias.md) для [адреса](/blockchain/address.md).
+**Транзакция создания псевдонима** — [транзакция](/blockchain/transaction.md), которая создает [псевдоним](/blockchain/account/alias.md) для [адреса](/blockchain/address.md).
 
 > Созданный псевдоним невозможно удалить
 

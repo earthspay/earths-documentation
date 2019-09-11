@@ -13,13 +13,13 @@
 | 4.2 | [Token ID](/blockchain/token/token-id.md) | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 if the value of the "flag WAVES/token" field is 0.<br>`S` = 32 if the value of the "flag WAVES/token" field is 1 |
 | 5.1 | Number of transfers | transferCount | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | |
 | 5.2 | Sum of all transfers | totalAmount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
-| 5.3 | [Address](/blockchain/address.md) or [alias ](/blockchain/alias.md) of the recipient of the transfer 1 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
+| 5.3 | [Address](/blockchain/address.md) or [alias ](/blockchain/account/alias.md) of the recipient of the transfer 1 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
 | 5.4 | Amount of [tokens](/blockchain/token.md) in the transfer 1 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
-| 5.5 | [Address](/blockchain/address.md) or [alias ](/blockchain/alias.md) of the recipient of the transfer 2 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
+| 5.5 | [Address](/blockchain/address.md) or [alias ](/blockchain/account/alias.md) of the recipient of the transfer 2 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
 | 5.6 | Amount of [tokens](/blockchain/token.md) in the transfer 2 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | ... | ... | ... | ... | ... | ... |
 | ... | ... | ... | ... | ... | ... |
-| 5.[2× `N + 1`] | [Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the transfer recipient`N` | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
+| 5.[2× `N + 1`] | [Address](/blockchain/address.md) or [alias](/blockchain/account/alias.md) of the transfer recipient`N` | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | |
 | 5.[2× `N + 2`] | Amount of [tokens](/blockchain/token.md) in the transfer`N` | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 6 | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |
 | 7 | [Transaction fee](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | |

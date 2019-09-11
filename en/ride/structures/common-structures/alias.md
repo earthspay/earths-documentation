@@ -1,6 +1,6 @@
 # Alias
 
-Structure of an [alias](/blockchain/alias.md).
+Structure of an [alias](/blockchain/account/alias.md).
 
 ## Constructor
 
@@ -12,4 +12,4 @@ Alias(alias: String)
 
 | # | Name | Data type | Description |
 | :--- | :--- | :--- | :--- |
-| 1 | alias | [String](/ride/data-types/string.md) | [Alias](/blockchain/alias.md) |
+| 1 | alias | [String](/ride/data-types/string.md) | [Alias](/blockchain/account/alias.md) |
