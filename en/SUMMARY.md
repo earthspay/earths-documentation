@@ -14,7 +14,6 @@
   * [Address](blockchain/account/address.md)
   * [dApp](blockchain/account/dapp.md)
   * [Smart account](blockchain/account/smart-account.md)
-* [Address](blockchain/address.md)
 * [Alias](blockchain/alias.md)
 * [Binary format](blockchain/binary-format.md)
   * [Address binary format](blockchain/binary-format/address-binary-format.md)
