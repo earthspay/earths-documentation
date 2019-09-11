@@ -11,6 +11,7 @@
 
 * [Account](blockchain/account.md)
   * [Account data storage](blockchain/account/account-data-storage.md)
+  * [Address](blockchain/account/address.md)
   * [dApp](blockchain/account/dapp.md)
   * [Smart account](blockchain/account/smart-account.md)
 * [Address](blockchain/address.md)
