@@ -4,7 +4,7 @@
 | :--- | :--- | :--- | :--- |
 | 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Проверяет, что данные являются частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
 | 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа | 300 |
-| 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа | 100 |
+| 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем открытого ключа | 100 |
 
 ## checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean<a id="check-merkle-proof"></a>
 
@@ -74,7 +74,7 @@ rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub
 
 ## sigVerify(ByteVector, ByteVector, ByteVector): Boolean<a id="sig-verify"></a>
 
-Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа.
+Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем открытого ключа.
 
 ``` ride
 sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean
