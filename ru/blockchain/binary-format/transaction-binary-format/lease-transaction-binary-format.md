@@ -9,7 +9,7 @@
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) |version| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4 | Зарезервированное поле |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 0 |
 | 5 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 6 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/alias.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
+| 6 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/alias/alias.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
 | 7 | Количество токенов, отдаваемых в лизинг | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 8 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 9 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
@@ -25,7 +25,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 8 |
 | 2 | Открытый ключ аккаунта отправителя транзакции | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 3 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/alias.md) получателя | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
+| 3 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/account/alias.md) получателя | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первый байт поля равен 1, то в поле хранится адрес; если 2 — псевдоним |
 | 4 | Количество токенов, отдаваемых в лизинг | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md)| 8 |  |

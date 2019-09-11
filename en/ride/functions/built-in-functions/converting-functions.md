@@ -3,7 +3,7 @@
 | # | Name | Description | Complexity |
 |:--- | :--- | :--- | :--- |
 | 1 | [addressFromPublicKey(ByteVector): Address](#address-from-public-key)| Converts account public key to [address](/blockchain/account/address.md) | 82 |
-| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Gets the corresponding [address](/blockchain/account/address.md) of the [alias](/blockchain/alias.md) | 100 |
+| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Gets the corresponding [address](/blockchain/account/address.md) of the [alias](/blockchain/account/alias.md) | 100 |
 | 3 | [parseInt(String): Int&#124;Unit](#parse-int) | Converts the string representation of a number to its integer equivalent | 20 |
 | 4 | [parseIntValue(String): Int](#parse-int-value) | Converts the string representation of a number to its integer equivalent.<br>Raises an exception if the string cannot be parsed | 20 |
 | 5 | [toBytes(Boolean): ByteVector](#tobytes-bool) | Converts a boolean value to an array of bytes | 1 |
@@ -33,7 +33,7 @@ The public key to convert.
 
 ## addressFromRecipient(Address|Alias): Address<a id="address-from-recipient"></a>
 
-Gets the corresponding [address](/blockchain/account/address.md) of the [alias](/blockchain/alias.md).
+Gets the corresponding [address](/blockchain/account/address.md) of the [alias](/blockchain/account/alias.md).
 
 ``` ride
 addressFromRecipient(AddressOrAlias: Address|Alias): Address

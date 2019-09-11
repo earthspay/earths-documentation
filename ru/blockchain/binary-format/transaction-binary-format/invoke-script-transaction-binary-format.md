@@ -11,7 +11,7 @@
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) | version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 1 |
 | 4 | [Байт сети](/blockchain/blockchain-network/chain-id.md) |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 84 для [тестовой сети](/blockchain/blockchain-network/test-network.md), 87 для [основной сети](/blockchain/blockchain-network/main-network.md) |
 | 5 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 6 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/alias.md) | dApp | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/alias.md) dApp, скрипт которого должен быть вызван |
+| 6 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/account/alias.md) | dApp | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/account/alias.md) dApp, скрипт которого должен быть вызван |
 | 7 | Флаг адреса или псевдонима |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 1 — для идентификации отправителя используется адрес.<br>2 — для идентификации отправителя используется псевдоним. |
 | 8 | Байт сети |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Дублирует указанный выше байт сети |
 | 9 | Хеш адреса |  | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 20 |  |

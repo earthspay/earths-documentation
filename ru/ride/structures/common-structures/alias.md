@@ -1,6 +1,6 @@
 # Alias
 
-Структура [псевдонима](/blockchain/alias.md).
+Структура [псевдонима](/blockchain/account/alias.md).
 
 ## Конструктор
 
@@ -12,4 +12,4 @@ Alias(alias: String)
 
 |   #   | Название | Тип данных | Описание |
 | :--- | :--- | :--- | :--- |
-| 1 | alias | [String](/ride/data-types/string.md) | [Псевдоним](/blockchain/alias.md) |
+| 1 | alias | [String](/ride/data-types/string.md) | [Псевдоним](/blockchain/account/alias.md) |

@@ -14,14 +14,6 @@ Here click on the **Import accounts** box.
 
 ![](/_assets/account_restoring_03.png)
 
-**Note** You can import as many accounts as you need if you want to use several Waves accounts. Just create a new account or import an existing account and click on the **Account avatar** at the top right corner.
-
-Click on the **Switch account** and **Add an account**. And repeat the account recovering procedure described below.
-
-![](/_assets/account_restoring_04.png)
-
-![](/_assets/account_restoring_04.1.png)
-
 After clicking on the **Import accounts** box you will be forwarded to the following page. Click on the **Seed or Key** **Import account from a backup SEED or Private key**.
 
 ![](/_assets/account_restoring_05.png)
@@ -42,6 +34,20 @@ Choose account name. To finish the process, click on the **Sign in**
 If you have done all of the above, you are forwarded to the user interface.
 
 ![](/_assets/account_restoring_08.png)
+
+## How to use several accounts
+
+You can create or import as many accounts as you need if you want to use several Waves accounts. Just create a new account or import an existing account and click on the **Account avatar** at the top right corner.
+
+Click on the **Switch account** and **Add an account**. And repeat the account recovering procedure described above.
+
+![](/_assets/account_restoring_04.png)
+
+![](/_assets/account_restoring_04.1.png)
+
+To change the account click on the **Account avatar** at the top right corner and click on the **Switch account**. After that choose the required account.
+
+![](/_assets/account_restoring_04.2.png)
 
 ## How to pairing accounts between devices
 

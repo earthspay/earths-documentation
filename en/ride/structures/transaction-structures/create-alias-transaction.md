@@ -12,7 +12,7 @@ CreateAliasTransaction(alias: String, id: ByteVector, fee: Int, timestamp: Int, 
 
 | # | Name | Data type | Description |
 | :--- | :--- | :--- | :--- |
-| 1 | alias | [String](/ride/data-types/string.md) | [Alias](/blockchain/alias.md) |
+| 1 | alias | [String](/ride/data-types/string.md) | [Alias](/blockchain/account/alias.md) |
 | 3 | id | [ByteVector](/ride/data-types/byte-vector.md) | [Transaction ID](/blockchain/transaction/transaction-id.md) |
 | 4 | fee | [Int](/ride/data-types/int.md) | [Transaction fee](/blockchain/transaction/transaction-fee.md) |
 | 5 | timestamp | [Int](/ride/data-types/int.md) | [Transaction timestamp](/blockchain/transaction/transaction-timestamp.md) |

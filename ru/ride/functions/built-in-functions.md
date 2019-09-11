@@ -59,7 +59,7 @@
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
 | 1 | addressFromPublicKey(ByteVector): Address | Получает [адрес](/blockchain/account/address.md), соответствующий открытому ключу аккаунта | 82 |
-| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
+| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/account/alias.md) | 100 |
 | 3 | parseInt(String): Int&#124;Unit | Конвертирует строковое представление числа в эквивалентное целое число | 20 |
 | 4 | parseIntValue(String): Int | Конвертирует строковое представление числа в эквивалентное целое число. <br>Выбрасывает исключение, если строка не может быть спарсена | 20 |
 | 5 | toBytes(Boolean): ByteVector | Конвертирует логическое значение в массив байтов | 1 |
