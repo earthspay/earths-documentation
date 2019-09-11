@@ -23,7 +23,9 @@ If you use DEB-packages to install a node, they also contain configuration files
 
 If you run JAR file it's recommended to override default parameters by passing a path to config file as the command line parameter then starting Waves Node application.
 
-```java -jar waves-all-0.13.3.jar waves.conf```
+```
+java -jar waves-all-0.13.3.jar waves.conf
+```
 
 Typically this file should contain you node's unique characteristics (ip, name, keys, etc...) and network-specific parameters similar to waves-mainnet or waves-testnet configs from previous sections (files shipped with DEB packages).
 
@@ -149,10 +151,6 @@ Using `average-block-delay` parameter you can set the speed of block generation 
 
 In `transactions` parameter you should provide the list of first transactions. Each transaction is described by recipient’s address \(as BASE58 string\) and amount. You have to distribute all initial balance to one or more addresses in genesis block. If you failed to do so, the genesis block will be considered as incorrect and the application won’t start.
 
-### Checkpoints settings
-
-In this section, you can configure the public key for checkpoints verification sent over the P2P network. Provide the BASE58 representation of public key using `public-key` parameter. It’s useful to change this parameter only in CUSTOM blockchains.
-
 ### Matcher settings
 
 Configuration section `matcher` could be used to configure DEX matcher.
@@ -229,23 +227,36 @@ Using `interval-after-last-block-then-generation-is-allowed` parameter you tune 
 
 ### REST API settings
 
-In section `rest-api` you can set the node’s REST API parameters.
+The **REST API section** is a section in the node configuration file with settings of a [node API](/waves-node/node-api.md).
 
-Use `enable` parameter to activate or deactivate REST API.
+#### parameters
 
-Parameter `bind-address` could be used to select network interface on which REST API will accept incoming connections.
+| # | Name | Description | Default value |
+| :--- | :--- | :--- | :--- |
+| 1 | enable | Activates REST API. <br>If you want to deactivate REST API, change the default value to `no` | yes |
+| 2 | `bind-address` | Sets the network address where the REST API will accept the incoming connections. <br>**Note.** It's not recommended to change the default value. Use [Nginx’s proxy pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) or [SSH port forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html) for external access. | `"127.0.0.1"` |
+| 3 | `port` | Sets the port number where the REST API will await connections. | 6869 |
+| 4 | `api-key-hash` | Sets the hash of the [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) that is provided by the node owner.<br> [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) of the node owner is highly important as the [seed](http://confluence.wavesplatform.com/display/WDOCS/Seed+phrase) phrase and the password of the wallet.<br>Follow these steps to generate the hash of the API key:<br> 1. Go to [Swagger web interface](http://confluence.wavesplatform.com/display/WDOCS/Node+API)<br> 2. Click on[`utils`](https://nodes.wavesnodes.com/api-docs/index.html#/utils)section<br>3. Click on the API method [`/utils/hash/secure`](https://nodes.wavesnodes.com/api-docs/index.html#!/utils/hashSecure_1)<br>4. Create a unique [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) as a string value and include it in the `message` parameter<br> 5. Get the hash of the [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) and paste it in your node configuration file<br>6. Restart the node<br>**Note.** The API key is transmitted in the HTTP header as unprotected plain text. An attacker can intercept it in the network transit and use it to transfer your money to any address! So it's highly important to protect the transmission using HTTPS or SSH port forwarding. | "" |
+| 5 | cors | Enables [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) support that is necessary for [Swagger](https://swagger.io/) and [DEX](http://confluence.wavesplatform.com/display/WDOCS/About+Waves+DEX). <br>[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) allows to safely resolve queries for other domains outside the one that is running the node.<br> **Note.** If you want to deactivate [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) support, change the default value to `no` | yes |
 
-Parameter `port` could be used to change the port number on which REST API will await connections.
+During REST API calls the node owner must provide the string value of his unique [API key](https://en.wikipedia.org/wiki/Application_programming_interface_key) instead of the hashed value.
+This is an example for signing a transaction that already exists in the wallet of the node owner as a CURL command:
 
-**Warning:** Attention! For better security, do not change `bind-address` from `127.0.0.1` if you do not know what you’re doing! For external access, you should use instead [Nginx’s proxy\_pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) or [SSH port-forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html).
-
-
-Use `api-key-hash` parameter to set the hash of your API key. The API key is used to protect calls of critical API methods. Remember, that in this parameter you should provide the hash of API key, but during REST calls you should provide API key itself. You can use API method `/utils/hash/secure` to produce the hash of your API key.
-
-**Warning:** API key is transmitted in the HTTP header as unprotected plain text! An attacker could intercept it in network transit and use it to transfer your money to any address! So you have to protect the transmission using HTTPS or use SSH port forwarding.
-
-
-Parameter `cors` could be used to enable or disable CORS support in REST API. CORS allows to safely resolve queries to other domains outside the one running the node. It’s necessary for Swagger and Lite client. You can read about it [here](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Key: YOUR UNIQUE API KEY'
+-d '{ \
+amount: 5800000000, \
+fee: 100000, \
+type: 4, \
+version: 1, \
+attachment: "", \
+sender: "3P3pUKEAKxegWr3PZkGYNq1mzQQaQ5zxZbw", \
+feeAssetId: null, \ assetId: null, \
+recipient: "3P9p39MwZ5JjwdBSYEWC6XYri4jpovzcAbs", \
+feeAsset: null, \
+timestamp: 1568020044350 \
+}' 'http://nodes.wavesnodes.com/transactions/sign'
+```
 
 ### Synchronization settings
 

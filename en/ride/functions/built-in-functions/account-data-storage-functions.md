@@ -27,7 +27,7 @@ assetBalance(addressOrAlias: Address|Alias, assetId: ByteVector): Int
 
 #### `addressOrAlias`: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### `assetId`: ByteVector
 
@@ -45,7 +45,7 @@ getBinary(addressOrAlias: Address|Alias, key: String): ByteVector|Unit
 
 #### `addressOrAlias`: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### `key`: String
 
@@ -63,7 +63,7 @@ getBinaryValue(addressOrAlias: Address|Alias, key: String): ByteVector
 
 #### `addressOrAlias`: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### `key`: String
 
@@ -81,7 +81,7 @@ getBoolean(addressOrAlias: Address|Alias, key: String): Boolean|Unit
 
 #### `addressOrAlias`: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -99,7 +99,7 @@ getBooleanValue(addressOrAlias: Address|Alias, key: String): Boolean
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -117,7 +117,7 @@ getInteger(addressOrAlias: Address|Alias, key: String): Int|Unit
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -135,7 +135,7 @@ getIntegerValue(addressOrAlias: Address|Alias, key: String): Int
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -153,7 +153,7 @@ getString(addressOrAlias: Address|Alias, key: String): String|Unit
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -171,7 +171,7 @@ getStringValue(addressOrAlias: Address|Alias, key: String): String
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.
 
 #### key: String
 
@@ -189,4 +189,4 @@ wavesBalance(addressOrAlias: Address|Alias): Int
 
 #### addressOrAlias: Address|Alias
 
-[Address](/blockchain/address.md) or [alias](/blockchain/alias.md) of the account.
+[Address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) of the account.

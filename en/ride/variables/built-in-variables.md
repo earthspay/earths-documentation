@@ -71,7 +71,7 @@ A **built-in variable** is a [variable](/ride/variables.md) of the [script conte
   <tr>
     <td>7</td>
     <td>this</td>
-    <td>Transaction sender <a href="/blockchain/address.md">address</a> or information about the <a href="/blockchain/token.md">token</a></td>
+    <td>Transaction sender <a href="/blockchain/account/address.md">address</a> or information about the <a href="/blockchain/token.md">token</a></td>
   </tr>
   <tr>
     <td>8</td>

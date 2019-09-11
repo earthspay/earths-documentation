@@ -11,10 +11,10 @@
 
 * [Account](blockchain/account.md)
   * [Account data storage](blockchain/account/account-data-storage.md)
+  * [Address](blockchain/account/address.md)
+  * [Alias](blockchain/alias.md)
   * [dApp](blockchain/account/dapp.md)
   * [Smart account](blockchain/account/smart-account.md)
-* [Address](blockchain/address.md)
-* [Alias](blockchain/alias.md)
 * [Binary format](blockchain/binary-format.md)
   * [Address binary format](blockchain/binary-format/address-binary-format.md)
   * [Alias binary format](blockchain/binary-format/alias-binary-format.md)
@@ -416,6 +416,7 @@
 * [Rating formula](waves-token-rating/rating-formula.md)
 * [Data transaction with user's rate](waves-token-rating/data-transaction-with-user-s-rate.md)
 * [Data transaction of the Token Rating oracle](waves-token-rating/data-transaction-of-the-token-rating-oracle.md)
+* [Token management](waves-token-rating/token-management.md)
 
 ## Miscellaneous
 

@@ -2,7 +2,7 @@
 
 |   #   | Название | Описание |
 | :--- | :--- | :--- |
-| 1 | [Address](/ride/structures/common-structures/address.md) | Структура [адреса](/blockchain/address.md) |
+| 1 | [Address](/ride/structures/common-structures/address.md) | Структура [адреса](/blockchain/account/address.md) |
 | 2 | [Asset](/ride/structures/common-structures/asset.md) | Структура [токена](/blockchain/token.md) |
 | 3 | [AssetPair](/ride/structures/common-structures/asset-pair.md) | Структура пары токенов ордера |
 | 4 | [AttachedPayment](/ride/structures/common-structures/attached-payment.md) | Структура платежа [транзакции вызова скрипта](/blockchain/transaction-type/invoke-script-transaction.md) |

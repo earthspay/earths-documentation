@@ -8,9 +8,10 @@
 
 ## Блокчейн
 
-* [Адрес](blockchain/address.md)
 * [Аккаунт](blockchain/account.md)
   * [dApp](blockchain/account/dapp.md)
+  * [Адрес](blockchain/account/address.md)
+  * [Псевдоним](blockchain/account/alias.md)
   * [Смарт-аккаунт](blockchain/account/smart-account.md)
   * [Хранилище данных аккаунта](blockchain/account/account-data-storage.md)
 * [Бинарный формат](blockchain/binary-format.md)
@@ -22,6 +23,7 @@
     * [Бинарный формат транзакции генезиса](blockchain/binary-format/transaction-binary-format/genesis-transaction-binary-format.md)
     * [Бинарный формат транзакции данных](blockchain/binary-format/transaction-binary-format/data-transaction-binary-format.md)
     * [Бинарный формат транзакции лизинга](blockchain/binary-format/transaction-binary-format/lease-transaction-binary-format.md)
+    * [Бинарный формат транзакции массового перевода](blockchain/binary-format/transaction-binary-format/mass-transfer-transaction-binary-format.md)
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
     * [Бинарный формат транзакции сжигания токена](blockchain/binary-format/transaction-binary-format/burn-transaction-binary-format.md)
@@ -46,7 +48,6 @@
   * [Майнящая нода](blockchain/node/mining-node.md)
 * [Оракул](blockchain/oracle.md)
 * [Ордер](blockchain/order.md)
-* [Псевдоним](blockchain/alias.md)
 * [Сеть блокчейна](blockchain/blockchain-network.md)
   * [Байт сети](blockchain/blockchain-network/chain-id.md)
   * [Основная сеть](blockchain/blockchain-network/main-network.md)
@@ -324,6 +325,7 @@
 * [Формула рейтинга](waves-token-rating/rating-formula.md)
 * [Транзакция данных с оценкой пользователя](waves-token-rating/data-transaction-with-user-s-rate.md)
 * [Транзакция данных оракула Token Rating](waves-token-rating/data-transaction-of-the-token-rating-oracle.md)
+* [Управление токеном](waves-token-rating/token-management.md)
 
 ## Разное
 

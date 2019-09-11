@@ -8,7 +8,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) |type| [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 1 |
 | 2 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 3 | [Адрес](/blockchain/address.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 |  |
+| 3 | [Адрес](/blockchain/account/address.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 26 |  |
 | 4 | Количество [WAVES](/blockchain/token/waves.md), которое будет переведено на [аккаунт](/blockchain/account.md) | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md)| 8 |  |
 | 6 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) | signature | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  ||

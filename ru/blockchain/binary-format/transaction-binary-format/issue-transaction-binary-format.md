@@ -44,4 +44,4 @@
 | 9 | Количество знаков после запятой у токена | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 |  |
 | 10 | Флаг возможности довыпуска | [Boolean](/blockchain/blockchain/blockchain-data-types.md) | 1 | Если значение равно 0, то довыпуск невозможен.<br>Если значение равно 1, то довыпуск возможен |
 | 11 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 12 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 12 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |  |
