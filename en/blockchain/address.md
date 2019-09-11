@@ -8,7 +8,7 @@ An address can be represented as an alphanumeric string or a scanned QR code.
 
 Each account has a _single_ address.
 
-One address can have several [aliases](/blockchain/alias.md).
+One address can have several [aliases](/blockchain/account/alias.md).
 
 ## Binary format
 See the page [Address binary format](/blockchain/binary-format/address-binary-format.md).

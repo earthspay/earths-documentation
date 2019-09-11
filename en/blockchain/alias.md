@@ -1,6 +1,6 @@
 # Alias
 
-An **alias** is a short, easy to remember, name of [address](/blockchain/address.md).
+An **alias** is a short, easy to remember, name of [address](/blockchain/account/address.md).
 
 Aliases are easy to remember, because of that they are often used instead of addresses.
 

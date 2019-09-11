@@ -2,13 +2,13 @@
 
 | # | Name | Description | Complexity |
 | :--- | :--- | :--- | :--- |
-| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Checks that a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) | 30 |
+| 1 | [checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean](#check-merkle-proof) | Checks that the data is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) | 30 |
 | 2 | [rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean](#rsa-verify) | Checks that the [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) digital signature is valid, i.e. it was created by the owner of the public key | 300 |
 | 3 | [sigVerify(ByteVector, ByteVector, ByteVector): Boolean](#sig-verify) | Checks that the [Curve25519](https://en.wikipedia.org/wiki/Curve25519) digital signature is valid, i.e. it was created by the owner of the public key | 100 |
 
 ## checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean<a id="check-merkle-proof"></a>
 
-Checks that a tree of hashes is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
+Checks that the data is part of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
 [BLAKE2b](https://en.wikipedia.org/wiki/BLAKE_%28hash_function%29) hashing function is used to hash the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
@@ -24,11 +24,11 @@ Root hash of the Merkle tree.
 
 #### merkleProof: ByteVector
 
-Tree of hashes.
+Array of hashes.
 
 #### valueBytes: ByteVector
 
-Tree of hashes.
+Data to check.
 
 ## rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean<a id="rsa-verify"></a>
 

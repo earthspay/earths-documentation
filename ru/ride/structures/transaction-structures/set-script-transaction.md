@@ -17,7 +17,7 @@ SetScriptTransaction(script: ByteVector|Unit, id: ByteVector, fee: Int, timestam
 | 3 | fee | [Int](/ride/data-types/int.md) | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) |
 | 4 | timestamp | [Int](/ride/data-types/int.md) | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) |
 | 5 | version | [Int](/ride/data-types/int.md) | [Версия транзакции](/blockchain/transaction/transaction-version.md) |
-| 6 | sender | [Address](/ride/structures/common-structures/address.md) | [Адрес](/blockchain/address.md) отправителя транзакции |
+| 6 | sender | [Address](/ride/structures/common-structures/address.md) | [Адрес](/blockchain/account/address.md) отправителя транзакции |
 | 7 | senderPublicKey | [ByteVector](/ride/data-types/byte-vector.md) | Публичный ключ отправителя транзакции |
 | 8 | bodyBytes | [ByteVector](/ride/data-types/byte-vector.md) | [Байты тела транзакции](/blockchain/transaction/transaction-body-bytes.md) |
 | 9 | proofs | [List](/ride/data-types/list.md)[[ByteVector](/ride/data-types/byte-vector.md)] | [Подтверждения](/blockchain/transaction/transaction-proof.md) |

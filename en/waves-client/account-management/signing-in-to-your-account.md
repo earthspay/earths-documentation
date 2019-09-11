@@ -4,15 +4,20 @@ You can use either [**Online Client**](https://dex.wavesplatform.com), or standa
 
 Choose and open up your Waves wallet.
 
-Click on the **Sign In**.
+Click on the **[Sign In](https://dex.wavesplatform.com/sign-in)**.
 
-![](/_assets/login_page.png)
+![](/_assets/login_page_01.png)
 
-You will be forwarded to the following page.
+You will be forwarded to the following page. Type the password in the **Password** field and click on the **Sign in**.
 
 ![](/_assets/login_page_02.png)
 
-Type the password in the **Password** field and click on the **Log in**.
+If you have done all of the above, you are forwarded to the user interface.
+
+![](/_assets/login_page_03.png)
+
+If you forgot the password, in this case click on the **Forgot your password?** under **Sign In** button. Please keep in mind, password reseting will delete all accounts. To recover access you will need to import each account from the seed phrase or via private key.
+**Note** If you have not saved the Seed phrase or Private key, then you will not be able to recover access to your account.
 
 ___
 

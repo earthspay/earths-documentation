@@ -25,9 +25,9 @@
 
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, является ли дерево хешей частью [дерева Меркла](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9).<br>Для хеширования [дерева Меркла](https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9) используется [Blake2b256](https://en.wikipedia.org/wiki/BLAKE_(hash_function)) | 30 |
-| 2 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Проверяет подпись [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29) | 300 |
-| 3 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Проверяет подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) | 100 |
+| 1 | checkMerkleProof(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что данные являются частью [дерева Меркла](https://ru.wikipedia.org/wiki/Дерево_хешей) | 30 |
+| 2 | rsaVerify(digestAlgorithmType, ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что цифровая подпись [RSA](https://ru.wikipedia.org/wiki/RSA) достоверна; то есть что она была создана владельцем открытого ключа | 300 |
+| 3 | sigVerify(ByteVector, ByteVector, ByteVector): Boolean | Проверяет, что цифровая подпись [Curve25519](https://en.wikipedia.org/wiki/Curve25519) достоверна; то есть что она была создана владельцем публичного ключа | 100 |
 
 ### [Функции декодирования](/ride/functions/built-in-functions/decoding-functions.md)
 
@@ -58,8 +58,8 @@
 
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
-| 1 | addressFromPublicKey(ByteVector): Address | Получает [адрес](/blockchain/address.md), соответствующий открытому ключу аккаунта | 82 |
-| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
+| 1 | addressFromPublicKey(ByteVector): Address | Получает [адрес](/blockchain/account/address.md), соответствующий открытому ключу аккаунта | 82 |
+| 2 | addressFromRecipient(Address&#124;Alias): Address | Получает [адрес](/blockchain/account/address.md), соответствующий [псевдониму](/blockchain/account/alias.md) | 100 |
 | 3 | parseInt(String): Int&#124;Unit | Конвертирует строковое представление числа в эквивалентное целое число | 20 |
 | 4 | parseIntValue(String): Int | Конвертирует строковое представление числа в эквивалентное целое число. <br>Выбрасывает исключение, если строка не может быть спарсена | 20 |
 | 5 | toBytes(Boolean): ByteVector | Конвертирует логическое значение в массив байтов | 1 |
@@ -67,7 +67,7 @@
 | 7 | toBytes(String): ByteVector | Конвертирует строку в массив байтов | 1 |
 | 8 | toInt(ByteVector): Int | Конвертирует массив байтов в целое число | 10 |
 | 9 | toInt(ByteVector, Int): Int | Конвертирует массив байтов, начиная с указанного индекса, в целое число | 10 |
-| 10 | toString(Address): String | Конвертирует массив байтов [адреса](/blockchain/address.md) в строку | 10 |
+| 10 | toString(Address): String | Конвертирует массив байтов [адреса](/blockchain/account/address.md) в строку | 10 |
 | 11 | toString(Boolean): String | Конвертирует логическое значение в строку | 1 |
 | 12 | toString(Int): String | Конвертирует целое число в строку | 1 |
 | 13 | toUtf8String(ByteVector): String | Конвертирует массив байтов в строку в [UTF-8](https://ru.wikipedia.org/wiki/UTF-8) | 20 |
