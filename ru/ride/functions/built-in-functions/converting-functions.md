@@ -3,7 +3,7 @@
 | # | Название | Описание | Сложность |
 | :--- | :--- | :--- | :--- |
 | 1 | [addressFromPublicKey(ByteVector): Address](#address-from-public-key) | Получает [адрес](/blockchain/address.md), соответствующий открытому ключу аккаунта | 82 |
-| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md) | 100 |
+| 2 | [addressFromRecipient(Address&#124;Alias): Address](#address-from-recipient) | Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/account/alias.md) | 100 |
 | 3 | [parseInt(String): Int&#124;Unit](#parse-int) | Конвертирует строковое представление числа в эквивалентное целое число | 20 |
 | 4 | [parseIntValue(String): Int](#parse-int-value) | Конвертирует строковое представление числа в эквивалентное целое число.<br>Выбрасывает исключение, если строка не может быть спарсена | 20 |
 | 5 | [toBytes(Boolean): ByteVector](#to-bytes-boolean) | Конвертирует логическое значение в массив байтов | 1 |
@@ -39,7 +39,7 @@ let add = addressFromPublicKey(publicKey)# The result will be the address for th
 
 ## addressFromRecipient(Address&#124;Alias): Address<a id="address-from-recipient"></a>
 
-Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/alias.md).
+Получает [адрес](/blockchain/address.md), соответствующий [псевдониму](/blockchain/account/alias.md).
 
 ``` ride
 addressFromRecipient(AddressOrAlias: Address|Alias): Address

@@ -1,6 +1,6 @@
 # Alias binary format
 
-> Learn more about [alias](/blockchain/alias.md)
+> Learn more about [alias](/blockchain/account/alias.md)
 
 | Field order number | Field | Field type | Field size in bytes | Comments |
 | :--- | :--- | :--- | :--- | :--- |

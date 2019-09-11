@@ -13,7 +13,7 @@
 | 4.2 | ID токена | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | S | S = 0 если значение поля "Флаг WAVES/токен" равно 0.<br>S = 32 если значение поля "Флаг WAVES/токен" равно 1 |
 | 5.1 | Количество переводов | transferCount | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 | Количество переводов токенов в транзакции |
 | 5.2 | Сумма всех переводов  | totalAmount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 5.3 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md) получателя перевода 1 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
+| 5.3 | [Адрес](/blockchain/address.md) или [псевдоним](/blockchain/account/alias.md) получателя перевода 1 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 5.4 | Количество токена в переводе 1 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 5.5 | Адрес или псевдоним получателя перевода 2 | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 5.6 | Количество токена в переводе 2 | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
