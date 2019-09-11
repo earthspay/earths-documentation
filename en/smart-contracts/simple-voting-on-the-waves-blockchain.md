@@ -31,7 +31,7 @@ Rename created account to "Head of HOA".
 
 <img src="img/voting/account-chief.png" width="245"/>
 
-Copy the [address](/blockchain/address.md) of the head of HOA and top up its balance by 10 [WAVES](/blockchain/token/waves.md) using the [Faucet](/waves-explorer/account-balance-top-up-in-the-test-network.md). The head of HOA will need [tokens](/blockchain/token.md) to pay the [fee](/blockchain/transaction/transaction-fee.md) for the set script transaction when he will be attaching [dApp script](/ride/script/script-types/dapp-script.md) to his account.
+Copy the [address](/blockchain/account/address.md) of the head of HOA and top up its balance by 10 [WAVES](/blockchain/token/waves.md) using the [Faucet](/waves-explorer/account-balance-top-up-in-the-test-network.md). The head of HOA will need [tokens](/blockchain/token.md) to pay the [fee](/blockchain/transaction/transaction-fee.md) for the set script transaction when he will be attaching [dApp script](/ride/script/script-types/dapp-script.md) to his account.
 
 <img src="img/voting/account-chief-balance.png" width="250"/>
 

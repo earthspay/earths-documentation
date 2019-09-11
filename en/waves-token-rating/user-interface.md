@@ -17,7 +17,7 @@ The menu consists of following items:
 
 ### Top 20
 
-Displays 20 tokens that have the best overall indicators of rating, sums of all weights [W<sub>n</sub>](/waves-token-rating/rating-formula.md), and the number of [addresses](/blockchain/address.md) that rated token.
+Displays 20 tokens that have the best overall indicators of rating, sums of all weights [W<sub>n</sub>](/waves-token-rating/rating-formula.md), and the number of [addresses](/blockchain/account/address.md) that rated token.
 
 ### All tokens
 

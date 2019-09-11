@@ -1,6 +1,6 @@
 # Address binary format
 
-> Learn more about [address](/blockchain/address.md)
+> Learn more about [address](/blockchain/account/address.md)
 
 | Field order number | Field | Field type | Field size in bytes | Comments |
 | :--- | :--- | :--- | :--- | :--- |

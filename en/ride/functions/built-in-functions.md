@@ -42,8 +42,8 @@ A **built-in function** is a [function](/ride/functions.md) of the [script conte
 
 | # | Name | Description | Complexity |
 | :--- | :--- | :--- | :--- |
-| 1 | addressFromPublicKey(ByteVector): Address | Converts account public key to [address](/blockchain/address.md) | 82 |
-| 2 | addressFromRecipient(Address&#124;Alias): Address | Gets the corresponding [address](/blockchain/address.md) of the [alias](/blockchain/account/alias.md) | 100 |
+| 1 | addressFromPublicKey(ByteVector): Address | Converts account public key to [address](/blockchain/account/address.md) | 82 |
+| 2 | addressFromRecipient(Address&#124;Alias): Address | Gets the corresponding [address](/blockchain/account/address.md) of the [alias](/blockchain/account/alias.md) | 100 |
 | 3 | parseInt(String): Int&#124;Unit | Converts the string representation of a number to its integer equivalent | 20 |
 | 4 | parseIntValue(String): Int | Converts the string representation of a number to its integer equivalent.Raises an exception if the string cannot be parsed | 20 |
 | 5 | toBytes(Boolean): ByteVector | Converts a boolean to an array of bytes | 1 |
@@ -51,7 +51,7 @@ A **built-in function** is a [function](/ride/functions.md) of the [script conte
 | 7 | toBytes(String): ByteVector | Converts a string to an array of bytes | 1 |
 | 8 | toInt(ByteVector): Int | Converts an array of bytes to an integer | 10 |
 | 9 | toInt(ByteVector, Int): Int | Converts an array of bytes to an integer starting from a certain index | 10 |
-| 10 | toString(Address): String | Converts an [address](/blockchain/address.md) to a string | 10 |
+| 10 | toString(Address): String | Converts an [address](/blockchain/account/address.md) to a string | 10 |
 | 11 | toString(Boolean): String | Converts a boolean to a string | 1 |
 | 12 | toString(Int): String | Converts an integer to a string | 1 |
 | 13 | toUtf8String(ByteVector): String | Converts an array of bytes to a UTF-8 string | 20 |
