@@ -1,8 +1,7 @@
 # Waves Smart Contracts
 ![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node-&gt;%3D0.12.0-4bc51d.svg)
 
-
-Our realisation of smart contracts will contain two parts:
+Our realization of smart contracts will contain two parts:
 
 1. A **Smart Account** language implementation, It is an important property that the smart account does not store any data on the blockchain. A smart account will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time. these smart accounts can be run for the price of normal transactions with a predefined fee, **without any additional “gas” or other costs**.
 2. A **Foundational Layer** for developing various decentralised applications and smart contracts on the blockchain, with a built-in Turing-complete programming language.
