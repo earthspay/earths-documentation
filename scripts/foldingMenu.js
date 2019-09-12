@@ -32,15 +32,15 @@ jQuery(document).ready(function () {
     // > process on next event tick (i.e. timeout) seems to help
 
     const findClosestChapter = function($currentElement) {
-      var $closestChapter = $currentElement.closest('.chapter:not(.active)');
-      if($currentElement[0] === $closestChapter[0]) {
-        return
-      }
-      if($closestChapter.length) {
-        $closestChapter[0].click();
-        return findClosestChapter($closestChapter);
-      }
+      var parentChapters = $currentElement.parents('.chapter');
+      parentChapters.each(function(index, parentChapter) {
+        var trigger = $(parentChapter).find('.icon-triangle')[0];
+        if(trigger) {
+          trigger.click();
+        }
+      });
     }
+
     setTimeout( function() {
 
       var activeElement = $('.chapter.active');
@@ -48,9 +48,9 @@ jQuery(document).ready(function () {
       var activeElementClosestTrigger = activeElementClosestParent.prev();
       var bookSummaryElement = activeElement.closest('.book-summary');
       if(!activeElementClosestTrigger.hasClass('expanded')) {
-        findClosestChapter(activeElement);
-        activeElementClosestTrigger.click();
         setTimeout(function() {
+          findClosestChapter(activeElement);
+          activeElementClosestTrigger.click();
           var activeChapterBoundingClientRect = activeElement[0].getBoundingClientRect();
           bookSummaryElement[0].scrollTop = activeChapterBoundingClientRect.top;
         }, 1000);
