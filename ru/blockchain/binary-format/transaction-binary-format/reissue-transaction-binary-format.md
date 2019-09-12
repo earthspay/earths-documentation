@@ -12,7 +12,7 @@
 | 4 | [Байт сети](/blockchain/blockchain-network/chain-id.md) | chainId | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 84 для [тестовой сети](/blockchain/blockchain-network/test-network.md), 87 для [основной сети](/blockchain/blockchain-network/main-network.md) |
 | 5 | Открытый ключ аккаунта отправителя | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 6 | ID токена | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 7 | Количество токенов | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 7 | Количество токена | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 8 | Флаг довыпуска | reissuable | [Boolean](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — повторный выпуск невозможен<br>1 — повторный выпуск возможен |
 | 9 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 10 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
@@ -30,7 +30,7 @@
 | 2 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
 | 3 | Открытый ключ аккаунта отправителя транзакции | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 4 | ID токена | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 5 | Количество токенов | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 5 | Количество токена | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 6 | Флаг возможности повторного выпуска | [Boolean](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — повторный выпуск невозможен<br>1 — повторный выпуск возможен |
 | 7 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 8 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
