@@ -12,7 +12,7 @@
 * [Account](blockchain/account.md)
   * [Account data storage](blockchain/account/account-data-storage.md)
   * [Address](blockchain/account/address.md)
-  * [Alias](blockchain/alias.md)
+  * [Alias](blockchain/account/alias.md)
   * [dApp](blockchain/account/dapp.md)
   * [Smart account](blockchain/account/smart-account.md)
 * [Binary format](blockchain/binary-format.md)
