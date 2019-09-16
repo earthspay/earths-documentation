@@ -1,4 +1,4 @@
-# Ордер
+# Биржевая заявка
 
 **Биржевая заявка** или **ордер** — инструкция [владельца аккаунта](/blockchain/account.md) [матчеру](/waves-node/extensions/matcher.md) на покупку или продажу [токена](/blockchain/token.md) на [DEX](/waves-dex/about-waves-dex.md).
 
