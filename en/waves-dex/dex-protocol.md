@@ -27,7 +27,7 @@ A user initiates his willingness to purchase or sell assets by creating, signing
 
 ![](/_assets/DEX1.png)Figure 1
 
-User can set an expiration time \(maximum timestamp\) to the order, and when the order expires it will be automatically canceled. One of the rules at DEX is that all orders older than 30 days will be canceled by default. An expiration time for each order is specified by the user at the time the order is signed. The expiration time is a long integer value that represents the absolute number of seconds since the UNIX epoch. When the order is unfilled and its expiration time is more than now UNIX timestamp, it can be canceled by the user. In this case, the order gets into blockchain as Cancelled order and nobody can fill it since that.
+User can set an expiration time \(maximum timestamp\) to the order, and when the order expires it will be automatically canceled. One of the rules at DEX is that all orders older than 30 days will be canceled by default. An expiration time for each order is specified by the user at the time the order is signed. The expiration time is a long integer value that represents the absolute number in _milliseconds_ since the UNIX epoch. When the order is unfilled and its expiration time is more than now UNIX timestamp, it can be canceled by the user. In this case, the order gets into blockchain as Cancelled order and nobody can fill it since that.
 
 The full execution cycle for one order is following:
 

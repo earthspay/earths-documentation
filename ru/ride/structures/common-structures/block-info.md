@@ -12,7 +12,7 @@ BlockInfo(timestamp: Int, height: Int, baseTarget: Int, generationSignature: Byt
 
 |   #   | Название | Тип данных | Описание |
 | :--- | :--- | :--- | :--- |
-| 1 | timestamp | [Int](/ride/data-types/int.md) | Unix-время создания [блока](/blockchain/block.md) |
+| 1 | timestamp | [Int](/ride/data-types/int.md) | [Временна́я метка блока](/blockchain/block/block-timestamp.md) |
 | 2 | height | [Int](/ride/data-types/int.md) | [Высота блока](/blockchain/block/block-height.md) |
 | 3 | baseTarget | [Int](/ride/data-types/int.md) | Сложность создания блока |
 | 4 | generationSignature | [ByteVector](/ride/data-types/byte-vector.md) | Подпись ключевого блока |

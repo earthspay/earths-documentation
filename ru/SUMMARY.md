@@ -22,6 +22,7 @@
     * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)
     * [Бинарный формат транзакции генезиса](blockchain/binary-format/transaction-binary-format/genesis-transaction-binary-format.md)
     * [Бинарный формат транзакции данных](blockchain/binary-format/transaction-binary-format/data-transaction-binary-format.md)
+    * [Бинарный формат транзакции довыпуска](blockchain/binary-format/transaction-binary-format/reissue-transaction-binary-format.md)
     * [Бинарный формат транзакции лизинга](blockchain/binary-format/transaction-binary-format/lease-transaction-binary-format.md)
     * [Бинарный формат транзакции массового перевода](blockchain/binary-format/transaction-binary-format/mass-transfer-transaction-binary-format.md)
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
@@ -29,6 +30,8 @@
     * [Бинарный формат транзакции сжигания токена](blockchain/binary-format/transaction-binary-format/burn-transaction-binary-format.md)
     * [Бинарный формат транзакции создания псевдонима](blockchain/binary-format/transaction-binary-format/alias-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта ассета](blockchain/binary-format/transaction-binary-format/set-asset-script-transaction-binary-format.md)
+    * [Бинарный формат транзакции установки скрипта](blockchain/binary-format/transaction-binary-format/set-script-transaction-binary-format.md)
+
 * [Блок](blockchain/block.md)
   * [Блок генезиса](blockchain/block/genesis-block.md)
   * [Временная метка блока](blockchain/block/block-timestamp.md)
