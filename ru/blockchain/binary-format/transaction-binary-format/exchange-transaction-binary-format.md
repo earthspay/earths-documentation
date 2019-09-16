@@ -4,7 +4,7 @@
 
 ## Транзакция версии 2
 
-Транзакция версии 2 может принимать ордера версии [1](/blockchain/binary-format/order-binary-format.md#order1), [2](/blockchain/binary-format/order-binary-format.md#order2) и 3.
+Транзакция версии 2 может принимать ордера версии 1, 2 и 3.
 
 | Порядковый номер поля | Поле | Название JSON-поля | Тип поля | Размер поля в байтах | Комментарий |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -12,8 +12,8 @@
 | 2 | [ID типа транзакции](/blockchain/transaction-type.md) | type | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 7 |
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) | version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4.1 | Размер ордера на покупку |  | [Int](/blockchain/blockchain/blockchain-data-types.md) | 4 |  |
-| 4.2 | Флаг [версии ордера](/blockchain/binary-format/order-binary-format.md) на покупку | order1.version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | `S` | `S` = 1 если версия ордера 1.<br>`S` = 0 если версия ордера 2 |
-| 4.3 | Ордер на покупку токена | order1 | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | См. [бинарный формат ордера](/blockchain/binary-format/order-binary-format.md) |  |
+| 4.2 | Флаг версии ордера на покупку | order1.version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | `S` | `S` = 1 если версия ордера 1.<br>`S` = 0 если версия ордера 2 |
+| 4.3 | Ордер на покупку токена | order1 | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] |  |  |
 | 5.1 | Размер ордера на продажу |  | [Int](/blockchain/blockchain/blockchain-data-types.md) | 4 |  |
 | 5.2 | Флаг [версии ордера](/blockchain/binary-format/order-binary-format.md) на продажу | order2.version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | `S` | `S` = 1 если версия ордера 1.<br>`S` = 0 если версия ордера 2 |
 | 5.3 | Ордер на продажу токена | order2 | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | См. [бинарный формат ордера](/blockchain/binary-format/order-binary-format.md) |  |
