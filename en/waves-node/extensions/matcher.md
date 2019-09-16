@@ -1,3 +1,3 @@
 # Matcher
 
-**Matcher** is a [node extension](/waves-node/extensions.md) that places and closes [orders](/blockchain/order.md) on the [DEX](/waves-dex/about-waves-dex.md).
+A **matcher** is a [node extension](/waves-node/extensions.md) that executes [orders](/blockchain/order.md) on [DEX](/waves-dex/about-waves-dex.md).
