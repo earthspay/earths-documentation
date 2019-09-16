@@ -1,4 +1,4 @@
-# Lease Cancel transaction binary format
+# Lease cancel transaction binary format
 
 > Learn more about [lease cancel transaction](/blockchain/transaction-type/lease-cancel-transaction.md)
 
