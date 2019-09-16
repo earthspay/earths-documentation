@@ -13,10 +13,6 @@ If you want to make someone pay with WAVES or any other Waves tokens, you can us
 
 If the user interrupts the process, he stays on the Waves Client page.
 
-## Details
-
-[**Here**](https://demo.wavesplatform.com/payment-api) you can find the demo project which shows how to use Payment API for donations. The Payment API allows creating a special link for avoiding users' seed input on 3-party sites.
-
 ### Request
 
 [Example](https://dex.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict): `https://dex.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict`.
@@ -29,7 +25,7 @@ Basic path is `https://dex.wavesplatform.com/#send/{assetId}`. Then there are th
 
 #### Recipient
 
-`?recipient=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj` — the address \(or an alias\) to send tokens to. 
+`?recipient=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj` — the address \(or an alias\) to send tokens to.
 
 #### Amount
 
