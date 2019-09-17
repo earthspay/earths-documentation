@@ -10,8 +10,8 @@
 | 2 | [ID типа транзакции](/blockchain/transaction-type.md) | type | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 4 |
 | 3 | [Версия транзакции](/blockchain/transaction/transaction-version.md) | version | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 2 |
 | 4 | Открытый ключ аккаунта отправителя транзакции | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 5 | Флаг типа переводимого токена |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — WAVES<br>1 — другой токен |
-| 6 | ID переводимого токена | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 если значение поля 5 равно 0.<br>`S` = 32 если значение поля 5 не равно 0 |
+| 5 | Флаг типа переводимого токена |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — [WAVES](/blockchain/token/waves.md)<br>1 — другой токен |
+| 6 | [ID](/blockchain/token/token-id.md) переводимого токена | assetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 если значение поля 5 равно 0.<br>`S` = 32 если значение поля 5 не равно 0 |
 | 7 | Флаг типа токена комиссии |  | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — WAVES<br>1 — другой токен |
 | 8 | ID токена комиссии | feeAssetId | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 если значение поля 7 равно 0.<br>`S` = 32 если значение поля 7 не равно 0 |
 | 9 | [Временная метка транзакции](/blockchain/transaction/transaction-timestamp.md) | timestamp | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
@@ -33,7 +33,7 @@
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 4 |
 | 2 | [Подпись транзакции](/blockchain/transaction/transaction-signature.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
 | 3 | Открытый ключ аккаунта отправителя транзакции | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
-| 4 | Флаг типа переводимого токена | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — WAVES<br>1 — другой токен |
+| 4 | Флаг типа переводимого токена | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — [WAVES](/blockchain/token/waves.md)<br>1 — другой токен |
 | 5 | ID переводимого токена | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 если значение поля 4 равно 0.<br>`S` = 32 если значение поля 4 не равно 0 |
 | 6 | Флаг типа токена комиссии | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | 0 — WAVES<br>1 — другой токен |
 | 7 | ID токена комиссии | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | `S` = 0 если значение поля 4 равно 0.<br>`S` = 32 если значение поля 4 не равно 0 |
