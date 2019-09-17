@@ -72,7 +72,6 @@
   * [Validating node](blockchain/node/validating-node.md)
 * [Oracle](blockchain/oracle.md)
 * [Order](blockchain/order.md)
-  * [Order timestamp](blockchain/order/order-timestamp.md)
 * [Token](blockchain/token.md)
   * [Non-fungible token](blockchain/token/non-fungible-token.md)
   * [Smart asset](blockchain/token/smart-asset.md)
