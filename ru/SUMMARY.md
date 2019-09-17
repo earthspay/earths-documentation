@@ -31,7 +31,7 @@
     * [Бинарный формат транзакции создания псевдонима](blockchain/binary-format/transaction-binary-format/alias-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта ассета](blockchain/binary-format/transaction-binary-format/set-asset-script-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта](blockchain/binary-format/transaction-binary-format/set-script-transaction-binary-format.md)
-
+* [Биржевая заявка](blockchain/order.md)
 * [Блок](blockchain/block.md)
   * [Блок генезиса](blockchain/block/genesis-block.md)
   * [Временная метка блока](blockchain/block/block-timestamp.md)
@@ -42,7 +42,6 @@
 * [Блокчейн](blockchain/blockchain.md)
   * [Высота блокчейна](blockchain/blockchain/blockchain-height.md)
   * [Типы данных блокчейна](blockchain/blockchain/blockchain-data-types.md)
-* [Биржевая заявка](blockchain/order.md)
 * [Комиссия матчера](blockchain/matcher-fee.md)
 * [Лизинг](blockchain/leasing.md)
 * [Майнинг](blockchain/mining.md)
