@@ -14,7 +14,8 @@
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта ассета](blockchain/binary-format/transaction-binary-format/set-asset-script-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта](blockchain/binary-format/transaction-binary-format/set-script-transaction-binary-format.md)
-* [Ордер](blockchain/order.md) — <span style="color:green">обновлено</span> 
+* [Ордер](blockchain/order.md) — <span style="color:green">обновлено</span>
+  * [Временная метка ордера](blockchain/order/order-timestamp.md)
 
 * Token Rating
   * [Управление токеном](waves-token-rating/token-management.md)

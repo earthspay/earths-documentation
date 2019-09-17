@@ -52,6 +52,7 @@
   * [Майнящая нода](blockchain/node/mining-node.md)
 * [Оракул](blockchain/oracle.md)
 * [Ордер](blockchain/order.md)
+  * [Временная метка ордера](blockchain/order/order-timestamp.md)
 * [Сеть блокчейна](blockchain/blockchain-network.md)
   * [Байт сети](blockchain/blockchain-network/chain-id.md)
   * [Основная сеть](blockchain/blockchain-network/main-network.md)
@@ -341,4 +342,3 @@
 * [Leased Proof Of Stake (Lpos)](platform-features/leased-proof-of-stake-lpos.md)
 * [Официальные ресурсы](overview/waves-official-resources.md)
 * [Архив новостей](miscellaneous/news-archive.md)
-
