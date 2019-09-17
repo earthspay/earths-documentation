@@ -40,7 +40,7 @@ BRzAFccE3BeAn8rf7Mf56LoqUdT5xExbMUEgV7wGsiKx
 
 У каждого аккаунта есть _единственный_ [адрес](/blockchain/address.md).
 
-Пример адресав [Base58](https://ru.wikipedia.org/wiki/Base58):
+Пример адреса в [Base58](https://ru.wikipedia.org/wiki/Base58):
 
 ```
 3MsoC9tFzt4jcfHvmv4DBCap2ttokY5Ve9S
