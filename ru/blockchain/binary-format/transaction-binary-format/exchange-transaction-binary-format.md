@@ -31,15 +31,15 @@
 
 ## Транзакция версии 1
 
-Транзакция версии 1 может принимать ордера только версии [1](/blockchain/binary-format/order-binary-format.md#order1).
+Транзакция версии 1 может принимать ордера только версии 1.
 
 | Порядковый номер поля | Поле | Тип поля | Размер поля в байтах | Комментарии |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [ID типа транзакции](/blockchain/transaction-type.md) | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Значение должно быть равно 7 |
 | 2 | Размер ордера на покупку в байтах | [Int](/blockchain/blockchain/blockchain-data-types.md) | 4 |  |
 | 3 | Размер ордера на продажу в байтах | [Int](/blockchain/blockchain/blockchain-data-types.md) | 4 |  |
-| 4 | Ордер на покупку | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | См. [бинарный формат ордера](/blockchain/binary-format/order-binary-format.md) |  |
-| 5 | Ордер на продажу | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | См. [бинарный формат ордера](/blockchain/binary-format/order-binary-format.md) |  |
+| 4 | Ордер на покупку | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] |  |  |
+| 5 | Ордер на продажу | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] |  |  |
 | 6 | Стоимость | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество [токена](/blockchain/token.md) А, которое отправитель ордера предлагает за один токен Б |
 | 7 | Количество | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 | Количество токена Б, которое отправитель ордера хочет купить |
 | 8 | [Комиссия матчера](/blockchain/matcher-fee.md) за покупку | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
