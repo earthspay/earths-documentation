@@ -4,6 +4,7 @@
 
 ### Блокчейн
 
+* [Аккаунт](blockchain/account.md) — <span style="color:green">обновлено</span>
 * Бинарный формат
   * Бинарный формат транзакции
     * [Бинарный формат транзакции вызова скрипта](blockchain/binary-format/transaction-binary-format/invoke-script-transaction-binary-format.md)
@@ -13,10 +14,10 @@
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
     * [Бинарный формат транзакции перевода](blockchain/binary-format/transaction-binary-format/transfer-transaction-binary-format.md)
+    * [Бинарный формат транзакции спонсирования](blockchain/binary-format/transaction-binary-format/sponsor-fee-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта ассета](blockchain/binary-format/transaction-binary-format/set-asset-script-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта](blockchain/binary-format/transaction-binary-format/set-script-transaction-binary-format.md)
 * [Биржевая заявка](blockchain/order.md) — <span style="color:green">обновлено</span>
-
 * Token Rating
   * [Управление токеном](waves-token-rating/token-management.md)
 
@@ -28,7 +29,6 @@
   * [Тело скрипта](ride/script/script-body.md)
   * Типы скриптов
     * [Скрипт аккаунта](ride/script/script-types/account-script.md) — <span style="color:green">обновлено</span>
-
 * Функции
   * [Встроенные функции](ride/functions/built-in-functions.md) — <span style="color:green">обновлено</span>
     * [Функции верификации](ride/functions/built-in-functions/verification-functions.md) — <span style="color:green">обновлено</span>
