@@ -1,4 +1,4 @@
-# Sponsor fee transaction binary format
+# Sponsorsheep transaction binary format
 
 ## Transaction version 1
 
