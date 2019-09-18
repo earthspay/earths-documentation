@@ -4,11 +4,11 @@
 
 Аккаунты однозначно соотносят [транзакции](/blockchain/transaction.md) и [ордера](/blockchain/order.md) с их отправителями.
 
-## Открытый и закрытый ключиаккаунта
+## Открытый и закрытый ключи аккаунта
 
 Закрытый и открытый ключи имеют одинаковый размер — 32 байта. Байты ключей преобразуются в строку символов [Base58](https://ru.wikipedia.org/wiki/Base58); в таком виде ключи отображаются в интерфейсах программ.
 
-Примероткрытого ключа в Base58:
+Пример открытого ключа в Base58:
 
 ```
 BRzAFccE3BeAn8rf7Mf56LoqUdT5xExbMUEgV7wGsiKx
@@ -38,7 +38,7 @@ BRzAFccE3BeAn8rf7Mf56LoqUdT5xExbMUEgV7wGsiKx
 
 ## Адрес аккаунта
 
-У каждого аккаунта есть _единственный_ [адрес](/blockchain/address.md).
+У каждого аккаунта есть _единственный_ [адрес](/blockchain/account/address.md).
 
 Пример адреса в [Base58](https://ru.wikipedia.org/wiki/Base58):
 
