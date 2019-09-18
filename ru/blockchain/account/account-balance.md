@@ -40,7 +40,6 @@ A - L + R
 **Доступный баланс** это:
 
 ```
-
 A - L
 ```
 
@@ -60,10 +59,10 @@ curl https://nodes.wavesplatform.com/addresses/balance/details/<адрес ак�
 
 ```
 {
-"address": "3PMCn1EHq4WrsfUazezyYu23H1gHKvuffER",
-"regular": 6086358429,
-"generating": 5086358429,
-"available": 5086358429,
-"effective": 5086358429
+  "address": "3PMCn1EHq4WrsfUazezyYu23H1gHKvuffER",
+  "regular": 6086358429,
+  "generating": 5086358429,
+  "available": 5086358429,
+  "effective": 5086358429
 }
 ```
