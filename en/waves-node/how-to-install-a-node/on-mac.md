@@ -4,7 +4,9 @@
 
 Install [OpenJDK 8](tps://github.com/AdoptOpenJDK/homebrew-openjdk) :
 
-`brew cask install adoptopenjdk/openjdk/adoptopenjdk8`
+```
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+```
 
 Now check the JDK version using the terminal:
 
