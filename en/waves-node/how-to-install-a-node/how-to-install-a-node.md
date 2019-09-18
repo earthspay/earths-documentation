@@ -9,7 +9,7 @@ Prior to the launch of your nodes, make sure you read the [configuration specifi
 
 More specific steps depend on your operating system:
 
-* [On Mac](/waves-node/how-to-install-a-node/on-mac.md)
+* [On macOS](/waves-node/how-to-install-a-node/on-mac.md)
 * [On Windows](/waves-node/how-to-install-a-node/on-windows.md)
 * [On Ubuntu](/waves-node/how-to-install-a-node/on-ubuntu.md)
 

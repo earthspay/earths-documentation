@@ -94,7 +94,7 @@ You can enable following features on your node by modifying the `pre-activated-f
 > If the directory parameter was not redefined, the waves folder will be created in 
 <br>Linux: $XDG_DATA_HOME/waves or $HOME/.local/share/waves
 <br>Win: %APPDATA%/local/waves
-<br>Mac OS: $HOME/Library/Application Support/waves
+<br>macOS: $HOME/Library/Application Support/waves
 
 > The `address-scheme-character` parameter value from below must be the same as the `network-type` value from the step 3.
 

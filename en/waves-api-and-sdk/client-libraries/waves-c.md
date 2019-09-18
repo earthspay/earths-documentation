@@ -13,7 +13,7 @@ cmake .
 make
 ```
 
-On **Mac OS X** you should [install openssl using brew](http://brewformulas.org/Openssl) and then pass the openssl path as cmake parameter:
+On **macOS** you should [install openssl using brew](http://brewformulas.org/Openssl) and then pass the openssl path as cmake parameter:
 
 ```js
 brew install openssl
