@@ -5,6 +5,7 @@
 ### Блокчейн
 
 * [Аккаунт](blockchain/account.md) — <span style="color:green">обновлено</span>
+  * [Баланс аккаунта](blockchain/account/account-balance.md)
 * Бинарный формат
   * Бинарный формат транзакции
     * [Бинарный формат транзакции вызова скрипта](blockchain/binary-format/transaction-binary-format/invoke-script-transaction-binary-format.md)
@@ -13,6 +14,7 @@
     * [Бинарный формат транзакции массового перевода](blockchain/binary-format/transaction-binary-format/mass-transfer-transaction-binary-format.md)
     * [Бинарный формат транзакции обмена](blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md)
     * [Бинарный формат транзакции отмены лизинга](blockchain/binary-format/transaction-binary-format/lease-cancel-transaction-binary-format.md)
+    * [Бинарный формат транзакции перевода](blockchain/binary-format/transaction-binary-format/transfer-transaction-binary-format.md)
     * [Бинарный формат транзакции спонсирования](blockchain/binary-format/transaction-binary-format/sponsor-fee-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта ассета](blockchain/binary-format/transaction-binary-format/set-asset-script-transaction-binary-format.md)
     * [Бинарный формат транзакции установки скрипта](blockchain/binary-format/transaction-binary-format/set-script-transaction-binary-format.md)

@@ -1,31 +1,35 @@
-# Install the JRE 1.8
+# Installing a node on Ubuntu
 
-Ubuntu users can use the following commands to install JRE.
+# Install OpenJDK 8
+
+Install OpenJDK 8 :
 
 ```cpp
 sudo apt-get update
 sudo apt-get install openjdk-8-jre
 ```
 
-Now you can check your JRE installation. Run start console and execute command `java -version`. If you see
+Now check the JDK version using the console:
 
 ```
-java version "1.8.0_74"
-Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
-Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
+java -version
 ```
 
-then it good, you can move to the next step!
+If you see this result, you can move to the next step:
 
-But if you get an error, then check your installation and try to find some better tutorials in google.
+```
+openjdk version "1.8.0_202"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_202-b08)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.202-b08, mixed mode)
+```
 
-**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version,** you also can check Waves Releases [Here](https://github.com/wavesplatform/Waves/releases).
+**Note.** Do not install OpenJDK 8 If you already have OpenJDK 11 installed. The node Installation is supported in both versions 8 and 11.
 
 ## Installation from deb package on deb-based linux (Ubuntu, Debian)
 
 Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`. Now it's time to check your waves config!
 
-It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. [Please read this and edit waves config](/waves-node/node-configuration.md) with caution.
+It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` (or `waves-testnet` folder for testnet) and symlinked to `/etc/waves/waves.conf`. [Please read this and edit waves config](/waves-node/node-configuration.md) with caution.
 
 There are two types of deb packages of waves nodes: with **upstart loader** and **systemd loader**.
 
@@ -33,17 +37,17 @@ There are two types of deb packages of waves nodes: with **upstart loader** and 
 
 Users can start the node with `sudo systemctl start waves.service` (`waves-testnet` for testnet) and enable autoload on start with `sudo systemctl enable waves.service`. **Systemd** users can find waves app logs in journald storage like that `journalctl -u waves.service -f`. You can read about journald tips [here](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs).
 
-### 2. **Upstart \(Ubuntu &lt; 15.04\):**
+### 2. **Upstart (Ubuntu &lt; 15.04):**
 
-Users can start the node with `sudo service waves start` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo service waves enable`. You can find **waves app logs** in `/var/log/waves` folder like that tail `-f /var/log/waves/waves.log`
+Users can start the node with `sudo service waves start` (`waves-testnet` for testnet) and enable autoload on start with `sudo service waves enable`. You can find **waves app logs** in `/var/log/waves` folder like that tail `-f /var/log/waves/waves.log`
 
 
 
-**If you want to change waves directory \(for wallet, blockchain and other node files\) in ubuntu packages you should change it using **`-J-Dwaves.directory=path`** in **`/etc/waves/application.ini`**. Default waves directory is **`/var/lib/waves-testnet/`** is set in run systemd start script.**
+**If you want to change waves directory (for wallet, blockchain and other node files\ in ubuntu packages you should change it using **`-J-Dwaves.directory=path`** in **`/etc/waves/application.ini`**. Default waves directory is **`/var/lib/waves-testnet/`** is set in run systemd start script.**
 
 # Installation for advanced users
 
-[Download latest version](https://github.com/wavesplatform/Waves/releases) of waves.jar and required configuration file \(for mainnet or testnet\) to any folder, for example `/opt/waves`.
+[Download latest version](https://github.com/wavesplatform/Waves/releases) of waves.jar and required configuration file (for mainnet or testnet) to any folder, for example `/opt/waves`.
 
 Check out the configuration file, **it is very important**! On this depends **the safety of your wallet and money**.
 
