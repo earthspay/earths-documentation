@@ -10,6 +10,7 @@
 ## Blockchain
 
 * [Account](blockchain/account.md)
+  * [Account balance](blockchain/account/account-balance.md)
   * [Account data storage](blockchain/account/account-data-storage.md)
   * [Address](blockchain/account/address.md)
   * [Alias](blockchain/account/alias.md)

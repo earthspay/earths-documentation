@@ -5,6 +5,7 @@
 ### Blockchain
 
 * [Account](blockchain/account.md) — <span style="color:green">updated</span>
+  * [Account balance](blockchain/account/account-balance.md)
 * [Order](blockchain/order.md) — <span style="color:green">updated</span>
 
 ### RIDE
