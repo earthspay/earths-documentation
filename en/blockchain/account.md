@@ -38,7 +38,7 @@ An account may store different [tokens](/blockchain/token.md) in different amoun
 
 Each account has a _single_ [address](/blockchain/account/address.md).
 
-Example of address in Base58:
+Example of address in [Base58](https://en.wikipedia.org/wiki/Base58):
 
 ```
 3MsoC9tFzt4jcfHvmv4DBCap2ttokY5Ve9S
