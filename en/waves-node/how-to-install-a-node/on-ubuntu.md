@@ -18,9 +18,9 @@ java -version
 If you see this result, you can move to the next step:
 
 ```
-openjdk version "1.8.0_202"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_202-b08)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.202-b08, mixed mode)
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
 
 **Note.** Do not install OpenJDK 8 If you already have OpenJDK 11 installed. The node Installation is supported in both versions 8 and 11.
