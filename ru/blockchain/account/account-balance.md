@@ -4,8 +4,6 @@
 
 Один аккаунт может хранить разные токены в разных количествах. Например, на аккаунте может одновременно храниться 50 [WAVES](/blockchain/token/waves.md) и 200 [WCT](/blockchain/token/wct.md). Количество токена Y на аккаунте называется **балансом аккаунта в токене Y**. Если на аккаунте нет токена Y, то говорят, что **баланс аккаунта в токене Y равен нулю**.
 
-Приложение [Waves Wallet](https://wavesplatform.com/technology/wallet) показывает все токены, которые хранятся на аккаунте.
-
 ## Баланс в токене WAVES
 
 Существуют четыре вида баланса в токене WAVES:
@@ -17,7 +15,7 @@
 
 На аккаунте кроме WAVES владельца аккаунта, могут хранится WAVES, которые принадлежат другим аккаунтам — это WAVES, которые были сданы в [лизинг](/blockchain/leasing.md).
 
-**Регулярный баланс** — количество [WAVES](/blockchain/token/waves.md) на аккаунте, которое принадлежит непосредственно владельцу аккаунта.
+**Регулярный баланс** — количество WAVES на аккаунте, которое принадлежит непосредственно владельцу аккаунта.
 
 Для объяснения эффективного и доступного балансов введем следующие обозначения:
 
@@ -39,11 +37,11 @@ A - L + R
 A - L
 ```
 
-**Генерирующий баланс** — минимальное значение эффективного баланса аккаунта за последние 1000 блоков.
+**Генерирующий баланс** — минимальное значение эффективного баланса аккаунта за последние 1000 [блоков](blockchain/block.md).
 
 ## Пополнение и просмотр баланса аккаунта
 
-Купить и продать токены можно с помощью приложений [Waves Wallet](https://wavesplatform.com/technology/wallet) и [Waves DEX](/waves-dex/about-waves-dex.md) или на одной из [централизованных бирж](https://coinmarketcap.com/currencies/waves/#markets).
+Купить и продать токены можно с помощью приложений [Waves Wallet](https://wavesplatform.com/technology/wallet) и [Waves DEX](https://dex.wavesplatform.com) или на одной из [централизованных бирж](https://coinmarketcap.com/currencies/waves/#markets).
 
 Посмотреть баланс аккаунта можно в Waves Wallet, Waves DEX, а также в расширение для браузера [Keeper](https://wavesplatform.com/technology/keeper).
 
@@ -51,7 +49,7 @@ A - L
 
 <img src="img/account-balance.png" alt="faucet" width="300"/>
 
-Посмотреть список токенов на аккаунте можно в [Waves Explorer](https://wavesexplorer.com/) — найдите аккаунт по его [адресу](/blockchain/account/address.md) или [псевдониму](/blockchain/account/alias.md) и перейдите во вкладку **Assets**.
+Посмотреть список токенов на аккаунте можно в [Waves Explorer](https://wavesexplorer.com) — для этого найдите аккаунт по его [адресу](/blockchain/account/address.md) или [псевдониму](/blockchain/account/alias.md) и перейдите во вкладку **Assets**.
 
 <img src="img/account.png" alt="faucet" width="550"/>
 
