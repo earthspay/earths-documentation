@@ -45,6 +45,20 @@ A - L
 
 **Генерирующий баланс** — минимальное значение эффективного баланса аккаунта за последние 1000 блоков.
 
+## Пополнение и просмотр баланса аккаунта
+
+Купить и продать токены можно с помощью приложений [Waves Wallet](https://wavesplatform.com/technology/wallet) и [Waves DEX](/waves-dex/about-waves-dex.md) или на одной из [централизованных бирж](https://coinmarketcap.com/currencies/waves/#markets).
+
+Посмотреть баланс аккаунта можно в Waves Wallet, Waves DEX, а также в расширение для браузера [Keeper](https://wavesplatform.com/technology/keeper).
+
+Пример окна в Wallet со списком токенов на аккаунте:
+
+<img src="img/account-balance.png" alt="faucet" width="300"/>
+
+Посмотреть список токенов на аккаунте можно в [Waves Explorer](https://wavesexplorer.com/) — найдите аккаунт по его [адресу](/blockchain/account/address.md) или [псевдониму](/blockchain/account/alias.md) и перейдите во вкладку **Assets**.
+
+<img src="img/account.png" alt="faucet" width="550"/>
+
 ## Получение баланса аккаунта с помощью Node API
 
 Получить баланс аккаунта в WAVES можно с помощью запроса к Node API.
