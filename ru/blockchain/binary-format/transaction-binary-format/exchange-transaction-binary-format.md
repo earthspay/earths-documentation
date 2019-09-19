@@ -2,9 +2,9 @@
 
 > Подробнее о [транзакции обмена](/blockchain/transaction-type/exchange-transaction.md)
 
-## Транзакция версии 2
+## Транзакция версии 2 <a id="v2"></a>
 
-Транзакция версии 2 может принимать ордера версии 1, 2 и 3.
+Транзакция версии 2 может принимать ордера версии [1](/blockchain/binary-format/order-binary-format.md#v1), [2](/blockchain/binary-format/order-binary-format.md#v2) и [3](/blockchain/binary-format/order-binary-format.md#v3).
 
 | Порядковый номер поля | Поле | Название JSON-поля | Тип поля | Размер поля в байтах | Комментарий |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,7 +29,7 @@
 
 Смотрите [пример](https://nodes.wavesplatform.com/transactions/info/9VJCXTdLqtsfvk1d68G5MT237ezQ4g9nuQhWZXR47vi9) в Node API.
 
-## Транзакция версии 1
+## Транзакция версии 1 <a id="v1"></a>
 
 Транзакция версии 1 может принимать ордера только версии 1.
 
