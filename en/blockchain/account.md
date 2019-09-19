@@ -44,7 +44,7 @@ Example of address in [Base58](https://en.wikipedia.org/wiki/Base58):
 3MsoC9tFzt4jcfHvmv4DBCap2ttokY5Ve9S
 ```
 
-When transferring a token from one account to another, instead of using the public key of the recipient, its [address](/blockchain/address.md) or [alias](/blockchain/alias.md) is used.
+When transferring a token from one account to another, instead of using the public key of the recipient, its [address](/blockchain/account/address.md) or [alias](/blockchain/account/alias.md) is used.
 
 ## Scripted account
 
