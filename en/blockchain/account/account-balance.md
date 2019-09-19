@@ -14,7 +14,7 @@ There are four balances in WAVES token:
 
 In addition to WAVES that belong to the account owner, the account may store WAVES that belong to other accounts — those are [leased](/blockchain/leasing.md) WAVES.
 
-The **regular balance** is the amount of [WAVES](/blockchain/token/waves.md) on the account which belongs directly to the account owner.
+The **regular balance** is the amount of WAVES on the account which belongs directly to the account owner.
 
 To explain the effective and accessible balances, we will introduce the following designations:
 
