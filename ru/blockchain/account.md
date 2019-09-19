@@ -46,7 +46,7 @@ BRzAFccE3BeAn8rf7Mf56LoqUdT5xExbMUEgV7wGsiKx
 3MsoC9tFzt4jcfHvmv4DBCap2ttokY5Ve9S
 ```
 
-При переводе токена с одного аккаунта на другой вместо публичного ключа получателя используется его [адрес](/blockchain/address.md) или [псевдоним](/blockchain/alias.md).
+При переводе токена с одного аккаунта на другой вместо публичного ключа получателя используется его [адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/account/alias.md).
 
 
 
