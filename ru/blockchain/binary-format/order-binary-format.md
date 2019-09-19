@@ -87,5 +87,5 @@
 | 7 | Количество токена Б, которое отправитель ордера хочет купить | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 8 | Количество миллисекунд с начала [эпохи Unix](https://ru.wikipedia.org/wiki/Unix-время) до момента валидации ордера матчером | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 9 | Количество миллисекунд с начала эпохи Unix до момента [отмены](/blockchain/order.md#cancel) невыполненного ордера | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-|  | Комиссия матчера | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
-| 11 | [Подпись отправителя ордера](/blockchain/matcher-fee.md) | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
+| 10 | [Комиссия матчера](/blockchain/matcher-fee.md) | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
+| 11 | Подпись отправителя ордера | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 64 |  |
