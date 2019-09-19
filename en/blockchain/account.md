@@ -26,13 +26,13 @@ An **account owner** is an owner of both account keys at the same time: both pub
 
 _All_ transactions have a _single_ sender; the only exception is [genesis transactions](/blockchain/transaction-type/genesis-transaction.md) — they do not have a sender.
 
-A transaction contains the sender's _public key_. Before sending the transaction, the sender signs it with his _private key_. The account that signed a transaction is called a **transaction sender**. The signature that results from signing the transaction is called the **transaction digital signature**. If account Y is the sender of the transaction, it is said that the **transaction was sent from account Y**.
+A transaction contains the sender's _public key_. Before sending the transaction, the sender signs it with his _private key_. The account that signed the transaction is called the **transaction sender**. The signature that results from signing the transaction is called the **transaction digital signature**. If account Y is the sender of the transaction, it is said that the **transaction was sent from account Y**.
 
 The transaction is sent to the [blockchain network](/blockchain/blockchain-network.md) along with its digital signature. The digital signature and the sender's public key are used to verify the authenticity of the transaction data.
 
 ## Account balance
 
-An account may store different [tokens](/blockchain/token.md) in different amounts. The amount of the token on the account is called the account balance in this token.
+An account may store different [tokens](/blockchain/token.md) in different amounts. The amount of the token on the account is called the [account balance](/blockchain/account/account-balance.md) in this token.
 
 ## Account address
 
