@@ -14,7 +14,7 @@
 | 2 | Открытый ключ отправителя ордера | senderPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 3 | Открытый ключ [матчера](/blockchain/waves-node/extensions/matcher.md) | matcherPublicKey | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 |  |
 | 4.1 | Флаг токена Б |  | [Short](/blockchain/blockchain/blockchain-data-types.md) | 1 | Если токен [WAVES](/blockchain/token/waves.md), то значение 0, иначе — 1 |
-| 4.2 | [ID токена](/blockchain/token/token-id.md) Б | amountAsset | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | S | Если токен не WAVES, то S = 32, иначе — поле не должно присутствовать в бинарном формате |
+| 4.2 | [ID токена](/blockchain/token/token-id.md) Б | amountAsset | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | Если токен не WAVES, то `S` = 32, иначе — поле не должно присутствовать в бинарном формате |
 | 5.1 | Флаг токена А |  | [Short](/blockchain/blockchain/blockchain-data-types.md) | 1 | Если токен WAVES, то значение 0, иначе — 1 |
 | 5.2 | ID токена А | priceAsset | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | `S` | Если токен не WAVES, то `S` = 32, иначе — поле не должно присутствовать в бинарном формате |
 | 6 | Тип ордера | orderType | [Byte](/blockchain/blockchain/blockchain-data-types.md) | 1 | Если ордер на покупку, то значение 0, если на продажу — 1 |
