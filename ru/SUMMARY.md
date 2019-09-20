@@ -17,6 +17,7 @@
   * [Хранилище данных аккаунта](blockchain/account/account-data-storage.md)
 * [Бинарный формат](blockchain/binary-format.md)
   * [Бинарный формат адреса](blockchain/binary-format/address-binary-format.md)
+  * [Бинарный формат ордера](blockchain/binary-format/order-binary-format.md)
   * [Бинарный формат псевдонима](blockchain/binary-format/alias-binary-format.md)
   * [Бинарный формат транзакции](blockchain/binary-format/transaction-binary-format.md)
     * [Бинарный формат транзакции вызова скрипта](blockchain/binary-format/transaction-binary-format/invoke-script-transaction-binary-format.md)
