@@ -1,6 +1,6 @@
 # Installing a node on Ubuntu
 
-# Install OpenJDK 8
+## Install OpenJDK 8
 
 Install OpenJDK 8 :
 

@@ -1,6 +1,6 @@
 # Installing a node on Windows
 
-# Install OpenJDK 8
+## Install OpenJDK 8
 
 Install OpenJDK 8 from [this link](https://access.redhat.com/documentation/en-us/openjdk/8/html/openjdk_8_for_windows_getting_started_guide/getting_started_with_openjdk_for_windows).
 
