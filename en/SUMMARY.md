@@ -397,7 +397,7 @@
   * [WavesRS](waves-api-and-sdk/client-libraries/wavesrs.md)
   * [Waves signature adapter](waves-api-and-sdk/client-libraries/waves-signature-adapter.md)
   * [Waves transactions](waves-api-and-sdk/client-libraries/waves-transactions.md)
-  * [Community libraries](development-and-api/client-libraries/unofficial-libraries.md)
+  * [Community libraries](waves-api-and-sdk/client-libraries/unofficial-libraries.md)
 * [Examples](waves-api-and-sdk/examples.md)
   * [Create your first crypto trading Bot](waves-api-and-sdk/examples/trading-bot.md)
 
