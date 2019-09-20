@@ -7,6 +7,7 @@
 * [Аккаунт](blockchain/account.md) — <span style="color:green">обновлено</span>
   * [Баланс аккаунта](blockchain/account/account-balance.md)
 * Бинарный формат
+  * [Бинарный формат ордера](blockchain/binary-format/order-binary-format.md)
   * Бинарный формат транзакции
     * [Бинарный формат транзакции вызова скрипта](blockchain/binary-format/transaction-binary-format/invoke-script-transaction-binary-format.md)
     * [Бинарный формат транзакции выпуска](blockchain/binary-format/transaction-binary-format/issue-transaction-binary-format.md)

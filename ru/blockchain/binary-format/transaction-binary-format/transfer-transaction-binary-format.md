@@ -18,7 +18,7 @@
 | 10 | Количество токена для перевода | amount | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 11 | [Комиссия за транзакцию](/blockchain/transaction/transaction-fee.md) | fee | [Long](/blockchain/blockchain/blockchain-data-types.md) | 8 |  |
 | 12 | [Адрес](/blockchain/account/address.md) или [псевдоним](/blockchain/account/alias.md) получателя | recipient | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | 32 | Если первым байтом поля является 1, то за ним следует адрес.<br>Если первым байтом поля является 2, то за ним следует псевдоним |
-| 13 | Длина вложения |  | Short | 2 |  |
+| 13 | Длина вложения |  | [Short](/blockchain/blockchain/blockchain-data-types.md) | 2 |  |
 | 14 | Вложение | attachment | Array[[Byte](/blockchain/blockchain/blockchain-data-types.md)] | До 140 включительно | Может включать произвольные данные |
 | 15 | [Подтверждения транзакции](/blockchain/transaction/transaction-proof.md) | proofs | Array[[Подтверждение](/blockchain/transaction/transaction-proof.md)] | `S` | Если массив пустой, то `S` = 3.<br>Если массив не пустой, то `S` = 3 + 2 × `N` + (`P`<sub>1</sub> + `P`<sub>2</sub> + ... + `P`<sub>n</sub>),<br>где<br>`N` — количество подтверждений в массиве,<br>`P`<sub>n</sub> — размер N-го подтверждения в байтах.<br>Максимальное количество подтверждений в массиве — 8. Максимальный размер каждого подтверждения — 64 байта |
 
