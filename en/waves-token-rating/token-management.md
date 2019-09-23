@@ -1,43 +1,33 @@
 # Token management
 
-If you are a token issuer, call up the top right corner of the account menu and select **My tokens**. The dashboard for your tokens will open.
+Open the token dashboard by hitting **My tokens** at the top-right menu.
 
-If you haven't issued any tokens from this account yet, you will be asked for token creation.
+![](/waves-token-rating/img/dashboard_en.png)
 
-If you are a token issuer and have already created tokens, you will see a list of tokens issued from this account with a name and ID on the left side.
+Available options for token:
 
-The general information about the selected token is displayed in the right part and includes
+* [Add ticker](#ticker)
+* [Add link to the website](#website)
+* [Add additional information](#additional)
 
-* ID (assetId)
-* Token name from issue transaction
-* Description from issue transaction
+## Add ticker <a id="ticker"></a>
 
-Options with token are available below:
+A ticker is a token’s unique identifier, used by exchanges and users as a currency code.
 
-* Add ticker
-* Add a link to the website
-* Add additional information
+If the token has a ticker, it is easier to remember, easier to find and more readable to display on the exchange. Without the ticker, the trade pair string may not be displayed  properly, for example:
 
-## Ticker
+![](/waves-token-rating/img/with_or_without_ticker.png)
 
-If your token has a high rating, WCT weight, and votes sum, you can create a ticker for that token for the exchange. A ticker is a token’s unique identifier, used by exchanges and as a currency code by users.
+If your token has a high rating, WCT weight, and votes sum, you can create a ticker for that token for the exchange. The ticker should be unique within the Waves ecosystem and consist of up to six uppercase characters. After adding a ticker, it is not possible to edit or change it. The created ticker can not be used for other tokens.
 
-The ticker should be unique and consist of up to six uppercase characters.
-
-After adding a ticker, it is impossible to edit or change it.
-
-## Website
+## Add link to the website <a id="website></a>
 
 You can add a link to the website of your token or project.
 
-This information will only be displayed on the Token Rating token card.
+This information will only be displayed on the Token Rating token card. You can always change the link.
 
-You can always change this information.
-
-## Additional information
+## Add additional information <a id="additional"></a>
 
 If the description you specified when issued the token is obsolete, or if you want to extend it by specifying additional information about your token or project, you can add an additional description.
 
-This information will only be displayed on the Token Rating token card, along with a description from the token issue transaction.
-
-You can always change this information.
+This information will only be displayed on the Token Rating token card, along with a description from the token issue transaction. You can always change this information.
