@@ -20,7 +20,7 @@ If the token has a ticker, it is easier to remember, easier to find and more rea
 
 If your token has a high rating, WCT weight, and votes sum, you can create a ticker for that token for the exchange. The ticker should be unique within the Waves ecosystem and consist of up to six uppercase characters. After adding a ticker, it is not possible to edit or change it. The created ticker can not be used for other tokens.
 
-## Add link to the website <a id="website></a>
+## Add link to the website <a id="website"></a>
 
 You can add a link to the website of your token or project.
 
