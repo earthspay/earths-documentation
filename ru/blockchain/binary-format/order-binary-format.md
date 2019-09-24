@@ -2,9 +2,9 @@
 
 > Подробнее об ордере читайте на странице [Биржевая заявка](/blockchain/order.md)
 
-В [транзакции обмена версии 2](/blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md#v2) могут использоваться версии [3](#v3), [2](#v2) и [1](#1) ордера.
+В [транзакции обмена версии 2](/blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md#v2) могут использоваться версии [3](#v3), [2](#v2) и [1](#v1) ордера.
 
-В [транзакции обмена версии 1](/blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md#v1) может использоваться только версия [1](#1) ордера.
+В [транзакции обмена версии 1](/blockchain/binary-format/transaction-binary-format/exchange-transaction-binary-format.md#v1) может использоваться только версия [1](#v1) ордера.
 
 ## Ордер версии 3 <a id="v3"></a>
 
