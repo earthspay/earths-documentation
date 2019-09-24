@@ -16,7 +16,7 @@ In addition to WAVES that belong to the account owner, the account may store WAV
 
 The **regular balance** is the amount of WAVES on the account which belongs directly to the account owner.
 
-To explain the effective and accessible balances, we will introduce the following designations:
+To explain the effective and available balances, we will introduce the following designations:
 
 `A` — regular balance,
 
