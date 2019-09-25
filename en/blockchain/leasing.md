@@ -6,7 +6,7 @@
 
 [Nodes](/blockchain/node.md) can use the leased tokens to generate blocks and get the [mining reward](/blockchain/mining/mining-reward.md). For that purpose, the generating balance of a node must be at least 1000 WAVES.
 
-> In the [node configuration file](/waves-node/node-configuration-file.md), Use the `enable` parameter to start generating blocks on your node. By default, it’s enabled, but if you disable it your node won’t generate blocks.
+> In the [node configuration file](/waves-node/node-configuration.md), Use the `enable` parameter to start generating blocks on your node. By default, it’s enabled, but if you disable it your node won’t generate blocks.
 
 ## Leasing benefits for the token holder
 
