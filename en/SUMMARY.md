@@ -428,7 +428,6 @@
   * [Validation rules](blockchain/waves-protocol/validation-rules.md)
   * [Waves-NG solution](blockchain/waves-protocol/waves-ng-solution.md)
   * [Sponsored fee](blockchain/waves-protocol/sponsored-fee.md)
-  * [Leased Proof of Stake (LPoS)](blockchain/waves-protocol/leased-proof-of-stake-lpos.md)
   * [Fair Proof of Stake](blockchain/waves-protocol/fair-pos.md)
   * [Waves-NG protocol](blockchain/waves-protocol/waves-ng-protocol.md)
   * [Activation protocol](blockchain/waves-protocol/activation-protocol.md)
