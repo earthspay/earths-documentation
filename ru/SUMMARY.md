@@ -49,6 +49,7 @@
 * [Комиссия матчера](blockchain/matcher-fee.md)
 * [Лизинг](blockchain/leasing.md)
 * [Майнинг](blockchain/mining.md)
+  * [Вознаграждение за майнинг](/blockchain/mining/mining-reward.md)
   * [Майнер](blockchain/mining/miner.md)
   * [Майнящий аккаунт](blockchain/mining/mining-account.md)
 * [Нода](blockchain/node.md)
