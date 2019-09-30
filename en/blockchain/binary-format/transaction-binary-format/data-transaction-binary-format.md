@@ -1,6 +1,6 @@
 # Data transaction binary format
 
-> Learn more about [data transaction](/blockchain/transaction-type/burn-transaction.md)
+> Learn more about [data transaction](/blockchain/transaction-type/data-transaction.md)
 
 ## Transaction version 1
 
