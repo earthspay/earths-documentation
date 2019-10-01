@@ -103,7 +103,7 @@ sudo systemctl start waves
 6. Generate non-empty `api_key_hash` value. Execute command
 
 ```bash
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '<YOUR_ARBITRARY_STRING>' 'https://nodes.wavesplatform.com/utils/hash/secure'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '<YOUR_ARBITRARY_STRING>' '127.0.0.1:6869/utils/hash/secure'
 ```
 
 Please use your own value instead of `<YOUR_ARBITRARY_STRING>` (it is recommended to store it). As a result, you will see the following output
