@@ -1,5 +1,13 @@
 # Новости
 
+## Октябрьские статьи
+
+### Node
+
+* Расширения
+  * Матчер
+    * [Установка матчера на Ubuntu из deb-пакета](/waves-node/extensions/matcher/matcher-install-ubuntu-deb.md)
+
 ## Сентябрьские статьи
 
 ### Блокчейн
