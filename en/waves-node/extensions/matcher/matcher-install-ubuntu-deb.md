@@ -1,5 +1,11 @@
 # Installing matcher on Ubuntu from deb-package
 
+## System requirements
+
+- 2 core CPU
+- 4 GB RAM
+- 50 GB HDD
+
 ## Checking OpenJDK version 8 presence
 
 Make sure that you have OpenJDK version 8 installed. To do so, execute the following command in the console
@@ -11,12 +17,6 @@ java -version 2>&1 | grep “openjdk version \“1.8” | wc -l
 If `0` is being displayed, then proceed to [OpenJDK version 8 installation step](#jdk-install).
 
 If `1` is being displayed, then proceed to [Node installation](#node-install).
-
-## System requirements
-
-- 2 core CPU
-- 4 GB RAM
-- 50 GB HDD
 
 ## OpenJDK version 8 installation <a id="jdk-install"></a>
 
