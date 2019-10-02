@@ -50,7 +50,7 @@ cd /var/lib/waves
             <code class="lang-ride">
                 sudo nano /usr/share/waves/conf/waves.conf
             </code>
-        <pre>
+        </pre>
     </li>
     <li>Решите, следует ли использовать вновь созданный или существующий аккаунт для <a href="https://docs.wavesplatform.com/ru/blockchain/node.html">ноды</a>. Использовать существующий аккаунт может понадобиться в том случае, если вы планируете сделать свою ноду <a href="https://docs.wavesplatform.com/ru/blockchain/node/mining-node.html">майнящей</a>.
         <ul>
