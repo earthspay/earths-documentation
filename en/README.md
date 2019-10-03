@@ -2,6 +2,13 @@
 
 ## October articles
 
+### RIDE
+
+* Functions
+  * Built-in functions
+    * [Math functions](ride/functions/built-in-functions/math-functions.md) — <span style="color:green">updated</span>
+    * [String functions](ride/functions/built-in-functions/string-functions.md) — <span style="color:green">updated</span>
+
 ### Node
 
 * Extensions
