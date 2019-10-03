@@ -29,6 +29,16 @@ drop(xs: String, number: Int): String
 
 Число `n`.
 
+### Примеры
+
+```ride
+drop("Apple", 0) # Возвращает "Apple"
+drop("Apple", 1) # Возвращает "pple"
+drop("Apple", 3) # Возвращает "le"
+drop("Apple", 5) # Возвращает пустую строку
+drop("Apple", 15) # Возвращает пустую строку
+```
+
 ## dropRight(String, Int): String<a id=drop-right></a>
 
 Удаляет последние `n` символов строки.
@@ -47,6 +57,16 @@ dropRight(xs: String, number: Int): String
 
 Число `n`.
 
+### Примеры
+
+```ride
+dropRight("Apple", 0) # Возвращает "Apple"
+dropRight("Apple", 1) # Возвращает "Appl"
+dropRight("Apple", 3) # Возвращает "Ap"
+dropRight("Apple", 5) # Возвращает пустую строку
+dropRight("Apple", 15) # Возвращает пустую строку
+```
+
 ## indexOf(String, String): Int&#124;Unit<a id=index-of></a>
 
 Возвращает индекс первого вхождения подстроки.
@@ -64,6 +84,14 @@ indexOf(str: String, substr: String): Int|Unit
 #### `substr`: String
 
 Подстрока.
+
+### Примеры
+
+```ride
+indexOf("Apple","ple") # Возвращает 3
+indexOf("Apple","le") # Возвращает 4
+indexOf("Apple","e") # Возвращает 5
+```
 
 ## indexOf(String, String, Int): Int&#124;Unit<a id=index-of></a>
 
@@ -87,6 +115,14 @@ indexOf(str: String, substr: String, offset: Int): Int|Unit
 
 Индекс.
 
+### Примеры
+
+```ride
+indexOf("Apple","ple", 1) # Возвращает 2
+indexOf("Apple","le", 2) # Возвращает 3
+indexOf("Apple","e", 3) # Возвращает 4
+```
+
 ## size(String): Int<a id=size></a>
 
 Возвращает длину строки.
@@ -100,6 +136,14 @@ size(xs: String): Int
 #### `xs`: String
 
 Строка.
+
+### Примеры
+
+```ride
+size("Ap") # Возвращает 2
+size("Appl") # Возвращает 4
+size("Apple") # Возвращает 5
+```
 
 ## split(String, String): List[String]<a id=split></a>
 
@@ -119,6 +163,15 @@ split(str: String, separator: String): List[String]
 
 Разделитель.
 
+### Примеры
+
+```ride
+split("A.p.p.l.e", ".") # Возвращает ["A", "p", "p", "l", "e"]
+split("Apple", ".") # Возвращает ["Apple"]
+split("Apple", "") # Возвращает ["A", "p", "p", "l", "e"]
+split("Ap.ple", ".") # Возвращает ["Ap","ple"]
+```
+
 ## take(String, Int): String<a id=take></a>
 
 Возвращает первые n символов строки.
@@ -137,6 +190,16 @@ take(xs: String, number: Int): String
 
 Число `n`.
 
+### Примеры
+
+```ride
+take("Apple", 0) # Возвращает пустую строку
+take("Apple", 1) # Возвращает "A"
+take("Apple", 3) # Возвращает "App"
+take("Apple", 5) # Возвращает "Apple"
+take("Apple", 15) # Возвращает пустую строку
+```
+
 ## takeRight(String, Int): String<a id=take-right></a>
 
 Возвращает последние `n` символов строки.
@@ -154,3 +217,13 @@ takeRight(xs: String, number: Int): String
 #### `number`: Int
 
 Число `n`.
+
+### Примеры
+
+```ride
+takeRight("Apple", 0) # Возвращает пустую строку
+takeRight("Apple", 1) # Возвращает "A"
+takeRight("Apple", 3) # Возвращает "ple"
+takeRight("Apple", 5) # Возвращает "Apple"
+takeRight("Apple", 15) # Возвращает "Apple"
+```
