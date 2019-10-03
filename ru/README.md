@@ -2,6 +2,13 @@
 
 ## Октябрьские статьи
 
+### RIDE
+
+* Функции
+  * Встроенные функции
+    * [Математические функции](ride/functions/built-in-functions/math-functions.md) — <span style="color:green">обновлено</span>
+    * [Функции строки](ride/functions/built-in-functions/string-functions.md) — <span style="color:green">обновлено</span>
+
 ### Node
 
 * Расширения
