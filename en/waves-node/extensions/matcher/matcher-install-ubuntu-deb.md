@@ -29,18 +29,23 @@ sudo apt-get install openjdk-8-jre
 
 ## Node installation <a id="node-install"></a>
 
-1. Download the latest version of `waves_<version>_all.deb` file from [https://github.com/wavesplatform/Waves/releases](https://github.com/wavesplatform/Waves/releases).
-2. Execute in the console
-
-```bash
-sudo dpkg -i /path/to/waves_<version>_all.deb
-```
-
-3. Move to `/var/lib/waves` folder by executing
-
-```bash
-cd /var/lib/waves
-```
+<ol>
+    <li>Download the latest version of <span class="lang-ride">waves_VERSION_all.deb</span> file from <a href="https://github.com/wavesplatform/Waves/releases">https://github.com/wavesplatform/Waves/releases</a>.</li>
+    <li>Execute in the console
+        <pre>
+            <code class="lang-ride">
+                sudo dpkg -i /path/to/waves_VERSION_all.deb
+            </code>
+        </pre>
+    </li>
+    <li>Move to <span class="lang-ride">/var/lib/waves</span> folder by executing
+        <pre>
+            <code class="lang-ride">
+                cd /var/lib/waves
+            </code>
+        </pre>
+    </li>
+</ol>
 
 ## Node setup
 
@@ -110,13 +115,13 @@ cd /var/lib/waves
       </code>
     </pre>
   </li>
-  <li>Generate non-empty <span class="lang-ride">api_key_hash</a> value. Execute command
+  <li>Generate non-empty <span class="lang-ride">api_key_hash</span> value. Execute command
     <pre>
       <code class="lang-ride">
-        curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '<YOUR_ARBITRARY_STRING>' '127.0.0.1:6869/utils/hash/secure'
+        curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d 'YOUR_ARBITRARY_STRING' '127.0.0.1:6869/utils/hash/secure'
       </code>
     </pre>
-    <p>Please use your own value instead of <span class="lang-ride"><YOUR_ARBITRARY_STRING></span> (it is recommended to store it). As a result, you will see the following output
+    <p>Please use your own value instead of <span class="lang-ride">YOUR_ARBITRARY_STRING</span> (it is recommended to store it). As a result, you will see the following output
       <pre>
         <code class="lang-ride">
           {"message": "YOUR_ARBITRARY_STRING", "hash": "3QbuM9nJP9GZQDekgfGboPGDQe4g1nsH4kmK2jbCLAFJ"}
@@ -169,17 +174,17 @@ cd /var/lib/waves
       </code>
     </pre>
   </li>
-</ul>
+</ol>
 
 Considering other node parameters is out of current article scope. To get more information about node parameters, refer to [Node Configuration](/waves-node/node-configuration.md).
 
 ## Installing matcher
 
-1. Download the latest version of `dex_<version>_all.deb` file from [https://github.com/wavesplatform/dex/releases](https://github.com/wavesplatform/dex/releases).
+1. Download the latest version of `dex_VERSION_all.deb` file from [https://github.com/wavesplatform/dex/releases](https://github.com/wavesplatform/dex/releases).
 2. Execute the following command in a console
 
 ```bash
-sudo dpkg -i /path/to/dex_<version>_all.deb
+sudo dpkg -i /path/to/dex_VERSION_all.deb
 ```
 
 3. Restart the node by executing
