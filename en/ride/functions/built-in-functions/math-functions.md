@@ -36,6 +36,14 @@ Conversion is performed according to the following formula:
 fraction = value × numerator / denominator
 ```
 
+### Examples
+
+```ride
+fraction(2,2,3) # Returns 1
+fraction(3,3,3) # Returns 3
+fraction(3,2,3) # Returns 2
+```
+
 ## log(Int, Int, Int, Int, Int, Union): Int<a id="log"></a>
 
 Calculates logarithm of the number.
@@ -72,6 +80,20 @@ One of the [rounding function](#rounding-functions).
 
 The `HalfUp()` function may be used as the default value.
 
+### Examples
+
+* log<sub>2</sub>(0) = -Infinity
+* log<sub>2</sub>(2) = 0
+* log<sub>2</sub>(10.555) = 3.4
+* log<sub>2</sub>(16.25) = 4.02
+
+```ride
+log(0, 0, 2, 0, 0, HalfUp()) # -Infinity
+log(1, 0, 2, 0, 0, HalfDown()) # Returns 0
+log(10555, 3, 2, 0, 3, HalfEven()) # Returns 3400
+log(1625, 2, 2, 0, 2, Up()) # Returns 403
+```
+
 ## pow(Int, Int, Int, Int, Int, Union): Int<a id="pow"></a>
 
 Raises the number to a power.
@@ -107,6 +129,20 @@ Number of decimals of the resulting value.
 One of the [rounding functions](#rounding-functions).
 
 The `HalfUp()` function may be used as the default value.
+
+### Examples
+
+* 1<sup>0</sup> = 1
+* 2<sup>4</sup> = 16
+* 2.5<sup>2.5</sup> = 9.88
+* 3.33<sup>3</sup> = 36.926
+
+```ride
+pow(1, 0, 0, 0, 0, Up()) # Returns 1
+pow(2, 0, 4, 0, 0, HalfUp()) # Returns 16
+pow(25, 1, 25, 1, 2, Floor()) # Returns 988
+pow(333, 2, 3, 0, 3, Down()) # Returns 36926
+```
 
 ## Rounding functions
 
