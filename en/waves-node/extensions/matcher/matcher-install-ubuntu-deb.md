@@ -180,23 +180,31 @@ Considering other node parameters is out of current article scope. To get more i
 
 ## Installing matcher
 
-1. Download the latest version of `dex_VERSION_all.deb` file from [https://github.com/wavesplatform/dex/releases](https://github.com/wavesplatform/dex/releases).
-2. Execute the following command in a console
-
-```bash
-sudo dpkg -i /path/to/dex_VERSION_all.deb
-```
-
-3. Restart the node by executing
-
-```bash
-sudo systemctl restart waves
-```
-
-4. Make sure that matcher is successfully started. To do so, execute
-
-```bash
-curl 127.0.0.1:6886/matcher
-```
+<ol>
+    <li>Download the latest version of <span class="lang-ride">dex_VERSION_all.deb</span> file from <a href="https://github.com/wavesplatform/dex/releases">https://github.com/wavesplatform/dex/releases</a>.
+    </li>
+    <li>Execute the following command in a console
+        <pre>
+            <code class="lang-ride">
+                sudo dpkg -i /path/to/dex_VERSION_all.deb
+            </code>
+        </pre>
+    </li>
+    <li>Restart the node by executing
+        <pre>
+            <code class="lang-ride">
+                sudo systemctl restart waves
+            </code>
+        </pre>
+    </li>
+    <li>
+        Make sure that matcher is successfully started. To do so, execute
+        <pre>
+            <code>
+                curl 127.0.0.1:6886/matcher
+            </code>
+        </pre>
+    </li>
+</ol>
 
 As a result, the matcher account address will be displayed. Congratulations, you've successfully installed the matcher.
