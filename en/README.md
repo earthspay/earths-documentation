@@ -1,12 +1,20 @@
 # News
 
+## October articles
+
+### Node
+
+* Extensions
+  * Matcher
+    * [Installing matcher on Ubuntu from deb-package](/waves-node/extensions/matcher/matcher-install-ubuntu-deb.md)
+
 ## September articles
 
 ### Blockchain
 
 * [Account](blockchain/account.md) — <span style="color:green">updated</span>
   * [Account balance](blockchain/account/account-balance.md)
-* [Leasing](blockchain/leasing.md) — <span style="color:green">updated</span> 
+* [Leasing](blockchain/leasing.md) — <span style="color:green">updated</span>
 * [Order](blockchain/order.md) — <span style="color:green">updated</span>
 
 ### RIDE
