@@ -29,18 +29,27 @@ sudo apt-get install openjdk-8-jre
 
 ## Установка ноды <a id="node-install"></a>
 
-1. Скачайте последнюю версию файла `waves_<версия>_all.deb` со страницы [https://github.com/wavesplatform/Waves/releases](https://github.com/wavesplatform/Waves/releases).
-2. Выполните в консоли команду
-
-```bash
-sudo dpkg -i /путь/к/файлу/waves_<версия>_all.deb
-```
-
-3. Перейдите в папку `/var/lib/waves`, выполнив команду
-
-```bash
-cd /var/lib/waves
-```
+<ol>
+    <li>
+        Скачайте последнюю версию файла <span class="lang-ride">waves_VERSION_all.deb</span> со страницы <a href="https://github.com/wavesplatform/Waves/releases">https://github.com/wavesplatform/Waves/releases</a>.
+    </li>
+    <li>
+        Выполните в консоли команду
+        <pre>
+            <code class="lang-ride">
+                sudo dpkg -i /путь/к/файлу/waves_VERSION_all.deb
+            </code>
+        </pre>
+    </li>
+    <li>
+        Перейдите в папку <span class="lang-ride">/var/lib/waves</span>, выполнив команду
+        <pre>
+            <code class="lang-ride">
+                cd /var/lib/waves
+            </code>
+        </pre>
+    </li>
+</ol>
 
 ## Настройка ноды
 
@@ -116,7 +125,7 @@ cd /var/lib/waves
                 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '<YOUR_ARBITRARY_STRING>' '127.0.0.1:6869/utils/hash/secure'
             </code>
         </pre>
-        <p>Вместо <span class="lang-ride"><YOUR_ARBITRARY_STRING></span> используйте собственное значение (рекомендуется запомнить его). В результате будет выведено сообщение вида
+        <p>Вместо <span class="lang-ride">YOUR_ARBITRARY_STRING</span> используйте собственное значение (рекомендуется запомнить его). В результате будет выведено сообщение вида
             <pre>
                 <code class="lang-ride">
                     {"message": "YOUR_ARBITRARY_STRING", "hash": "3QbuM9nJP9GZQDekgfGboPGDQe4g1nsH4kmK2jbCLAFJ"}
@@ -171,29 +180,41 @@ cd /var/lib/waves
             }
         </pre>
     </li>
-</ul>
+</ol>>
 
 Рассмотрение прочих параметров ноды выходит за рамки настоящей статьи. Более подробно параметры ноды рассматриваются в статье [Node Configuration](/waves-node/node-configuration.md).
 
 ## Установка матчера
 
-1. Скачайте последнюю версию файла `dex_<версия>_all.deb` со страницы [https://github.com/wavesplatform/dex/releases](https://github.com/wavesplatform/dex/releases).
-2. Выполните в консоли команду
-
-```bash
-sudo dpkg -i /путь/к/файлу/dex_<версия>_all.deb
-```
-
-3. Перезапустите ноду. Для этого выполните команду
-
-```bash
-sudo systemctl restart waves
-```
-
-4. Убедитесь, что матчер успешно запущен. Для этого выполните команду
-
-```bash
-curl 127.0.0.1:6886/matcher
-```
-
-В ответ должен быть выведен адрес аккаунта матчера. Если это так, то матчер успешно установлен.
+<ol>
+    <li>
+        Скачайте последнюю версию файла `dex_VERSION_all.deb` со страницы <a href="https://github.com/wavesplatform/dex/releases">https://github.com/wavesplatform/dex/releases</a>.
+    </li>
+    <li>
+        Выполните в консоли команду
+        <pre>
+            <code class="lang-ride">
+                sudo dpkg -i /путь/к/файлу/dex_VERSION_all.deb
+            </code>
+        </pre>
+    </li>
+    <li>
+        Перезапустите ноду. Для этого выполните команду
+        <pre>
+            <code class="lang-ride">
+                sudo systemctl restart waves
+            </code>
+        </pre>
+    </li>
+    <li>
+        Убедитесь, что матчер успешно запущен. Для этого выполните команду
+        <pre>
+            <code class="lang-ride">
+                curl 127.0.0.1:6886/matcher
+            </code>
+        </pre>
+        <p>
+            В ответ должен быть выведен адрес аккаунта матчера. Если это так, то матчер успешно установлен.
+        </p>
+    </li>
+</ol>
