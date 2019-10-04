@@ -9,4 +9,5 @@ Waves Oracles features:
 - Viewing public [oracle](/blockchain/oracle.md) cards.
 - Searching oracles by name or [account](/blockchain/account.md).
 - Filtering of oracles by category, status, network type.
-- [Create an oracle card](/waves-oracles/create-an-oracle-card-with-waves-oracle.md).
+- [Creating an oracle card](/waves-oracles/create-an-oracle-card-with-waves-oracle.md).
+- [Sending data transaction by the specification of the oracle](/waves-oracles/data-transaction-tool.md).
