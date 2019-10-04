@@ -1,22 +1,22 @@
 # How to create an oracle
 
-The Waves Platform provides a catalogue for the search and creation of oracle cards — [https://oracles.wavesexplorer.com](https://oracles.wavesexplorer.com). Using the [Waves Oracles](/waves-oracles/about-waves-oracles.md) service, you can see which oracles have already been created by other developers and what data they write on the blockchain, or if you already have an oracle, you can publish your oracle card so that other users know it exists and can use it.
+The Waves Platform provides a catalog for the searching and creating of oracle cards — [https://oracles.wavesexplorer.com](https://oracles.wavesexplorer.com). Using the [Waves Oracles](/waves-oracles/about-waves-oracles.md) service, you know which oracles have already been created by other developers and what data they write on the blockchain. Anyone can create their oracle card so that other users know it exists and can use it.
 
-But the creation of the [oracle](/blockchain/oracle.md) as microservice which takes data from an outside world source and writes it on the blockchain, remains outside the scope of the Waves Oracles service.
+Creating the [oracle](/blockchain/oracle.md) as microservice which takes data from an outside source and writes on the blockchain, remains outside the scope of Waves Oracles.
 
-This article based on a simple sample will shortly introduce you to full-cycle how and why to use Waves Oracles, how to implementation of the programme part of the oracle and launch your solution, and then use the oracle data in the [dApp](/blockchain/account/dapp.md).
+This article based on a simple sample will shortly introduce you to full-cycle how and why to use Waves Oracles, how to implementation of the program part of the oracle and launch your solution, and then use the oracle data in the [dApp](/blockchain/account/dapp.md).
 
 ## Example of an oracle
 
 As a small example, the following use case should be considered now: imagine you have dApp and you want in it to access data of exchange rates: [WAVES](/blockchain/token/waves.md) per USD and WAVES per BTC, e.g.
 
-If off-chain data is required for dApp to be executed, this data must be obtained and write on the [blockchain](/blockchain/blockchain.md), because dApp have access only to data stored on the blockchain. To retrieve data from the off-chain to blockchain, implementing small programs called [oracles](/blockchain/oracle.md).
+If off-chain data is required for dApp to be executed, this data must be obtained and write on the [blockchain](/blockchain/blockchain.md), because dApp have access only to data stored on the blockchain. To get data from off-chain to blockchain implements small programs called [oracles](/blockchain/oracle.md).
 
-Our dApp requires quotation data on the blockchain. Therefore, we will create a new oracle, which will receive the relevant quotation data from the public Waves Data Service API once an hour and write it on the blockchain, and also create an oracle card so that other users in theirs decentralized applications can use this data if they have the same need.
+Our dApp requires quotation data on the blockchain. Therefore, we will create a new oracle, which will receive the relevant quotation data from the public Waves Data Service API (you can use any other source) once an hour and write it on the blockchain. In addition, we will create an oracle card so that other users can alse use the data in their decentralized applications.
 
-## Implementation of the programme part of the oracle
+## Implementation of the program part of the oracle
 
-First of all, let's create the main part of the oracle — programme that access to exchange rates data and write it to our account. Here we use TypeScript with Node.js, but you can use Python or any other programming language. List of [client libraries](/waves-api-and-sdk/client-libraries.md).
+The main part of the oracle is a program that has access to the API and records exchange rates in the oracles account data storage. Here use TypeScript with Node.js, but you can use Python or any other programming language. List of [client libraries](/waves-api-and-sdk/client-libraries.md).
 
 ### Cron
 
@@ -153,7 +153,7 @@ Now let's launch our oracle:
 $ npm run start
 ```
 
-In [Waves Explorer](/waves-explorer/about-waves-explorer.md) we can see data transaction with exchange rates in the format that we wanted (fig. 1):
+In [Waves Explorer](/waves-explorer/about-waves-explorer.md) we can see the data transaction with exchange rates in the format that we wanted (fig. 1):
 
 <img src="img/5_transaction_in_explorer.png" width="700"/>
 
@@ -167,7 +167,7 @@ Waves Oracles is a service that utilizes [Waves Keeper](/waves-keeper/about-wave
 
 To create an oracle card, use the same account you used to sign transactions in the code.
 
-Open Waves Oracles, log in with Waves Keeper and hit the Create an oracle on sidebar menu (fig.2).
+Open Waves Oracles, log in with Waves Keeper and hit the Create an oracle on the sidebar menu (fig.2).
 
 <img src="img/1_create_an_oracle.png" width="700"/>
 
@@ -195,7 +195,7 @@ The key like this is not unique and the [account data storage](/blockchain/accou
 
 _Figure 4_.
 
-After the form is filled, Approve the data transaction for the creation of the oracle card with Waves Keeper. Once we did so, the new oracle card is successfully registered in Waves Oracles. We can see oracle card protocol in Waves Explorer, as shown in fig. 5. After a while, the card will appear in the Waves Oracles interface.
+After the form is filled, Approve the data transaction for the creation of the oracle card with Waves Keeper. Once we did so, the new oracle card is successfully registered in Waves Oracles. We can see the oracle card protocol in Waves Explorer, as shown in fig. 5. After a while, the card will appear in the Waves Oracles interface.
 
 <img src="img/4_oracle_card_explorer.png" width="700"/>
 

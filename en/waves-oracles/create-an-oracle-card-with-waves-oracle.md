@@ -32,5 +32,5 @@ Once the oracle card has been created, the oracle card is available to all users
 | About | Goals and ideas of the current protocol, description of data sources or algorithm based on which data appears, list of use cases, list of references with descriptions |
 | Update frequency | How often the provider updates the data in time, or blocks, or by request only |
 | Summary of Changes from Previous Version | Summary of the made revisions |
-| Specification | Specification kit. You can add or remove an arbitrary number of parameters by specifying their type, required and description. It is in this format that oracle will need to transmit data from the data source to the consumer |
+| Specification | Specification kit. You can add or remove an arbitrary number of parameters by specifying their type, required and description. It is in this format that oracle will need to transmit data from the data source to the consumer.<br>If the parameter key should be variable, for example, assetId, then write **$** at the beginning: **$assetId** |
 | Example | Example of oracle transaction. For a better understanding of your oracle by other users insert a sample transaction in JSON by the format specified in the specification |
