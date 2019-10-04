@@ -8,6 +8,7 @@
   * Встроенные функции
     * [Математические функции](ride/functions/built-in-functions/math-functions.md) — <span style="color:green">обновлено</span>
     * [Функции строки](ride/functions/built-in-functions/string-functions.md) — <span style="color:green">обновлено</span>
+    * [Функции хеширования](ride/functions/built-in-functions/hashing-functions.md) — <span style="color:green">обновлено</span>
 
 ### Node
 
