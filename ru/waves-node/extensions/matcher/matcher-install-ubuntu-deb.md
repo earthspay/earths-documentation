@@ -67,10 +67,10 @@ sudo apt-get install openjdk-8-jre
                 <pre>
                     <code class="lang-ride">
                         wallet {
-                        # Password to protect wallet file
-                        password = iAmGoingToUseAnewAccount
-                        # Wallet seed as BASE58 string
-                        # seed =
+                            # Password to protect wallet file
+                            password = iAmGoingToUseAnewAccount
+                            # Wallet seed as BASE58 string
+                            # seed =
                         }
                     </code>
                 </pre>
@@ -137,8 +137,8 @@ sudo apt-get install openjdk-8-jre
         <pre>
             <code class="lang-ride">
                 rest-api {
-                …
-                api_key_hash = “3QbuM9nJP9GZQDekgfGboPGDQe4g1nsH4kmK2jbCLAFJ”
+                    …
+                    api_key_hash = “3QbuM9nJP9GZQDekgfGboPGDQe4g1nsH4kmK2jbCLAFJ”
                 }
             </code>
         </pre>
@@ -174,10 +174,12 @@ sudo apt-get install openjdk-8-jre
         <p>12.1. Создайте секцию <span class="lang-ride">waves.dex</span></p>
         <p>12.2. Укажите адрес аккаунта ноды для матчера. Для этого в секции <span class="lang-ride">waves.dex</span> присвойте параметру <span class="lang-ride">account</span> полученное на предыдущем шаге значение.</p>
         <pre>
-            waves.dex {
-            account = "3PAbvhnSesJGUd1Ry6YM1qCALTSD4pYGxG"
-            # bind-address = "0.0.0.0" # uncomment this line to accept connections from any host
-            }
+            <code class="lang-ride">
+                waves.dex {
+                    account = "3PAbvhnSesJGUd1Ry6YM1qCALTSD4pYGxG"
+                    # bind-address = "0.0.0.0" # uncomment this line to accept connections from any host
+                }
+            </code>
         </pre>
     </li>
 </ol>
