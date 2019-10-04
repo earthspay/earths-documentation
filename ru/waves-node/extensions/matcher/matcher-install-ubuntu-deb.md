@@ -180,7 +180,7 @@ sudo apt-get install openjdk-8-jre
             }
         </pre>
     </li>
-</ol>>
+</ol>
 
 Рассмотрение прочих параметров ноды выходит за рамки настоящей статьи. Более подробно параметры ноды рассматриваются в статье [Node Configuration](/waves-node/node-configuration.md).
 

@@ -57,7 +57,7 @@ sudo apt-get install openjdk-8-jre
       </code>
     </pre>
   </li>
-  <li>Decide whether the existing or new account should be used for <a href="https://docs.wavesplatform.com/ru/blockchain/node.html">node</a>. Use the existing account if you plan to use your node as a <a href="https://docs.wavesplatform.com/ru/blockchain/node/mining-node.html">mining node</a>.
+  <li>Decide whether the existing or new account should be used for <a href="https://docs.wavesplatform.com/en/blockchain/node.html">node</a>. Use the existing account if you plan to use your node as a <a href="https://docs.wavesplatform.com/en/blockchain/node/mining-node.html">mining node</a>.
     <ul>
       <li>To use a new account, uncomment in <span class="lang-ride">wallet</span> section the <span class="lang-ride">password</span> parameter and set a value for it. Example:
         <pre>
