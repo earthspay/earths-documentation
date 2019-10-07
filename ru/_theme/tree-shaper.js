@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
 	var collapsedState = 'collapsed';
 	var expandedState = 'expanded';
 	var animationTime = 200;
-	var pathToGithubFile = 'https://github.com/wavesplatform/waves-documentation/blob/master/';
+	var pathToGithubFile = 'https://github.com/earthspay/earths-documentation/blob/master/';
 	
 	var attachChapterClickHandler = function ($collapseIcon) {
 		$collapseIcon.on('click', function (e) {
@@ -149,9 +149,9 @@ jQuery(document).ready(function () {
 	var addBranding = function () {
 		var $bookSummary = $('.book-summary');
 		var $logo = $('<div class="sidebar-brand">' +
-			'<a href="/"><img class="brand-logo" src="/_theme/brand-logo/waves-docs-logo.png"\n' +
-			'     srcset="/_theme/brand-logo/waves-docs-logo@2x.png 2x,\n' +
-			'             /_theme/brand-logo/waves-docs-logo@3x.png 3x"\n alt="Waves Docs"></a>' +
+			'<a href="/"><img class="brand-logo" src="/_theme/brand-logo/earths-docs-logo.png"\n' +
+			'     srcset="/_theme/brand-logo/earths-docs-logo@2x.png 2x,\n' +
+			'             /_theme/brand-logo/earths-docs-logo@3x.png 3x"\n alt="Earths Docs"></a>' +
 			'</div>');
 		$bookSummary.prepend($logo);
 	};

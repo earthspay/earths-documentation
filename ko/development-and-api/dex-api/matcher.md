@@ -1,6 +1,6 @@
 ## Matcher
 
-The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Waves platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
+The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Earths platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
 
 ## Limit Order
 
@@ -16,8 +16,8 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 | :--- | :--- | :--- |
 | sender | PublicKeyAccount | Public key of order creator related to the address from which to send/receive assets |
 | matcher | PublicKeyAccount | Public key of matcher to whom user authorize to match his order |
-| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **WAVES** |
-| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **WAVES** |
+| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **EARTHS** |
+| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **EARTHS** |
 | price | Long | Price for `Asset2` in `Asset1` \* 10^8 |
 | amount | Long | Amount in `Asset1` |
 | expiration | Long | Max time of open order to live before execution. Currently, max is 1 month |
@@ -27,7 +27,7 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 `spendAssetId` and `receiveAssetId` form `AssetPair = (Asset1, Asset2)` by the following rule:
 
 * the first asset in the pair is an asset with minimal bytes compared byte by byte starting from the first. Empty asset \(
-  **WAVES**
+  **EARTHS**
   \) is always first in the pair. Thus:
 
 ```js
@@ -75,7 +75,7 @@ Execution price of `ExchangeTransaction` is always determined by the price of an
 ### Full execution
 
 1. If for a submitted order there is no counter-order matched by price \(which price _equal or better_\) that order would be put in the corresponding `OrderBook` and remains open until executed or until `maxTimestamp` is reached.
-2. If there is a counter-order that matches with a submitted order then \_order execution \_is performed. That means the counter-order is removed from `OrderBook` and `ExchangeTransaction` is created and signed by the Matcher's private key and is sent to the Waves network to be included in the blockchain.
+2. If there is a counter-order that matches with a submitted order then \_order execution \_is performed. That means the counter-order is removed from `OrderBook` and `ExchangeTransaction` is created and signed by the Matcher's private key and is sent to the Earths network to be included in the blockchain.
 3. If there are multiple orders, that are matched with a new order, the earliest on based on acceptance time gets chosen.
 
 ### Partial execution
@@ -100,7 +100,7 @@ New transaction type for blockchain is created for assets exchange. It contains 
 | :--- | :--- | :--- |
 | buyOrder | Order | Initially signed order executed in this transaction that 'BUY' corresponding `AssetPair` |
 | sellOrder | Order | Initially signed order executed in this transaction that 'SELL' corresponding `AssetPair` |
-| price | Long | Execution price of orders see[algorithm](https://github.com/wavesplatform/Waves/wiki/Matcher#price-calculation). Price is determined for `Asset2` in `Asset1` \* 10^8 |
+| price | Long | Execution price of orders see[algorithm](https://github.com/earthspay/Earths/wiki/Matcher#price-calculation). Price is determined for `Asset2` in `Asset1` \* 10^8 |
 | amount | Long | Executed amount in `Asset1` that is matched from both orders |
 | buyMatcherFee | Long | Amount fee for matching from `buyOrder`. Transferred to Matcher's account balance. |
 | sellMatcherFee | Long | Amount fee for matching from `sellOrder`. Transferred to Matcher's account balance. |
@@ -115,7 +115,7 @@ New transaction type for blockchain is created for assets exchange. It contains 
 3. `amount` should be &gt; 0 and &lt; `MaxAmount`
 4. `buyMatcherFee` should be &gt; 0 and &lt; `MaxAmount`
 5. `sellMatcherFee` should be &gt; 0 and &lt; `MaxAmount`
-6. `fee` should be &gt;  MinTransactionFee \(100000 Wavelets\) and &lt; `MaxAmount`
+6. `fee` should be &gt;  MinTransactionFee \(100000 Earthlets\) and &lt; `MaxAmount`
 7. `buyOrder` should has `OrderType.BUY`
 8. `sellOrder` should has `OrderType.SELL`
 9. `buyOrder` should be valid according to Order validation rules and be not expired
@@ -139,8 +139,8 @@ Get Order Book for a given Asset Pair.
 
 | Field name | Type | Description |
 | :--- | :--- | :--- |
-| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair, or empty if it is WAVES |
-| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair, or empty if it is WAVES |
+| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair, or empty if it is EARTHS |
+| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair, or empty if it is EARTHS |
 | depth | Int \(_optional_\) | Limit the number of bid/ask levels returned. MaxDepth = 50 |
 
 **Response JSON example:**
@@ -184,8 +184,8 @@ Get Order status for a given Asset Pair. Status is returned for orders submitted
 | Field name | Type | Description |
 | :--- | :--- | :--- |
 | id | Array\[Byte\] Base58-encoded | Order Id to get status of |
-| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair that is not WAVES |
-| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair or empty if it is WAVES |
+| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair that is not EARTHS |
+| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair or empty if it is EARTHS |
 
 Possible statuses:
 
@@ -219,10 +219,10 @@ POST /matcher/orders/cancel
 | Field name | Type | Description |
 | :--- | :--- | :--- |
 | sender | PublicKeyAccount | Public key of order creator related to the address from which to spend/receive assets |
-| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **WAVES** |
-| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **WAVES** |
+| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **EARTHS** |
+| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **EARTHS** |
 | orderId | Array\[Byte\] | Accepted Order Id that sender wants to cancel. |
-| fee | Long | Fee for Asset transaction, min = 100000 \(WAVElets\) |
+| fee | Long | Fee for Asset transaction, min = 100000 \(EARTHlets\) |
 | timestamp | Long | UNIX timestamp in millisec |
 | signature | Array\[Byte\] | Signature of all transaction data |
 

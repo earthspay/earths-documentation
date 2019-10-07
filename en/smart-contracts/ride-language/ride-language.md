@@ -1,6 +1,6 @@
-# RIDE Language for Waves Smart contracts
+# RIDE Language for Earths Smart contracts
 
-Turing-completeness of a blockchain system can be achieved through unwinding the recursive calls between multiple transactions and blocks instead of using a single one, and it is not necessary to have loops and recursion in the language itself. A script \(contract\) should be written using our RIDE language. Scala \(Waves node is written in it\) along with F\# influenced RIDE. For now,** **[**RIDE language**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b)** **has these main characteristics which makes it simple, expressive and bug-free:
+Turing-completeness of a blockchain system can be achieved through unwinding the recursive calls between multiple transactions and blocks instead of using a single one, and it is not necessary to have loops and recursion in the language itself. A script \(contract\) should be written using our RIDE language. Scala \(Earths node is written in it\) along with F\# influenced RIDE. For now,** **[**RIDE language**](https://earths.ga/files/docs/white_paper_earths_smart_contracts.pdf?cache=b)** **has these main characteristics which makes it simple, expressive and bug-free:
 
 * Non-Turing Complete
 * Lazy evaluating 

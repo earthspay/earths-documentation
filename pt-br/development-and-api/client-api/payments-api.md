@@ -1,27 +1,27 @@
-# API de pagamentos Waves
+# API de pagamentos Earths
 
-Se você quiser fazer alguém pagar com WAVES ou qualquer outro token Waves, use nossa API de pagamentos.
+Se você quiser fazer alguém pagar com EARTHS ou qualquer outro token Earths, use nossa API de pagamentos.
 
 ## Processo
 
 1. Você precisa configurar um botão em seu site que acione uma criação de um URL e um redirecionamento para ele.
 2. Um usuário decide comprar algo e o usuário pressiona esse botão.
-3. Depois disso, o usuário é redirecionado para o Cliente Waves com uma janela de parâmetros de pagamento.
+3. Depois disso, o usuário é redirecionado para o Cliente Earths com uma janela de parâmetros de pagamento.
 4. O usuário modifica esses parâmetros, se possível, e envia o formulário.
 5. Se tudo estiver bem, o usuário é redirecionado de volta ao referenciador.
 6. O referenciador é fornecido com o ID da transação, que pode ser verificado se estiver no blockchain.
 
-Se o usuário interromper o processo, ele permanecerá na página do Cliente Waves.
+Se o usuário interromper o processo, ele permanecerá na página do Cliente Earths.
 
 ## Detalhes
 
-[**Aqui**](https://demo.wavesplatform.com/payment-api) Você pode encontrar o projeto de demonstração que mostra como usar a Payment API para doações. A API de pagamento que permite criar um link especial para evitar a entrada de seed dos usuários em sites de terceiros.
+[**Aqui**](https://demo.earths.ga/payment-api) Você pode encontrar o projeto de demonstração que mostra como usar a Payment API para doações. A API de pagamento que permite criar um link especial para evitar a entrada de seed dos usuários em sites de terceiros.
 
 ### Pedido
 
-Exemplo: `https://client.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=1&referrer=https://example.com&strict`.
+Exemplo: `https://client.earths.ga/#send/EARTHS?recipient=your-alias&amount=1&referrer=https://example.com&strict`.
 
-Caminho basico `https://client.wavesplatform.com/#send/{assetId}`. Depois, há os parâmetros.
+Caminho basico `https://client.earths.ga/#send/{assetId}`. Depois, há os parâmetros.
 
 #### ID do recurso
 
@@ -37,7 +37,7 @@ Caminho basico `https://client.wavesplatform.com/#send/{assetId}`. Depois, há o
 
 #### Referenciador
 
-`?referrer=https://example.com/waves-payment` — o URL do seu serviço. Deve ser apenas HTTPS. obrigatório.
+`?referrer=https://example.com/earths-payment` — o URL do seu serviço. Deve ser apenas HTTPS. obrigatório.
 
 #### Modo estrito
 
@@ -45,7 +45,7 @@ Caminho basico `https://client.wavesplatform.com/#send/{assetId}`. Depois, há o
 
 ### Resposta
 
-Exemplo: `https://example.com/waves-payment?txId=D1USZfZPzVd2XNH9xj52Z81XhxChpwUKDJpQHz2haXRT`.
+Exemplo: `https://example.com/earths-payment?txId=D1USZfZPzVd2XNH9xj52Z81XhxChpwUKDJpQHz2haXRT`.
 
 O ID da transação de pagamento do usuário estará na consulta.
 

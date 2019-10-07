@@ -102,8 +102,8 @@
 | addressFromPublicKey|82|Convert public key to account address|<ul> <li>@publicKey <a>ByteVector</a> public key</li></ul>| <a>Address</a>
 | addressFromString|124|Decode account address|<ul> <li>@string <a>String string address represntation</li></ul>| OPTION[ <a>Address</a>]
 | addressFromRecipient|100|Extract address or lookup alias|<ul> <li>AddressOrAlias <a>Address</a> <a>Alias</a> address or alias, usually tx.recipient</li></ul>| <a>Address</a>
-| assetBalance|100|get asset balance for account|<ul> <li>addressOrAlias <a>Address</a> <a>Alias</a> account</li> <li>assetId OPTION <a>ByteVector</a> assetId (WAVES if none)</li></ul>| <a>Int</a>
-| wavesBalance|109|get WAVES balanse for account|<ul> <li>@addressOrAlias <a>Address</a> <a>Alias</a> account</li></ul>| <a>Int</a>
+| assetBalance|100|get asset balance for account|<ul> <li>addressOrAlias <a>Address</a> <a>Alias</a> account</li> <li>assetId OPTION <a>ByteVector</a> assetId (EARTHS if none)</li></ul>| <a>Int</a>
+| earthsBalance|109|get EARTHS balanse for account|<ul> <li>@addressOrAlias <a>Address</a> <a>Alias</a> account</li></ul>| <a>Int</a>
 
 
 # Common fields

@@ -1,33 +1,33 @@
-# Waves API de autenticação
+# Earths API de autenticação
 
-Se você quer autorizar um usuário em seu serviço por meio de sua conta Waves, aqui está a solução. Em geral, você deve redirecionar o usuário para o Cliente oficial Waves \([https://client.wavesplatform.com/] (https://beta.wavesplatform.com/) - a ser alterado posteriormente \) com determinados parâmetros de consulta incluindo alguns dados arbitrários para ele assinar.
+Se você quer autorizar um usuário em seu serviço por meio de sua conta Earths, aqui está a solução. Em geral, você deve redirecionar o usuário para o Cliente oficial Earths \([https://client.earths.ga/] (https://beta.earths.ga/) - a ser alterado posteriormente \) com determinados parâmetros de consulta incluindo alguns dados arbitrários para ele assinar.
 
 Isso pode ser necessário nos casos em que você precisa trabalhar com dados pessoais do usuário e ter certeza de que uma determinada conta blockchain pertence a esse usuário.
 
 ## Processo
 
-1. Você adiciona a ferramenta de autenticação waves ao seu site.
-2. Um usuário se depara com seu site e deseja fazer login usando sua conta do Waves.
-3. Ele clica no botão da ferramenta e é redirecionado para o cliente oficia Waves, junto com alguns dados aleatórios da ferramenta.
+1. Você adiciona a ferramenta de autenticação earths ao seu site.
+2. Um usuário se depara com seu site e deseja fazer login usando sua conta do Earths.
+3. Ele clica no botão da ferramenta e é redirecionado para o cliente oficia Earths, junto com alguns dados aleatórios da ferramenta.
 4. Lá, o usuário escolhe se efetuar login ou cancelar essa cadeia de ações.
 5. Se ele prosseguir, os dados serão assinados com a chave privada do usuário.
 6. Em seguida, o usuário é redirecionado de volta ao seu site, juntamente com a assinatura e a chave pública do usuário.
 7. Você verifica a validade da assinatura em relação aos dados fornecidos para esse usuário.
 8. Se tudo estiver correto, o usuário agora está autenticado em seu serviço.
 
-Se o usuário interromper o processo, ele permanecerá na página do cliente Waves.
+Se o usuário interromper o processo, ele permanecerá na página do cliente Earths.
 
 ## Detalhes
 
 Devido às limitações de comprimento da string de consulta, todos os parâmetros são expressos com um caracter.
 
-[**Aqui**](https://demo.wavesplatform.com) Você pode encontrar o projeto de demonstração que mostra como usar a API Web de autenticação.
+[**Aqui**](https://demo.earths.ga) Você pode encontrar o projeto de demonstração que mostra como usar a API Web de autenticação.
 
 ### Pedido
 
-Exemplo: `https://client.wavesplatform.com#gateway/auth?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/wavesAuth`.
+Exemplo: `https://client.earths.ga#gateway/auth?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/earthsAuth`.
 
-A URL basica e `https://client.wavesplatform.com#gateway/auth`. Então os parâmetros de consulta vão.
+A URL basica e `https://client.earths.ga#gateway/auth`. Então os parâmetros de consulta vão.
 
 #### Referencia
 
@@ -55,7 +55,7 @@ A URL basica e `https://client.wavesplatform.com#gateway/auth`. Então os parâm
 
 ### Resposta
 
-Exemplo: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6XwuMdcx4bhsCJAq3e8yhP7j64UD3aLyn9fFSK454o427raRmSn6a9FkaJpvXrc&p=2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr&a=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj`.
+Exemplo: `https://example.com/earthsAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6XwuMdcx4bhsCJAq3e8yhP7j64UD3aLyn9fFSK454o427raRmSn6a9FkaJpvXrc&p=2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr&a=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj`.
 
 #### Data
 
@@ -71,11 +71,11 @@ Exemplo: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6
 
 #### Endereço
 
-`?a=base58EncodedAddress` — endereço Waves do usuário.
+`?a=base58EncodedAddress` — endereço Earths do usuário.
 
 ### Como verificar a validade da assinatura
 
-Você pode usar o método `Waves.crypto.isValidTransactionSignature()` método de [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
+Você pode usar o método `Earths.crypto.isValidTransactionSignature()` método de [@earths/earths-api](https://www.npmjs.com/package/@earths/earths-api) npm package.
 
-A assinatura é obtida dos dados na seguinte ordem: uma string `WavesWalletAuthentication`, depois uma string com seu valor de parâmetro de host e, em seguida, uma string com seu valor de parâmetro de dados.
+A assinatura é obtida dos dados na seguinte ordem: uma string `EarthsWalletAuthentication`, depois uma string com seu valor de parâmetro de host e, em seguida, uma string com seu valor de parâmetro de dados.
 

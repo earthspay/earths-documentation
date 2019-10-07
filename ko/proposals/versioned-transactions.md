@@ -81,9 +81,9 @@ Fields, existing in transactions of any kind
 
 | #    | Field name                              | Type  | Length   |
 | ---: | :-------------------------------------- | :---: | -------: |
-| 5    | Amount's asset flag (0-Waves, 1-Asset)  | Byte  | 1        |
+| 5    | Amount's asset flag (0-Earths, 1-Asset)  | Byte  | 1        |
 | 6    | Amount's asset ID **(if used)**         | Bytes | 0 (32*)  |
-| 7    | Fee's asset flag (0-Waves, 1-Asset)     | Byte  | 1        |
+| 7    | Fee's asset flag (0-Earths, 1-Asset)     | Byte  | 1        |
 | 8    | Fee's asset ID **(if used)**            | Bytes | 0 (32**) |
 | 9    | Amount                                  | Long  | 8        |
 | 10   | Fee                                     | Long  | 8        |
@@ -95,7 +95,7 @@ Fields, existing in transactions of any kind
 
 | #    | Field name                           | Type  | Length   |
 | ---: | :----------------------------------- | :---: | -------: |
-| 4    | Asset flag (0-Waves, 1-Asset)        | Byte  | 1        |
+| 4    | Asset flag (0-Earths, 1-Asset)        | Byte  | 1        |
 | 5    | Asset ID, if any                     | Bytes | 0/32     |
 | 6    | Number of transfers                  | Short | 2        |
 | 7    | AddressOrAlias object for transfer 1 | Bytes | variable |

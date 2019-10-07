@@ -84,9 +84,9 @@ Block's signature is calculated from the following bytes:
 | --- | --- | --- | --- | --- |
 | 1 | Sender's public key | Bytes | 0 | 32 |
 | 2 | Matcher's public key | Bytes | 32 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 64 | 1 |
+| 3 | Amount's asset flag \(0-Earths, 1-Asset\) | Byte | 64 | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 65 | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
+| 5 | Price's asset flag \(0-Earths, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
 | 6 | Price's asset ID \(\*\*if used\) | Bytes | 66 \(98\*\) | 0 \(32\*\*\) |
 | 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 66 \(98_\) \(130\*_\) | 1 |
 | 8 | Price | Long | 67 \(99_\) \(131\*_\) | 8 |
@@ -106,9 +106,9 @@ The signature is calculated from the following bytes:
 | --- | --- | --- | --- | --- |
 | 1 | Sender's public key | Bytes | 0 | 32 |
 | 2 | Matcher's public key | Bytes | 32 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 64 | 1 |
+| 3 | Amount's asset flag \(0-Earths, 1-Asset\) | Byte | 64 | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 65 | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
+| 5 | Price's asset flag \(0-Earths, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
 | 6 | Price's asset ID \(\*\*if used\) | Bytes | 66 \(98\*\) | 0 \(32\*\*\) |
 | 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 66 \(98_\) \(130\*_\) | 1 |
 | 8 | Price | Long | 67 \(99_\) \(131\*_\) | 8 |
@@ -196,9 +196,9 @@ The transaction's signature is calculated from the following bytes:
 | 2 | Signature | Bytes | 1 | 64 |
 | 3 | Transaction type \(0x04\) | Byte | 65 | 1 |
 | 4 | Sender's public key | Bytes | 66 | 32 |
-| 5 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 98 | 1 |
+| 5 | Amount's asset flag \(0-Earths, 1-Asset\) | Byte | 98 | 1 |
 | 6 | Amount's asset ID \(\*if used\) | Bytes | 99 | 0 \(32\*\) |
-| 7 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 99 \(131\*\) | 1 |
+| 7 | Fee's asset flag \(0-Earths, 1-Asset\) | Byte | 99 \(131\*\) | 1 |
 | 8 | Fee's asset ID \(\*\*if used\) | Bytes | 100 \(132\*\) | 0 \(32\*\*\) |
 | 9 | Timestamp | Long | 100 \(132_\) \(164\*_\) | 8 |
 | 10 | Amount | Long | 108 \(140_\) \(172\*_\) | 8 |
@@ -213,9 +213,9 @@ The transaction's signature is calculated from the following bytes:
 | --- | --- | --- | --- | --- |
 | 1 | Transaction type \(0x04\) | Byte | 0 | 1 |
 | 2 | Sender's public key | Bytes | 1 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 33 | 1 |
+| 3 | Amount's asset flag \(0-Earths, 1-Asset\) | Byte | 33 | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 34 | 0 \(32\*\) |
-| 5 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 34 \(66\*\) | 1 |
+| 5 | Fee's asset flag \(0-Earths, 1-Asset\) | Byte | 34 \(66\*\) | 1 |
 | 6 | Fee's asset ID \(\*\*if used\) | Bytes | 35 \(67\*\) | 0 \(32\*\*\) |
 | 7 | Timestamp | Long | 35 \(67_\) \(99\*_\) | 8 |
 | 8 | Amount | Long | 43 \(75_\) \(107\*_\) | 8 |
@@ -232,7 +232,7 @@ The transaction's signature is calculated from the following bytes:
 | 2 | Transaction type | Byte | 1 | 1 |
 | 3 | Version | Byte | 2 | 1 |
 | 4 | Sender's public key | Bytes | 3 | 32 |
-| 5 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 35 | 1 |
+| 5 | Amount's asset flag \(0-Earths, 1-Asset\) | Byte | 35 | 1 |
 | 6 | Amount's asset ID \(\*if used\) | Bytes | 36 | 0 \(32\*\) |
 | 7 | Timestamp | Long | 36 \(68\*\) | 8 |
 | 8 | Amount | Long | 44 \(76\*\) | 8 |
@@ -244,7 +244,7 @@ The transaction's signature is calculated from the following bytes:
 | 14 | Proofs' number \(P\) | Short | 63+M+N \(95+M+N\*\) | 2 |
 | 15 | Proofs | Proof | 65+M+N \(97+M+N\*\) | S |
 
-* The fee only in Waves;
+* The fee only in Earths;
 * You may sign your transaction in your way and place the signature in proofs.
 
 #### Burn transaction
@@ -368,7 +368,7 @@ The transaction's signature is calculated from the following bytes:
 | 1 | Transaction type \(0x0b\) | 1 |
 | 2 | Version \(0x01\) | 1 |
 | 3 | Sender's public key | 32 |
-| 4 | Asset flag \(0-Waves, 1-Asset\) | 1 |
+| 4 | Asset flag \(0-Earths, 1-Asset\) | 1 |
 | 5 | Asset ID, if any | 0 / 32 |
 | 6 | Number of transfers | 2 |
 | 7 | AddressOrAlias object for transfer 1 | variable |
@@ -525,17 +525,17 @@ Sets the script which veries all outgoing transactions. The set script can be ch
 | 8 | Fee | Long | 38 + N | 8 |
 | 9 | Timestamp | Long | 46 + N | 8 |
 
-[**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
+[**Here**](/technical-details/earths-contracts-language-description.md) you can find more details about Earths smart-contracts.
 
-[**Here**](/technical-details/waves-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
+[**Here**](/technical-details/earths-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
 
-[**Here**](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually. 
+[**Here**](/technical-details/earths-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually. 
 
 ## Network messages
 
 ### Network message structure
 
-All network messages shares the same structure except the[Handshake](https://github.com/wavesplatform/Waves/wiki/Data-Structures#handshake-message).
+All network messages shares the same structure except the[Handshake](https://github.com/earthspay/Earths/wiki/Data-Structures#handshake-message).
 
 | \# | Field name | Type | Position | Length |
 | --- | --- | --- | --- | --- |

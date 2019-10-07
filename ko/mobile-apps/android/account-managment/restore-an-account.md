@@ -1,6 +1,6 @@
 # Restore Your Account
 
-**Step 1.** Download and install the latest version from Google Play. Please use only the [official resource](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet).
+**Step 1.** Download and install the latest version from Google Play. Please use only the [official resource](https://play.google.com/store/apps/details?id=com.earthspay.wallet).
 
 **Step 2.** Open your wallet and click on the **IMPORT WALLET** button.
 
@@ -27,7 +27,7 @@ Click on the **Create Wallet** button.
 
 ![](/_assets/account_restoring_android_06.png)
 
-Make sure that you imported the correct account. It is enough to check Waves address by clicking on the menu button ![](/_assets/account_restoring_android_07.png)
+Make sure that you imported the correct account. It is enough to check Earths address by clicking on the menu button ![](/_assets/account_restoring_android_07.png)
 
 ![](/_assets/account_restoring_android_08.png)
 
@@ -37,5 +37,5 @@ If you find an address that does not belong to you and your balance is empty, it
 
 If you lose both your password and your seed, there is no way to recover your money. This is why we ask you to save your seed phrase on paper.
 
-**Wavesplatform does not have access to users accounts and seed phrases**.
+**Earthspay does not have access to users accounts and seed phrases**.
 

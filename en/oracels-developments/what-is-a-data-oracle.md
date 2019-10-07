@@ -4,7 +4,7 @@ An oracle, in the context of blockchains and smart contracts, is a tool that det
 
 ## Why blockchain needs data oracles
 
-**How can smart contracts execute based on real-world conditions, such as price changes, game outcomes, or physical properties if the Waves blockchain has no way of directly accessing these data points through popular 3rd-party APIs?**
+**How can smart contracts execute based on real-world conditions, such as price changes, game outcomes, or physical properties if the Earths blockchain has no way of directly accessing these data points through popular 3rd-party APIs?**
 
 Blockchains do not have a way to access data outside of the chain\(they cannot access data outside their network\). Oracles provide external data and trigger smart contract executions when predefined conditions meet. Such a condition could be any data like weather temperature, successful payment, price fluctuations, etc. So Oracles aim to allow blockchain contracts to interact with the outside world.
 

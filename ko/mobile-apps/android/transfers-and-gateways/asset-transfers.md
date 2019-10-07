@@ -2,7 +2,7 @@
 
 ## **How to send Asset**
 
-**Step 1. **Open up your [Android wallet](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)  
+**Step 1. **Open up your [Android wallet](https://play.google.com/store/apps/details?id=com.earthspay.wallet)  
 At the bottom of the interface, click on the **Send** button.
 
 ![](/_assets/asset_transfers_android_01.png)
@@ -16,9 +16,9 @@ The following window will appear.
 
 ![](/_assets/asset_transfers_android_03.png)
 
-* **Recipient field**: Enter the recipient Waves address.
+* **Recipient field**: Enter the recipient Earths address.
 * **Amount**: Define a number of selected asset you want to send or click on the Use total available minus fee if you want to send total amount.
-* **Fee**: Default fee is 0.001 Waves. This is sufficient fee for most cases.
+* **Fee**: Default fee is 0.001 Earths. This is sufficient fee for most cases.
 * **Attachment**: Optional. You can write a message for the recipient in the Attachment field.
 * **Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
 
@@ -34,8 +34,8 @@ Confirm the payment by clicking on the **SEND** button.
 
 ## **How to receive Asset**
 
-Think of the Waves account as a multi-wallet. It, obviously, supports Waves and also any other token existing on the Waves blockchain.  
-Whenever you want to receive Waves based asset, just hand your personal Waves address to the sender and he is able to execute the transaction.
+Think of the Earths account as a multi-wallet. It, obviously, supports Earths and also any other token existing on the Earths blockchain.  
+Whenever you want to receive Earths based asset, just hand your personal Earths address to the sender and he is able to execute the transaction.
 
 **Step 1. **Open up your Android wallet.
 
@@ -43,8 +43,8 @@ At the bottom of the interface, click on the **Receive** button.
 
 ![](/_assets/asset_transfers_android_07.png)
 
-**Step 2. **The following window will appear. On the main page find the necessary asset that you want to receive and tap on it. There you can tap on the QR code to copy your Waves address.  
-Also you can put some amount in the **Amount** box and generate QR code with selected amount and Waves address.
+**Step 2. **The following window will appear. On the main page find the necessary asset that you want to receive and tap on it. There you can tap on the QR code to copy your Earths address.  
+Also you can put some amount in the **Amount** box and generate QR code with selected amount and Earths address.
 
 ![](/_assets/asset_transfers_android_08.png)
 

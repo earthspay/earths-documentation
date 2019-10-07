@@ -1,6 +1,6 @@
 # **How to Create an Account**
 
-**Step 1.** Download and install the latest version from Google Play. Please use only the [official resource](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet).
+**Step 1.** Download and install the latest version from Google Play. Please use only the [official resource](https://play.google.com/store/apps/details?id=com.earthspay.wallet).
 
 **Step 2.** Open installed app and click on the **CREATE NEW WALLET**.
 
@@ -18,7 +18,7 @@ Each SEED is linked to a unique address shown underneath the proposed SEED.
 
 You can restore your wallet only from the seed phrase. If you lose your seed, there is no way to recover your money. This is why we ask you to save your seed in the safe place.
 
-**Waves platform does not have access to users accounts and seed phrases**.
+**Earths platform does not have access to users accounts and seed phrases**.
 
 **Step 4.** Write down the seed phrase.  
 When you have done so, click on the **Continue** button.

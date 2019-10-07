@@ -26,5 +26,5 @@ The Smart account script validates these signatures with proofs and if 2 of 3 ar
 too, else the transaction does not pass to the blockchain.
 
 **Note**.  After the `SetScriptTransaction` operation all non multi-signature transactions are discarded. 
-Please check the example on our [IDE](https://ide.wavesplatform.com/).
+Please check the example on our [IDE](https://ide.earths.ga/).
 

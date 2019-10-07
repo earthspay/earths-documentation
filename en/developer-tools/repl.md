@@ -1,12 +1,12 @@
 # REPL
 
-It contains javascript console for waves blockchain. It is built on top of [jsconsole](https://github.com/remy/jsconsole) and have predefined functions to work with waves.
+It contains javascript console for earths blockchain. It is built on top of [jsconsole](https://github.com/remy/jsconsole) and have predefined functions to work with earths.
 
 ## Builtin functions
 
 #### JS lib
 
-Console uses [waves-transactions](https://wavesplatform.github.io/waves-transactions/) library. Top level library functions are bound to console global scope.  
+Console uses [earths-transactions](https://earthspay.github.io/earths-transactions/) library. Top level library functions are bound to console global scope.  
 The difference is that in console, seed argument is equal to env.SEED by default. You need to pass null explicitly if you only want to create transaction and not to sign it.
 
 ##### Console
@@ -101,7 +101,7 @@ Starts dev server
 ```javascript
 import * as React from 'react';
 import {render} from 'react-dom';
-import {Repl} from 'waves-repl';
+import {Repl} from 'earths-repl';
 
 const App: React.StatelessComponent = () => (
     <Repl theme="dark"/>
@@ -115,7 +115,7 @@ render(<App />, document.getElementById("root"));
 Repl.updateEnv({
     SEED: 'example seed',
     CHAIN_ID: 'T',
-    API_BASE: 'https://testnodes.wavesnodes.com/'
+    API_BASE: 'https://testnodes.earths.ga/'
 })
 ```
 

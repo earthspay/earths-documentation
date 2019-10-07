@@ -1,23 +1,23 @@
 # Introduction
 
-The integration of the waves consists of several parts: the development of a custom firmware for the device and the protocol of interaction and the integration of the communication library, implementation of the protocol of interaction with the device in the final application.
+The integration of the earths consists of several parts: the development of a custom firmware for the device and the protocol of interaction and the integration of the communication library, implementation of the protocol of interaction with the device in the final application.
 
 ## Code structure
 
 Trezor uses many repositories as modules for building, so we need to work in all of them:
 
-* [trezor-common](https://github.com/Tolsi/trezor-common/tree/waves-integration)
+* [trezor-common](https://github.com/Tolsi/trezor-common/tree/earths-integration)
 
 Here we are interested in `protob/messages.proto` file to add the new messages for exchange with the device.
-* [trezor-crypto](https://github.com/Tolsi/trezor-crypto/tree/waves-integration)
+* [trezor-crypto](https://github.com/Tolsi/trezor-crypto/tree/earths-integration)
 
 Here we must implement all common cryptographic methods used in crypto currency for use in other modules.
 
-* [trezor-mcu](https://github.com/Tolsi/trezor-mcu/tree/waves-integration)
+* [trezor-mcu](https://github.com/Tolsi/trezor-mcu/tree/earths-integration)
 
 Here we must respond to messages coming from the computer and implement the user interface and the logic of the integration itself using other modules.
 
-* [python-trezor](https://github.com/Tolsi/python-trezor/tree/waves-integration)
+* [python-trezor](https://github.com/Tolsi/python-trezor/tree/earths-integration)
 
 This is a python library for integrating the wallet and a test utility for communicating with it. It is convenient to use it for debugging.
 
@@ -25,7 +25,7 @@ So the `trezor-*` modules will be included into `trezor-mcu` (for old Trezor wal
 
 ## A custom firmware for the device
 
-It's into the [trezor-mcu](https://github.com/Tolsi/trezor-mcu/tree/waves-integration) repo. The firmware can be [compiled this commands](https://github.com/trezor/trezor-mcu#how-to-build-trezor-firmware).
+It's into the [trezor-mcu](https://github.com/Tolsi/trezor-mcu/tree/earths-integration) repo. The firmware can be [compiled this commands](https://github.com/trezor/trezor-mcu#how-to-build-trezor-firmware).
 
 Check the `build-firmware.sh` script for more details. For the development all the production ledger repos was changed to my forked repos.
 
@@ -37,20 +37,20 @@ You can build the protob files for `python-trezor` using the `python-trezor/tool
 
 ## Cryptography protocol
 
-It uses [the same method like a Ledger Nano S app (ED25519 with the signature and public key conversion to Curve25519 format)](https://github.com/wavesplatform/nanos-app-waves/wiki/Integration-manual#cryptography-protocol), but under the hood. So that's just Curve25519 and you don't need to do anything with that, it just works.
+It uses [the same method like a Ledger Nano S app (ED25519 with the signature and public key conversion to Curve25519 format)](https://github.com/earthspay/nanos-app-earths/wiki/Integration-manual#cryptography-protocol), but under the hood. So that's just Curve25519 and you don't need to do anything with that, it just works.
 
 # Integration
 
-The device uses a binary [Google Protocol Buffers](https://developers.google.com/protocol-buffers/) protocol. Messages for communicating with the device have been implemented, you can find them [here](https://github.com/Tolsi/trezor-common/blob/waves-integration/protob/messages.proto#L102).
-An example of integration on python can be found in [the modified trezorztl util](https://github.com/Tolsi/python-trezor/blob/waves-integration/trezorlib/client.py#L532).
+The device uses a binary [Google Protocol Buffers](https://developers.google.com/protocol-buffers/) protocol. Messages for communicating with the device have been implemented, you can find them [here](https://github.com/Tolsi/trezor-common/blob/earths-integration/protob/messages.proto#L102).
+An example of integration on python can be found in [the modified trezorztl util](https://github.com/Tolsi/python-trezor/blob/earths-integration/trezorlib/client.py#L532).
 
 ## Getting a public key
 
-See [this](https://github.com/Tolsi/python-trezor/blob/waves-integration/trezorlib/client.py#L532).
+See [this](https://github.com/Tolsi/python-trezor/blob/earths-integration/trezorlib/client.py#L532).
 
 ## Sign a message
 
-See [this](https://github.com/Tolsi/python-trezor/blob/waves-integration/trezorlib/client.py#L581).
+See [this](https://github.com/Tolsi/python-trezor/blob/earths-integration/trezorlib/client.py#L581).
 
 # Communication library
 

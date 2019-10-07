@@ -1,6 +1,6 @@
 # Restore Your Account
 
-**Step 1.** Download and install the latest version from App Store. Please use only the [official resource](https://itunes.apple.com/us/app/waves-wallet/id1233158971).
+**Step 1.** Download and install the latest version from App Store. Please use only the [official resource](https://itunes.apple.com/us/app/earths-wallet/id1233158971).
 
 **Step 2.** Click on the **Import Wallet** button.
 
@@ -27,7 +27,7 @@ In the additional section of the main menu, click on the **More** button.
 ![](/_assets/account_restoring_ios_04.jpg)
 
 Click on it, and you will be forwarding to additional wallet section.  
-There you will find your Waves address. If you have imported an account correctly, you will get the same address that you had.
+There you will find your Earths address. If you have imported an account correctly, you will get the same address that you had.
 
 ![](/_assets/account_restoring_ios_05.jpg)
 
@@ -37,5 +37,5 @@ If you find an address that does not belong to you and your balance is empty, it
 
 If you lose both your password and your seed, there is no way to recover your money. This is why we ask you to save your seed phrase on paper.
 
-** Wavesplatform does not have access to users accounts and seed phrases**.
+** Earthspay does not have access to users accounts and seed phrases**.
 

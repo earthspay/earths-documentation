@@ -9,4 +9,4 @@ Nesta seção, você pode encontrar exemplos de configuração do Full Node e us
 
 Os exemplos são orientados pela comunidade e qualquer bom exemplo de código pode ser incluído na documentação.
 
-Caso você tenha um exemplo ou projeto de demonstração usando waves e gostaria de compartilhar com a comunidade,por favor [contate-nos](http://wavesplatform.com/forum).
+Caso você tenha um exemplo ou projeto de demonstração usando earths e gostaria de compartilhar com a comunidade,por favor [contate-nos](http://earths.ga/forum).

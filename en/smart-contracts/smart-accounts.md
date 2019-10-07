@@ -10,15 +10,15 @@ An account can be restricted with any outgoing transaction based on:
 
 ## Set Script to an Account
 
-In order to setup an Smart Account, The account needs to issue [SetScriptTransaction](https://wavesplatform.github.io/waves-transactions/globals.html#setscript) which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
-`AccountScript` can be changed or cleared if the script installed allows the new [SetScriptTransaction](https://wavesplatform.github.io/waves-transactions/globals.html#setscript) to process.  
+In order to setup an Smart Account, The account needs to issue [SetScriptTransaction](https://earthspay.github.io/earths-transactions/globals.html#setscript) which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
+`AccountScript` can be changed or cleared if the script installed allows the new [SetScriptTransaction](https://earthspay.github.io/earths-transactions/globals.html#setscript) to process.  
 The default account has no script, which is equivalent to this script:
 
 ```scala
 sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 ```
 
-**Note.** [SetScriptTransaction](https://wavesplatform.github.io/waves-transactions/globals.html#setscript) sets the script which verifies all outgoing transactions. The set script can be changed by another [SetScriptTransaction ](https://wavesplatform.github.io/waves-transactions/globals.html#setscript)call unless it’s prohibited by a previous set script.
+**Note.** [SetScriptTransaction](https://earthspay.github.io/earths-transactions/globals.html#setscript) sets the script which verifies all outgoing transactions. The set script can be changed by another [SetScriptTransaction ](https://earthspay.github.io/earths-transactions/globals.html#setscript)call unless it’s prohibited by a previous set script.
 
 ## Script Costs
 
@@ -32,12 +32,12 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 As a result, We define the following constraint for a _**script cost**_:
 
 * A script must have a size _**no more 8 kB**_.
-* The fixed cost for each scripted unit is equal to **400000 **_**wavelets**_ \(Waves coins, 100000000 wavelets = 1 Wave\).
+* The fixed cost for each scripted unit is equal to **400000 **_**earthlets**_ \(Earths coins, 100000000 earthlets = 1 Earth\).
 
 **Examples:**
 
-* If transaction's usual cost is 0.001 WAVES, in case of smart scripting exactly the same transaction will be cost 0.001 + 0.004 WAVES.
-* Set Alias for an account without a script would cost 0.001 WAVES, whereas for a Smart Account it would be 0.001+0.004=0.005 WAVES.
+* If transaction's usual cost is 0.001 EARTHS, in case of smart scripting exactly the same transaction will be cost 0.001 + 0.004 EARTHS.
+* Set Alias for an account without a script would cost 0.001 EARTHS, whereas for a Smart Account it would be 0.001+0.004=0.005 EARTHS.
 
 **Note. **All minimal transactions fees can be found [_**here**_](../transactions-fees.md).
 
@@ -52,7 +52,7 @@ When an exchange transaction broadcasts to the UTX Pool and then to the blockcha
 * Orders are checked by traders’ account scripts \(in case they are smart\).
 * Exchange Transaction is checked by transaction sender’s \(Matcher’s\) script account if it’s set.
 
-Waves also added trader’s script check in Matcher. When it receives an order from a smart account, it executes the script for the order.
+Earths also added trader’s script check in Matcher. When it receives an order from a smart account, it executes the script for the order.
 
 ### Fee Calculation Rules for Trading
 
@@ -74,7 +74,7 @@ match tx {
 }
 ```
 
-#### 2. Buy back custom asset on specified price in WAVES:
+#### 2. Buy back custom asset on specified price in EARTHS:
 
 ```scala
 let myAssetId = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6B9'

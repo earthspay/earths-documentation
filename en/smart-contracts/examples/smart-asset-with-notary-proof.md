@@ -43,5 +43,5 @@ For example transactions list will be:
 
 **match tx** is used  to check the transaction type before accessing field. So each transaction type has its own fields, and you have to match tx type first.
 
-**Note**. Please check the example on our [IDE](https://ide.wavesplatform.com/).
+**Note**. Please check the example on our [IDE](https://ide.earths.ga/).
 

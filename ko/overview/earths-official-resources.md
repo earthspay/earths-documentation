@@ -1,0 +1,18 @@
+# Earths Official Resources
+
+* [**공식 홈페이지**](https://earths.ga)
+* [**신규 온라인 클라이언트 \(beta\)**](https://beta.earths.ga)
+* [**데스크탑 클라이언트 \(beta\)**](https://earths.ga/product)
+* [**온라인 지갑**](https://beta.earths.ga/wallet)
+* [**iOS 모바일 어플리케이션**](https://itunes.apple.com/us/app/earths-wallet/id1233158971?mt=8)
+* [**안드로이드 모바일 어플리케이션**](https://play.google.com/store/apps/details?id=com.earthspay.wallet)
+* [**Github 오픈 소스 코드**](https://github.com/earthspay/)
+* [**테스트넷**](https://testnet.explorer.earths.ga)
+* [**메인넷**](http://explorer.earths.ga)
+* [**지원 서비스**](https://support.earths.ga/)
+* [**Earths desk**](https://earthsdesk.com)
+* [**EarthsGo**](http://earthsgo.com)
+* [**페이스북 그룹**](https://www.facebook.com/earthspay)
+* [**트위터**](https://twitter.com/earthspay?lang=en)
+* [**블로그**](https://blog.earths.ga)
+* [**커뮤니티 페이지**](https://earthscommunity.com)

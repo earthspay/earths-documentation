@@ -4,12 +4,12 @@ The idea of a **Smart Account** is the following:
 
 Before the transaction is submitted to be included in the next block, the account checks if the transaction meets certain requirements, defined in a **script**. The **script** is attached to the account so the account can validate every transaction before confirming it.
 
-In this example, we're going to create and deploy a simple 2 of 2 MultiSig example without using neither `Waves Client libraries` nor `API libraries`.
+In this example, we're going to create and deploy a simple 2 of 2 MultiSig example without using neither `Earths Client libraries` nor `API libraries`.
 
 **Example Assumptions:**
 
-1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/waves-api-and-sdk/client-libraries.md) as shown in this [video tutorial](https://www.youtube.com/watch?v=o2msjSo0y0o&t=21s) using Waves Java Library\).
-2. We want to set up a script for a [generated](/waves-api-and-sdk/waves-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
+1. We assume that we have our own Earths node \(if you do not have Earths node, you can implement the example using one of [Earths Libraries](/earths-api-and-sdk/client-libraries.md) as shown in this [video tutorial](https://www.youtube.com/watch?v=o2msjSo0y0o&t=21s) using Earths Java Library\).
+2. We want to set up a script for a [generated](/earths-api-and-sdk/earths-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
 3. we assume that we have three generated addresses:
 
 `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account.
@@ -28,7 +28,7 @@ The idea here is to create a script and attach it to the account so this account
 
 **Now let's Start our 2 of 2 MultiSig Example:**
 
-1. Use our [IDE](https://ide.wavesplatform.com) to write your script \(you can find some script examples there\)
+1. Use our [IDE](https://ide.earths.ga) to write your script \(you can find some script examples there\)
 2. For this example we will use the following script: In the first two lines, we defined 2 public keys encoded in base58 for both alice and bob. After that, users gather 2 public keys  in proofs\[0\] and proofs\[1\]. The account is funded by the team members and after that, when 2 of 3 team members decide to spend money, they provide their signatures in a single transaction. The Smart account script, using sigVerify function, validates these signatures with proofs and if 2 of 2 are valid then the transaction is valid too, else the transaction does not pass to the blockchain.
 
 ```
@@ -70,7 +70,7 @@ SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 
    Note, `fee` is `100000` - a minimal required fee to deploy your script.
 
-2. Send it to [/transactions/sign](/waves-api-and-sdk/waves-node-rest-api/transactions.md#post-transactionssign):
+2. Send it to [/transactions/sign](/earths-api-and-sdk/earths-node-rest-api/transactions.md#post-transactionssign):
 
    ```bash
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
@@ -97,7 +97,7 @@ SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
    }
    ```
 
-3. Then we [broadcast](/waves-api-and-sdk/waves-node-rest-api/transactions.md#post-transactionsbroadcast) a prepared request:
+3. Then we [broadcast](/earths-api-and-sdk/earths-node-rest-api/transactions.md#post-transactionsbroadcast) a prepared request:
 
    ```bash
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
@@ -126,7 +126,7 @@ where `<scriptText>` is a String representation of compiled `<script>` \(express
 
 Fine! Now we able to make transfers from this account.
 
-## 2. Example of transferring Waves with a bad request
+## 2. Example of transferring Earths with a bad request
 
 **From shared account to another account: **`3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj`
 
@@ -165,7 +165,7 @@ And we got:
 
 > State check failed. Reason: TransactionNotAllowedByScript
 
-## 2.1 Example of transferring Waves with a successful request
+## 2.1 Example of transferring Earths with a successful request
 
 Now, let's try to make a valid transactions with all required proofs. For example, we want to sign this transfer request:
 
@@ -180,7 +180,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
 }
 ```
 
-1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](/waves-api-and-sdk/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](/earths-api-and-sdk/earths-node-rest-api/transactions.md#post-transactionssignsigneraddress)
 
    * Alice address: `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE`
    * JSON:
@@ -220,7 +220,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
 
 2. Alice gives received JSON of her transaction to Bob
 
-3. Bob signs it by his private key by same method [POST /transactions/sign/{signerAddress}](/waves-api-and-sdk/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+3. Bob signs it by his private key by same method [POST /transactions/sign/{signerAddress}](/earths-api-and-sdk/earths-node-rest-api/transactions.md#post-transactionssignsigneraddress)
 
    * Signer address: `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf`
    * JSON:
@@ -290,7 +290,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
    }
    ```
 
-5. Bob [broadcasts](/waves-api-and-sdk/waves-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
+5. Bob [broadcasts](/earths-api-and-sdk/earths-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
 
    ```json
     {

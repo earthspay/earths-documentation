@@ -1,15 +1,15 @@
 #Visual Studio Code Extension
 
-Waves Ride language extension and REPL for Visual Studio Code provides:
+Earths Ride language extension and REPL for Visual Studio Code provides:
 * Syntax highlighting
 * Code completion for global functions and fields
 * Snippets
-* Interactive console console for Waves blockchain
+* Interactive console console for Earths blockchain
 
 ##Installation
-You can find waves-ride extension in Visual Studio Code Marketplace or by the link below:
+You can find earths-ride extension in Visual Studio Code Marketplace or by the link below:
 
-{% prettylink link="https://marketplace.visualstudio.com/items?itemName=wavesplatform.waves-ride#overview" %} Waves-RIDE Extension {% endprettylink %}
+{% prettylink link="https://marketplace.visualstudio.com/items?itemName=earthspay.earths-ride#overview" %} Earths-RIDE Extension {% endprettylink %}
 
 ## Usage
 Extension recognizes `*.ride` files by default.
@@ -25,14 +25,14 @@ Currently shows first compilation error. Invalid base64 and base58 strings are h
 ![Error highlighting](../../_assets/vs-error.gif)
 
 ### Interactive console
-To open interactive console run "Start Waves Repl" task via command palette (Shift + CTRL/Command + P). Waves Repl is a javascript console with convenient functions to interact with blockchain. Console provides helpers for these functions.
+To open interactive console run "Start Earths Repl" task via command palette (Shift + CTRL/Command + P). Earths Repl is a javascript console with convenient functions to interact with blockchain. Console provides helpers for these functions.
 
 ![Interactive console](../../_assets/vs-repl.gif)
 
 ### Available functions
 
 **Transactions:**
-> You can create and sign transactions. All functions take transaction parameters and optional seed to sign. If no seed is provided, default one from settings will be used. For more detailed list check [@waves/waves-transactions](https://www.npmjs.com/package/@waves/waves-transactions) library, that is used internally
+> You can create and sign transactions. All functions take transaction parameters and optional seed to sign. If no seed is provided, default one from settings will be used. For more detailed list check [@earths/earths-transactions](https://www.npmjs.com/package/@earths/earths-transactions) library, that is used internally
 
 * `alias(txParams, seed?)` - create and sign createAlias transaction
 * `issue(txParams, seed?)` - create and sign issue transaction
@@ -70,7 +70,7 @@ To open interactive console run "Start Waves Repl" task via command palette (Shi
 **Blockchain interaction:**
 > You can broadcast transaction to blockchain or publish current script
 
-* `broadcast(tx, apiBase?)` - send transaction to waves node
+* `broadcast(tx, apiBase?)` - send transaction to earths node
 * `deploy()` - shortcut to broadcast(setScript({script:compile(contract())}))
 
 
@@ -87,4 +87,4 @@ In the default [VS Code settings](https://code.visualstudio.com/docs/getstarted/
 
 **Node URL**
 
-`rideExtention.repl.API_BASE:` "https://testnodes.wavesnodes.com"
+`rideExtention.repl.API_BASE:` "https://testnodes.earths.ga"

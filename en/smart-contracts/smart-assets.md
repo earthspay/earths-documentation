@@ -4,7 +4,7 @@
 
 ## Smart Assets Definition
 
-_**Smart assets**_ are unique virtual currency tokens that may represent a tangible real-world asset, or a non-tangible ownership that can be purchased, sold, or exchanged as _**defined by the rules of a script**_ on the Waves blockchain network.
+_**Smart assets**_ are unique virtual currency tokens that may represent a tangible real-world asset, or a non-tangible ownership that can be purchased, sold, or exchanged as _**defined by the rules of a script**_ on the Earths blockchain network.
 
 In simple words, **Smart assets** are assets with an attached script which validates every transaction within that asset.
 
@@ -28,12 +28,12 @@ Smart assets can be used in the following cases:
 
 # Smart Asset Fees
 
-The transaction fee is calculated in the same way as for [smart accounts](../smart-contracts/smart-accounts.md): for each time the script is called, [total transaction’s fee](../waves-environment/waves-protocol/transactions-fees.md) increases by 0.004 WAVES.
+The transaction fee is calculated in the same way as for [smart accounts](../smart-contracts/smart-accounts.md): for each time the script is called, [total transaction’s fee](../earths-environment/earths-protocol/transactions-fees.md) increases by 0.004 EARTHS.
 
 **Examples:**
 
-* If user will transfer smart assets from scripted account the final fee is 0.009.waves
-* x for a TransferTransaction of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=0.009 WAVES
+* If user will transfer smart assets from scripted account the final fee is 0.009.earths
+* x for a TransferTransaction of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=0.009 EARTHS
 
 **Note.** If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
@@ -53,11 +53,11 @@ If an Asset Pair contains a Smart Asset then the fee is increased by + 0.004 \(+
 
 This fee is payed to the Matcher by every account that is placing an order. The same fee is payed by the Matcher when an ExchangeTransaction is put into the blockchain.
 
-If an ExchangeTransaction's sender \(the Matcher or any other account\) has a script then the total fee for the transaction is increased by 0.004 waves.
+If an ExchangeTransaction's sender \(the Matcher or any other account\) has a script then the total fee for the transaction is increased by 0.004 earths.
 
 ## Validation
 
-A smart asset’s script validates any of [_**the following transaction**_](../waves-environment/waves-protocol/transactions-structure.md) types with the asset:
+A smart asset’s script validates any of [_**the following transaction**_](../earths-environment/earths-protocol/transactions-structure.md) types with the asset:
 
 1. ReissueTransaction
 2. BurnTransaction
@@ -91,9 +91,9 @@ For example, if a smart asset’s script requires that all the transactions with
 
 ## Smart Asset Creation
 
-You can create a smartAsset via [IssueTransaction\(Version2\)](../waves-environment/waves-protocol/transactions-structure.md) and specify the script in this transaction.
+You can create a smartAsset via [IssueTransaction\(Version2\)](../earths-environment/earths-protocol/transactions-structure.md) and specify the script in this transaction.
 
-Here’s an example of JSON for [IssueTransaction\(Version2\)](https://nodes.wavesnodes.com/transactions/info/FTQvw9zdYirRksUFCKDvor3hiu2NiUjXEPTDEcircqti):
+Here’s an example of JSON for [IssueTransaction\(Version2\)](https://nodes.earths.ga/transactions/info/FTQvw9zdYirRksUFCKDvor3hiu2NiUjXEPTDEcircqti):
 
 ```js
 {
@@ -117,13 +117,13 @@ The assets that were issued without a script cannot become scripted. You can cre
 
 ## Changing a Smart Asset's Script
 
-A smart asset’s script can be changed via [_**SetAssetScriptTransaction**_](../waves-environment/waves-protocol/data-structures.md) \([fee](../technical-details/transactions-fees.md) on changing is equal to 1 WAVES\).
+A smart asset’s script can be changed via [_**SetAssetScriptTransaction**_](../earths-environment/earths-protocol/data-structures.md) \([fee](../technical-details/transactions-fees.md) on changing is equal to 1 EARTHS\).
 
 Only the issuer can change the asset's script.
 
 ## Examples of Scripts for Smart Assets
 
-You can find an example of _**SetAssetScript **\_transaction on _**testnet**\_ in the following [transactions examples](../waves-api-and-sdk/waves-node-rest-api/example-transactions.md).
+You can find an example of _**SetAssetScript **\_transaction on _**testnet**\_ in the following [transactions examples](../earths-api-and-sdk/earths-node-rest-api/example-transactions.md).
 
 ### 1. Issue an unburnable asset
 
@@ -235,5 +235,5 @@ In this case, the following validations are performed:
 
 \*Matcher validates Orders by the assets’ scripts as follows: the matcher creates an auxiliary counter-order, puts the two orders to an ExchangeTransaction and validates this transaction via the assets scripts’ “case tx: ExchangeTx =&gt; …” branches.
 
-As a result, for the Orders placement Alice pays fee=0.011 waves to the matcher, Bob pays fee=0.011 waves to the matcher. When the ExchangeTransaction is being put into the blockchain, the fee payed by the matcher is 0.011+0.004\(because of the matcher’s script\)=0.015 waves.
+As a result, for the Orders placement Alice pays fee=0.011 earths to the matcher, Bob pays fee=0.011 earths to the matcher. When the ExchangeTransaction is being put into the blockchain, the fee payed by the matcher is 0.011+0.004\(because of the matcher’s script\)=0.015 earths.
 

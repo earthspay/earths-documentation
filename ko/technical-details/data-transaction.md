@@ -65,7 +65,7 @@ object DataType {
 
 Fee is proportional to transaction size. Minimal fee is 100,000 per kilobyte, rounded up.
 
-Fee is payable in WAVES only.
+Fee is payable in EARTHS only.
 
 ### API
 
@@ -78,7 +78,7 @@ Fee is payable in WAVES only.
     {"key": "int", "type": "integer", "value": 24},
     {"key": "bool", "type": "boolean", "value": true},
     {"key": "blob", "type": "binary", "value": "base64:BzWHaQU"}
-    {"key": "My poem", "type": "string", "value": "Oh waves!"}
+    {"key": "My poem", "type": "string", "value": "Oh earths!"}
   ],
   "fee": 100000
 }
@@ -101,7 +101,7 @@ Fee is payable in WAVES only.
 }, {
   "key": "My poem",
   "type": "string",
-  "value": "Oh waves!"
+  "value": "Oh earths!"
 } ]
 ```
 
@@ -143,7 +143,7 @@ Fee is payable in WAVES only.
   }, {
     "key" : "My poem",
     "type" : "string",
-    "value" : "Oh waves!"
+    "value" : "Oh earths!"
   } ],
   "version" : 1,
   "height" : 303

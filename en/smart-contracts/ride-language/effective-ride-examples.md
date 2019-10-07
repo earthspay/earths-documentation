@@ -111,7 +111,7 @@ the language will do it automatically, but remember basic rules:
 
 ## Collections
 
-Details are available by link [List\[T\]](/technical-details/waves-contracts-language-description/language-description.md#listt),  
+Details are available by link [List\[T\]](/technical-details/earths-contracts-language-description/language-description.md#listt),  
 and below is examples of `List[T]` usage:
 
 ```

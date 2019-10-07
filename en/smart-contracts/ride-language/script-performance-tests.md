@@ -34,14 +34,14 @@ Where:
 * `base58_decode_full`,`base58_encode` - tests for 64 bytes.
 * `curve25519_sign_full`, `curve25519_full` - tests for 512 bytes.
 
-## Waves Environment Benchmark
+## Earths Environment Benchmark
 
 Functions used in the script that refer to the state:
 
 | Benchmark | Score | Error |
 | --- | --- | --- |
 | `accountBalanceOf_asset` | 10\,887.166 ns/op | ± 490.024 ns/op |
-| `accountBalanceOf_waves` | 12\,837.177 ns/op | ± 46.377 ns/op |
+| `accountBalanceOf_earths` | 12\,837.177 ns/op | ± 46.377 ns/op |
 | `data` | 12\,154.862 ns/op | ± 666.479 ns/op |
 | `resolveAddress` | 7\,925.741 ns/op | ± 114.994 ns/op |
 | `transactionById` | 70\,485.131 ns/op | ± 3\,587.244 ns/op |
@@ -89,6 +89,6 @@ Let's Compare the applying process for a block with 5\,000 tx for a scripted acc
 * **sigVerify**
 
 As a result, we define the following constraint for a script cost: a script must have a size of** no more then 8 kB** and it must be **faster than 20 executions** of `sigVerify`, which is the most expensive operation.  
-**The fixed fee** for each scripted unit is equal to **400,000 wavelets** \(Waves coins, 100,000,000 wavelets = 1 Wave\).  
-For example, if you use a scripted asset \(smart asset\) then you pay 400,000 wavelets, if you also have a scripted transaction then you have to pay 2 \* 400,000 wavelets.
+**The fixed fee** for each scripted unit is equal to **400,000 earthlets** \(Earths coins, 100,000,000 earthlets = 1 Earth\).  
+For example, if you use a scripted asset \(smart asset\) then you pay 400,000 earthlets, if you also have a scripted transaction then you have to pay 2 \* 400,000 earthlets.
 

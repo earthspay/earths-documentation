@@ -1,6 +1,6 @@
 # Language description
 
-Waves smart contracts language is:
+Earths smart contracts language is:
 
 * Lazy
 * Strong typed

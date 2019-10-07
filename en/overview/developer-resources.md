@@ -1,21 +1,21 @@
-# Waves Official Resources
+# Earths Official Resources
 
-* [**Official website**](https://wavesplatform.com)
-* [**New online client**](https://client.wavesplatform.com)
-* [**Desktop Client**](https://wavesplatform.com/product)
-* [**Online Wallet**](https://client.wavesplatform.com/wallet)
-* [**Mobile application for iOS**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8)
-* [**Mobile app for Android**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)
-* [**Open Source code on GitHub**](https://github.com/wavesplatform/)
-* [**Test Net**](https://testnet.wavesexplorer.com)
-* [**Main Net**](http://wavesexplorer.com)
-* [**Support service**](https://support.wavesplatform.com/)
-* [**Waves desk**](https://wavesdesk.com)
-* [**WavesGo**](http://wavesgo.com)
-* [**Official Facebook group**](https://www.facebook.com/wavesplatform)
-* [**Twitter**](https://twitter.com/wavesplatform?lang=en)
-* [**Blog**](https://blog.wavesplatform.com)
-* [**Community Website**](https://wavescommunity.com)
+* [**Official website**](https://earths.ga)
+* [**New online client**](https://client.earths.ga)
+* [**Desktop Client**](https://earths.ga/product)
+* [**Online Wallet**](https://client.earths.ga/wallet)
+* [**Mobile application for iOS**](https://itunes.apple.com/us/app/earths-wallet/id1233158971?mt=8)
+* [**Mobile app for Android**](https://play.google.com/store/apps/details?id=com.earthspay.wallet)
+* [**Open Source code on GitHub**](https://github.com/earthspay/)
+* [**Test Net**](https://testnet.explorer.earths.ga)
+* [**Main Net**](http://explorer.earths.ga)
+* [**Support service**](https://support.earths.ga/)
+* [**Earths desk**](https://earthsdesk.com)
+* [**EarthsGo**](http://earthsgo.com)
+* [**Official Facebook group**](https://www.facebook.com/earthspay)
+* [**Twitter**](https://twitter.com/earthspay?lang=en)
+* [**Blog**](https://blog.earths.ga)
+* [**Community Website**](https://earthscommunity.com)
 
 
 {%ace edit=true, lang='c_cpp'%}
